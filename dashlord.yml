@@ -661,6 +661,12 @@ urls:
   - url: https://cje.beta.gouv.fr
     category: startup
     betaId: pass.engagement.jeune
+  - url: https://aplypro.beta.gouv.fr
+    category: startup
+    betaId: valorisation.des.stages.pro
+  - url: https://anssi-mac-prod.osc-secnum-fr1.scalingo.io/
+    category: startup
+    betaId: MonAideCyber
   - url: https://selexpert.anje-justice.fr
     category: startup
     betaId: experts

@@ -7,13 +7,13 @@
     "content-security-policy": "default-src 'self'",
     "content-type": "application/json",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 15 Oct 2023 16:12:03 GMT",
+    "date": "Sun, 29 Oct 2023 16:37:55 GMT",
     "referrer-policy": "same-origin",
     "strict-transport-security": "max-age=31536000",
     "vary": "origin",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-request-id": "e52629a4-aaaa-41c6-9799-64c801472eef"
+    "x-request-id": "4d3f0e53-0118-47ca-9c30-841c0df575d2"
   },
   "endpoints": [
     {

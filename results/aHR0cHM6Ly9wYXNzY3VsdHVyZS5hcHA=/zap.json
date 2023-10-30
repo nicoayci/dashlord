@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 09:22:59",
+	"@generated": "Sun, 29 Oct 2023 09:23:33",
 	"site":[ 
 		{
 			"@name": "https://passculture.app",
@@ -20,7 +20,7 @@
 					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
 					"instances":[ 
 						{
-							"uri": "https://passculture.app/static/js/2.07129f7f.chunk.js",
+							"uri": "https://passculture.app/static/js/2.0c9b2d29.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -28,7 +28,7 @@
 							"otherinfo": "Credit Card Type detected: Visa\nBank Identification Number: 441199\nBrand: VISA\nCategory: \nIssuer: VISA DEBIT PROCESSING SERVICE"
 						},
 						{
-							"uri": "https://passculture.app/static/js/2.07129f7f.chunk.js",
+							"uri": "https://passculture.app/static/js/2.0c9b2d29.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -36,7 +36,7 @@
 							"otherinfo": "Credit Card Type detected: Visa\nBank Identification Number: 441199\nBrand: VISA\nCategory: \nIssuer: VISA DEBIT PROCESSING SERVICE"
 						},
 						{
-							"uri": "https://passculture.app/static/js/main.b34c11ce.chunk.js",
+							"uri": "https://passculture.app/static/js/main.33224e75.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -44,7 +44,7 @@
 							"otherinfo": "Credit Card Type detected: Visa\nBank Identification Number: 441199\nBrand: VISA\nCategory: \nIssuer: VISA DEBIT PROCESSING SERVICE"
 						},
 						{
-							"uri": "https://passculture.app/static/js/main.b34c11ce.chunk.js",
+							"uri": "https://passculture.app/static/js/main.33224e75.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -58,114 +58,125 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "104"
+					"sourceid": "110"
 				},
 				{
-					"pluginid": "10038",
-					"alertRef": "10038-1",
-					"alert": "Content Security Policy (CSP) Header Not Set",
-					"name": "Content Security Policy (CSP) Header Not Set",
+					"pluginid": "10055",
+					"alertRef": "10055-4",
+					"alert": "CSP: Wildcard Directive",
+					"name": "CSP: Wildcard Directive",
 					"riskcode": "2",
 					"confidence": "3",
 					"riskdesc": "Medium (High)",
-					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
 							"uri": "https://passculture.app",
 							"method": "GET",
-							"param": "",
+							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://passculture.app/",
 							"method": "GET",
-							"param": "",
+							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://passculture.app/offre/2453719",
 							"method": "GET",
-							"param": "",
+							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/30079319",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/45800261",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/6652358",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://passculture.app/offre/66762284",
 							"method": "GET",
-							"param": "",
+							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/78546610",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/78546660",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/offre/78546742",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://passculture.app/recherche",
 							"method": "GET",
-							"param": "",
+							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nimg-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						}
 					],
-					"count": "11",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"count": "5",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>img-src, connect-src, frame-src, font-src, media-src, manifest-src, form-action</p><p></p><p>The directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"uri": "https://passculture.app",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"uri": "https://passculture.app/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"uri": "https://passculture.app/offre/2453719",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"uri": "https://passculture.app/offre/66762284",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"uri": "https://passculture.app/recherche",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "base-uri 'self'; object-src 'none'; script-src 'self' https://websdk.appsflyer.com https://www.googletagmanager.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://oos.eu-west-2.outscale.com/public-ubble-ai/ https://passculture.app/static/ 'sha256-36BVEwYegit3CzsZLq1yh51ZCmt2RTS8sSgALo2Q4m8=' 'sha256-sxxkOvFVQyEw0LGhj+A4h8EBzelUjS5Dr2QvKLSuyTM=' 'sha256-2Okpzl87Wqt94kg+jXsXyZiKZ3NNt0PRjsiIoHqurvU=' 'sha256-lntxhOTAFFvVrm5+fV7Fo02+WuBgJ9xUQx3Lth5rTu4='; style-src 'unsafe-inline' 'self' 'unsafe-eval'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "5",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -272,7 +283,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10110",
@@ -285,7 +296,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://passculture.app/static/js/2.07129f7f.chunk.js",
+							"uri": "https://passculture.app/static/js/2.0c9b2d29.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -299,7 +310,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "104"
+					"sourceid": "110"
 				},
 				{
 					"pluginid": "10063",
@@ -352,6 +363,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://passculture.app/offre/78546610",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://passculture.app/offre/78546660",
 							"method": "GET",
 							"param": "",
@@ -376,7 +395,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/static/js/3.8b52fdc6.chunk.js",
+							"uri": "https://passculture.app/static/js/3.4ce5b6e4.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -384,15 +403,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/static/js/4.8dc344cc.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/static/js/main.b34c11ce.chunk.js",
+							"uri": "https://passculture.app/static/js/4.97ac4f50.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -406,7 +417,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "2",
@@ -419,7 +430,7 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"uri": "https://passculture.app/static/js/main.b34c11ce.chunk.js",
+							"uri": "https://passculture.app/static/js/main.33224e75.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -433,7 +444,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "97"
+					"sourceid": "121"
 				},
 				{
 					"pluginid": "10037",
@@ -494,6 +505,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://passculture.app/iosSplashscreens/iphoneplus_splash.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Express",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://passculture.app/iosSplashscreens/iphonex_splash.png",
 							"method": "GET",
 							"param": "",
@@ -502,15 +521,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Express",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexsmax_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -540,7 +551,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10035",
@@ -601,6 +612,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://passculture.app/iosSplashscreens/iphoneplus_splash.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://passculture.app/iosSplashscreens/iphonex_splash.png",
 							"method": "GET",
 							"param": "",
@@ -609,15 +628,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexsmax_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -647,7 +658,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10096",
@@ -672,41 +683,33 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1696950700",
-							"otherinfo": "1696950700, which evaluates to: 2023-10-10 15:11:40"
+							"evidence": "1698089346",
+							"otherinfo": "1698089346, which evaluates to: 2023-10-23 19:29:06"
 						},
 						{
-							"uri": "https://passculture.app/",
+							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1557887412",
-							"otherinfo": "1557887412, which evaluates to: 2019-05-15 02:30:12"
-						},
-						{
-							"uri": "https://passculture.app/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1696950700",
-							"otherinfo": "1696950700, which evaluates to: 2023-10-10 15:11:40"
+							"evidence": "1698089146",
+							"otherinfo": "1698089146, which evaluates to: 2023-10-23 19:25:46"
 						},
 						{
 							"uri": "https://passculture.app/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1696950436",
-							"otherinfo": "1696950436, which evaluates to: 2023-10-10 15:07:16"
+							"evidence": "1698089146",
+							"otherinfo": "1698089146, which evaluates to: 2023-10-23 19:25:46"
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1557887412, which evaluates to: 2019-05-15 02:30:12</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10021",
@@ -767,6 +770,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://passculture.app/iosSplashscreens/iphoneplus_splash.png",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://passculture.app/iosSplashscreens/iphonex_splash.png",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -775,15 +786,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexsmax_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -813,7 +816,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -830,93 +833,93 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsSptFUcNH0mnk9YkPiqpq_2Is4LigWC8Z9FZqJ4WMzyCLAbC8P2fBl59Y0xp9OYxZOZscg476coiD0ekbf-75Ptw",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\\x0012\uFFFD\uFFFDTp\uFFFD\uFFFD\uFFFDy=bC\u2A9A\uFFFD\u060B8.(\\x0016\\x000b\uFFFD}\\x0015\uFFFD\uFFFD\uFFFDc3\uFFFD\"\uFFFDl/\\x000f\uFFFD\uFFFDe\uFFFD\uFFFD4\u019FNc\\x0016Nf\uFFFD \u3F9C\uFFFD \uFFFDzF\uFFFD\uFFFD\uFFFDO\uFFFD"
+							"evidence": "ABPtcPqTf-Mx4a4BTqNuRD1iElLywHRdqFGlf0dF4Ujk-j_NUquIjCPbtrws67gAHnsjCZwHkmPabeY6ifSr5-8eTsT6_ezOzx-P",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\uFFFD\uFFFD1\uFFFD\\x0001N\uFFFDnD=b\\x0012R\uFFFD\uFFFDt]\uFFFDQ\uFFFDGE\uFFFDH\uFFFD\uFFFD?\uFFFDR\uFFFD\uFFFD\uFFFD#\u06F6\uFFFD,\uFFFD\\x0000\\x001e{#\t\uFFFD\\x0007\uFFFDc\uFFFDm\uFFFD:\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001eN\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001f\uFFFD"
 						},
 						{
 							"uri": "https://passculture.app/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsSptFUcNH0mnk9YkPiqpq_2Is4LigWC8Z9FZqJ4WMzyCLAbC8P2fBl59Y0xp9OYxZOZscg476coiD0ekbf-75Ptw",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\\x0012\uFFFD\uFFFDTp\uFFFD\uFFFD\uFFFDy=bC\u2A9A\uFFFD\u060B8.(\\x0016\\x000b\uFFFD}\\x0015\uFFFD\uFFFD\uFFFDc3\uFFFD\"\uFFFDl/\\x000f\uFFFD\uFFFDe\uFFFD\uFFFD4\u019FNc\\x0016Nf\uFFFD \u3F9C\uFFFD \uFFFDzF\uFFFD\uFFFD\uFFFDO\uFFFD"
+							"evidence": "ABPtcPrdSZtGfmrFE32OZKbRE_lPIMBDiXxUUvVTAhmtq7vuSOZzUcLGCCH92vumvyQsdF0B-UHZoRdrnf7mbhU6R614Nw",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\uFFFDI\uFFFDF~j\uFFFD\\x0013}\uFFFDd\uFFFD\uFFFD\\x0013\uFFFDO \uFFFDC\uFFFD|TR\uFFFDS\\x0002\\x0019\uFFFD\uFFFD\uFFFD\uFFFDH\uFFFDsQ\uFFFD\uFFFD\\x0008!\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD$,t]\\x0001\uFFFDA\u0661\\x0017k\uFFFD\uFFFD\uFFFDn\\x0015:G\uFFFDx7"
 						},
 						{
 							"uri": "https://passculture.app/images/app-icon-iphone.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdveoE42GR3u5m_UdecDlLYJjqKYeyNnxF-3n34V5ilbmdVppwcRLKIVG-b6RQEbg1sZ4t7Vn2HCRCjyFHVDAnDy",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\u07A0N6\\x0019\\x001d\uFFFD\uFFFDo\uFFFDu\uFFFD\\x0003\uFFFD\uFFFD\t\uFFFD\uFFFD\uFFFD{#g\uFFFD_\uFFFD\uFFFD~\\x0015\uFFFD)[\uFFFD\uFFFDi\uFFFD\\x0007\\x0011,\uFFFD\\x0015\\x001b\uFFFD\uFFFDE\\x0001\\x001b\uFFFD[\\x0019\uFFFD\uFFFD\u055Fa\uFFFDD(\uFFFD\\x0014uC\\x0002p\uFFFD"
+							"evidence": "ABPtcPpb6SfHiWcujKHoLhTQdOi5bjzSbf6D4P8pmnx1OQoCC0qPU5fYvOHeIyi4OXVC_GJwXYRjoMkTklvwgHkBXIMkmh-RmJg0",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD[\uFFFD'\u01C9g.\uFFFD\uFFFD\uFFFD.\\x0014\uFFFDt\uFFFDn<\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFD|u9\n\\x0002\\x000bJ\uFFFDS\uFFFD\u063C\uFFFD\uFFFD#(\uFFFD9uB\uFFFDbp]\uFFFDc\uFFFD\uFFFD\\x0013\uFFFD[\uFFFD\uFFFDy\\x0001\\\uFFFD$\uFFFD\\x001f\uFFFD\uFFFD\uFFFD4"
 						},
 						{
 							"uri": "https://passculture.app/images/app-icon-iphone@3x.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsFEd5MUhCNUtftKtu1xAwevLvBIEB_75bOZtMVTUP-9vZ4JmiB5aUBGlEbqxwS20Umvcuf3F0WJPMugOoL_DEVe7_Eofqm",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\\x0005\\x0011\uFFFDLR\\x0010\uFFFDR\uFFFD\uFFFD*\u06F5\uFFFD\\x000c\\x001e\uFFFD\uFFFD\uFFFD @\uFFFD\uFFFDf\uFFFD\\x0015MC\uFFFD\uFFFD\uFFFDx&h\uFFFD\uFFFD\\x0001\\x001aQ\\x001b\uFFFD\\x001c\\x0012\uFFFDE&\uFFFD\u02DF\uFFFD]\\x0016$\uFFFD.\uFFFD\uFFFD\\x000b\uFFFD1\\x0015{\uFFFD\u0121\uFFFD\uFFFD"
+							"evidence": "ABPtcPrniqSOBaqXiX8QqZrthRoyL_aJb4MiOPa-hj_inP7IUSqrtCK-gOhzEf3MMGZVzgni-OZLPKTWUXcSLH3iyhAv",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\u72A4\uFFFD\\x0005\uFFFD\uFFFD\uFFFD\\x0010\uFFFD\uFFFD\uFFFD\\x001a2/\uFFFD\uFFFDo\uFFFD\"8\uFFFD\uFFFD\uFFFD?\uFFFD\uFFFD\uFFFDQ*\uFFFD\uFFFD\"\uFFFD\uFFFD\uFFFDs\\x0011\uFFFD\uFFFD0fU\uFFFD\t\uFFFD\uFFFD\uFFFDK<\uFFFD\uFFFDQw\\x0012,}\uFFFD\uFFFD\\x0010/"
 						},
 						{
 							"uri": "https://passculture.app/iosSplashscreens/iphone5_splash.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsp4wl2Rlwrr1Gg16W7_XJFLQD1LCdXL2HlLOI7OmNh3q7qs-neJBWtBjYTyHMn91Iod700JHNXwvw3h3ZKv52Z7A",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD)\uFFFD\tvF\\+\uFFFDQ\uFFFD\u05E5\uFFFD\uFFFDrE-\\x0000\uFFFD,'W/a\uFFFD,\uFFFD;:ca\u07AE\uFFFD\uFFFD\uFFFD$\\x0015\uFFFD\\x00066\\x0013\uFFFDs'\uFFFDR(w\uFFFD4$sW\uFFFD\uFFFD7\uFFFDvJ\uFFFD\uFFFD\uFFFD\uFFFD"
+							"evidence": "ABPtcPqY6TQh-kyvmpZVatdC-Dhwk29H0tbn56yUlfaAYN787NfKQySNU4-zRpa2pz4xYsYV7X_fXrPnqTrTitObofCIqQ",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\uFFFD\uFFFD4!\uFFFDL\uFFFD\uFFFD\uFFFDUj\uFFFDB\uFFFD8p\uFFFDoG\uFFFD\uFFFD\uFFFD\u7B14\uFFFD\uFFFD\uFFFD`\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDC$\uFFFDS\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD>1b\uFFFD\\x0015\uFFFD\uFFFD^\uFFFD\uFFFD:\u04CA\u04DB\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://passculture.app/iosSplashscreens/iphone6_splash.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdviARGzXG_JEnp2CUmqCgiTJmGsRmYSa7OhwLKYRIwCNEY3prjaV0YHMnEli9vcy3V69BnCsiJoED2QFOYJ_kcokzTDCMkF",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\uFFFD\\x0001\\x0011\uFFFD\\o\uFFFD\\x0012zv\tI\uFFFD\n\\x0008\uFFFD&a\uFFFDFf\\x0012k\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFD\\x00024F7\uFFFD\uFFFD\uFFFDWF\\x00072q%\uFFFD\uFFFD\uFFFD\uFFFDuz\uFFFD\\x0019\u00B2\"h\\x0010=\uFFFD\\x0014\uFFFD\t\uFFFDG(\uFFFD4\uFFFD\\x0008\uFFFD\\x0005"
+							"evidence": "ABPtcPp5iMRSuJ7HnVRG4_JV8-nfWU_T0Iurqjwf2EoykZUQGySEN90AneJSFXAamynPiUr6I9kYKeGslwOAjbY2PdWJCA",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFDy\uFFFD\uFFFDR\uFFFD\uFFFD\u01DDTF\uFFFD\uFFFDU\uFFFD\uFFFD\uFFFDYO\uFFFD\u040B\uFFFD\uFFFD<\\x001f\uFFFDJ2\uFFFD\uFFFD\\x0010\\x001b$\uFFFD7\uFFFD\\x0000\uFFFD\uFFFDR\\x0015p\\x001a\uFFFD)\u03C9J\uFFFD#\uFFFD\\x0018)\u1B17\\x0003\uFFFD\uFFFD\uFFFD6=\u0549\\x0008"
+						},
+						{
+							"uri": "https://passculture.app/iosSplashscreens/iphoneplus_splash.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ABPtcPrmAs3afnFq14dIqEU-uRKhyl1ztrNyQi66Tba87d-LjLfTl_OFtwcdTVbE6XbxBqxT-2mInDghWq9Af-9G3DMI9Q",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\uFFFD\\x0002\uFFFD\uFFFD~qj\u05C7H\uFFFDE>\uFFFD\\x0012\uFFFD\uFFFD]s\uFFFD\uFFFDrB.\uFFFDM\uFFFD\uFFFD\uFFFD\u07CB\uFFFD\uFFFD\u04D7\uFFFD\\x0007\\x001dMV\uFFFD\uFFFDv\uFFFD\\x0006\uFFFDS\uFFFDi\uFFFD\uFFFD8!Z\uFFFD@\uFFFDF\uFFFD3\\x0008\uFFFD"
 						},
 						{
 							"uri": "https://passculture.app/iosSplashscreens/iphonex_splash.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdu6ZWRRFNVrHrJKXB0z_6uC5q8c-KvWtQ_Q3EmgAeM4S9HXhNNX89jqdEikMU5YRtn-TgUvSAqVTSs6AeGwqrnXjLZaQLV0",
-							"otherinfo": "\\x00003\uFFFDq\u06FAedQ\\x0014\uFFFDk\\x001e\uFFFDJ\\\\x001d3\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\uFFFD\u05B5\\x000f\uFFFD\uFFFDI\uFFFD\\x0001\uFFFD8K\uFFFD\u05C4\uFFFDW\uFFFD\uFFFD\uFFFDtH\uFFFD1NXF\uFFFD\uFFFDN\\x0005/H\n\uFFFDM+:\\x0001\u1C2A\uFFFD\u05CC\uFFFDZ@\uFFFDt"
+							"evidence": "ABPtcPorfvE__JgRoJLzs-hD1c3NUbKf3mcU5BPQQ1EgYeSQON6luRhWpVoBBKmEN9KpBfw3b5ZO7-wq8gAl4n6zl5nvCvvOxHT8",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD+~\uFFFD?\uFFFD\uFFFD\\x0011\uFFFD\uFFFD\uFFFD\uFFFDC\uFFFD\uFFFD\uFFFDQ\uFFFD\uFFFD\uFFFDg\\x0014\uFFFD\\x0013\uFFFDCQ a\uFFFD8\u07A5\uFFFD\\x0018V\uFFFDZ\\x0001\\x0004\uFFFD\uFFFD7\u04A9\\x0005\uFFFD7o\uFFFDN\uFFFD\uFFFD*\uFFFD\\x0000%\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFD\n\uFFFD\uFFFD\uFFFDt\uFFFD"
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdt5_OuHPRhc7KD0dbCm8Nb0ZRCLKaCL-vdxDYAZxxAiqSjbO5d1ODpryGWq9ceqgxbKcJCksVTCNOjK2HMrVtlg7Q",
-							"otherinfo": "\\x00003\uFFFDq\uFFFDy\uFFFD\uFFFD=\\x0018\\\uFFFD\uFFFDu\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDe\\x0010\uFFFD)\uFFFD\uFFFD\uFFFD\uFFFDq\r\uFFFD\\x0019\uFFFD\\x0010\"\uFFFD(\uFFFD;\uFFFDu8:k\uFFFDe\uFFFD\uFFFD\u01EA\uFFFD\\x0016\uFFFDp\uFFFD\uFFFD\uFFFDT\uFFFD4\uFFFD\uFFFD\uFFFDs+V\uFFFD`\uFFFD"
-						},
-						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexsmax_splash.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "ADPycdthE6EmkiaK6X_ONLPOClxfgQF5mqEySv2knBtg0nYD4QqccRI7IMLyvoA3DJSqqTEzpXA8TXL_3ugmnK3QCHJH6YrzWc78",
-							"otherinfo": "\\x00003\uFFFDq\uFFFDa\\x0013\uFFFD&\uFFFD&\uFFFD\uFFFD\uFFFD4\uFFFD\uFFFD\n\\_\uFFFD\\x0001y\uFFFD\uFFFD2J\uFFFD\uFFFD\uFFFD\\x001b`\uFFFDv\\x0003\uFFFD\n\uFFFDq\\x0012; \uFFFD\uFFFD7\\x000c\uFFFD\uFFFD\uFFFD13\uFFFDp<Mr\uFFFD\uFFFD\uFFFD&\uFFFD\uFFFD\uFFFD\\x0008rG\uFFFD\uFFFDY\uFFFD\uFFFD"
+							"evidence": "ABPtcPpd96JpZHoDGgL1lc3opCGTFj093rGIRgHgn_um2SdscYW3HC4b3C4qalIotxcIz6oiOXRwajp_5mgsfxb0GvHJKA",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD]\uFFFD\uFFFDidz\\x0003\\x001a\\x0002\uFFFD\uFFFD\uFFFD\uFFFD!\uFFFD\\x0016==\u07B1\uFFFDF\\x0001\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD'lq\uFFFD\uFFFD\\x001c.\\x001b\uFFFD.*jR(\uFFFD\\x0017\\x0008\u03EA\"9tpj:\uFFFDh,\\x0016\uFFFD\\x001a\uFFFD\uFFFD("
 						},
 						{
 							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsPmXGUEESyQ_O9QPnWC8RSCxXmZTn2oYxiRCJpXkw0ouJ-dFOPStDfInao8lSXcsJXUCzf7mG793grxLMklo7DzRueeURy",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\\x000f\uFFFDq\uFFFD\\x0010D\uFFFDC\uFFFD@\uFFFD\uFFFD\\x000b\uFFFDR\\x000b\\x0015\uFFFDe9\uFFFD\uFFFD\uFFFDbD\"i^L4\uFFFD\uFFFD~tS\uFFFDJ\uFFFD\uFFFD\"v\uFFFD\uFFFDT\uFFFDr\uFFFDWP,\uFFFD\uFFFDa\uFFFD\uFFFDx+\u0133$\uFFFD\uFFFD\uFFFD\uFFFD\\x001b\uFFFDyDr"
+							"evidence": "ABPtcPpU0C49uwUOErnpv3RNOD9aNWXplFDOIB1yamf4GTc3VPhPSBrsw6fDJbbud9pxPk-ZeJWar70qvJFlv8mP1uIvkEr4q_S7",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFDT\uFFFD.=\uFFFD\\x0005\\x000e\\x0012\uFFFD\uFFFDtM8?Z5e\uFFFDP\uFFFD \\x001drjg\uFFFD\\x001977T\uFFFDOH\\x001a\uFFFD\u00E7\uFFFD%\uFFFD\uFFFDw\uFFFDq>O\uFFFDx\uFFFD\uFFFD\uFFFD\uFFFD*\uFFFD\uFFFDe\uFFFD\u024F\uFFFD\uFFFD/\uFFFDJ\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://passculture.app/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdsczVWEM5Qw8HeXVeXFHXZIexvq7vKvwkk_dIXXO951TV-VyrIPGdFI8blQuPBrZFA5zUvfEeWVZJSX4rZ00G5kPb-mCy7k",
-							"otherinfo": "\\x00003\uFFFDq\uFFFD\\x001c\uFFFDU\uFFFD3\uFFFD0\uFFFDw\uFFFDU\uFFFD\uFFFD\\x001dvH{\\x001b\uFFFD\uFFFD\uFFFD\uFFFDI?t\uFFFD\uFFFD;\uFFFDuM_\uFFFD\u02B2\\x000f\\x0019\uFFFDH\uFFFDP\uFFFD\uFFFDkdP9\uFFFDK\uFFFD\\x0011\uFFFDd\uFFFD\uFFFD\uFFFDt\uFFFDnd=\uFFFD\uFFFD\\x000b.\uFFFD"
+							"evidence": "ABPtcPrPnxx6r-1dY91EREMG35qf157QHOhfDweiWibUcSZU8W_rxscIyZorIV7zupWgEuUg2q8S3JM8ywLb5koc5G_COQ",
+							"otherinfo": "\\x0000\\x0013\uFFFDp\uFFFD\u03DF\\x001cz\uFFFD\uFFFD]c\uFFFDDDC\\x0006\u07DA\uFFFD\u05DE\uFFFD\\x001c\uFFFD_\\x000f\\x0007\uFFFDZ&\uFFFDq&T\uFFFDo\uFFFD\uFFFD\uFFFD\\x0008\u025A+!^\uDBA9\uDD60\\x0012\uFFFD \u06AF\\x0012\u0713<\uFFFD\\x0002\uFFFD\uFFFDJ\\x001c\uFFFDo\uFFFD9"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\\x00003\uFFFDq\uFFFD\\x0012\uFFFD\uFFFDTp\uFFFD\uFFFD\uFFFDy=bC\u2A9A\uFFFD\u060B8.(\\x0016\\x000b\uFFFD}\\x0015\uFFFD\uFFFD\uFFFDc3\uFFFD\"\uFFFDl/\\x000f\uFFFD\uFFFDe\uFFFD\uFFFD4\u019FNc\\x0016Nf\uFFFD \u3F9C\uFFFD \uFFFDzF\uFFFD\uFFFD\uFFFDO\uFFFD</p>",
+					"otherinfo": "<p>\\x0000\\x0013\uFFFDp\uFFFD\uFFFD\uFFFD1\uFFFD\\x0001N\uFFFDnD=b\\x0012R\uFFFD\uFFFDt]\uFFFDQ\uFFFDGE\uFFFDH\uFFFD\uFFFD?\uFFFDR\uFFFD\uFFFD\uFFFD#\u06F6\uFFFD,\uFFFD\\x0000\\x001e{#\t\uFFFD\\x0007\uFFFDc\uFFFDm\uFFFD:\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001eN\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001f\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -933,23 +936,23 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://passculture.app/static/js/2.07129f7f.chunk.js",
+							"uri": "https://passculture.app/static/js/2.0c9b2d29.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "bug",
-							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[2],[function(e,t,n){\"use strict\";e.exports=n(1726)},funct\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[2],[function(e,t,n){\"use strict\";e.exports=n(1744)},funct\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://passculture.app/static/js/3.8b52fdc6.chunk.js",
+							"uri": "https://passculture.app/static/js/3.4ce5b6e4.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[3],{2919:function(e,t,n){var i=n(1);Object.defineProperty\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[3],{2946:function(e,t,n){var i=n(1);Object.defineProperty\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://passculture.app/static/js/main.b34c11ce.chunk.js",
+							"uri": "https://passculture.app/static/js/main.33224e75.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -959,11 +962,11 @@
 					],
 					"count": "3",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[2],[function(e,t,n){\"use strict\";e.exports=n(1726)},funct\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpPassCulture=this.webpackJsonpPassCulture||[]).push([[2],[function(e,t,n){\"use strict\";e.exports=n(1744)},funct\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "104"
+					"sourceid": "110"
 				},
 				{
 					"pluginid": "10109",
@@ -980,7 +983,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=-1!==e.indexOf(\"Unexpected token '<'\")||-1!==e.indexOf(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&-1!==t.indexOf(\"chunk\")&&(-1!==t.indexOf(\"passculture\")||-1!==t.indexOf(\"localhost\")||-1!==t.indexOf(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
+							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=e.includes(\"Unexpected token '<'\")||e.includes(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&t.includes(\"chunk\")&&(t.includes(\"passculture\")||t.includes(\"localhost\")||t.includes(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -988,7 +991,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=-1!==e.indexOf(\"Unexpected token '<'\")||-1!==e.indexOf(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&-1!==t.indexOf(\"chunk\")&&(-1!==t.indexOf(\"passculture\")||-1!==t.indexOf(\"localhost\")||-1!==t.indexOf(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
+							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=e.includes(\"Unexpected token '<'\")||e.includes(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&t.includes(\"chunk\")&&(t.includes(\"passculture\")||t.includes(\"localhost\")||t.includes(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -1060,7 +1063,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=-1!==e.indexOf(\"Unexpected token '<'\")||-1!==e.indexOf(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&-1!==t.indexOf(\"chunk\")&&(-1!==t.indexOf(\"passculture\")||-1!==t.indexOf(\"localhost\")||-1!==t.indexOf(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
+							"evidence": "<script>function _errorTitle(e){const t=document.createElement(\"h1\");return t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"40%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.color=\"#fff\",t.style.width=\"100%\",t.style.textAlign=\"center\",t.style.padding=\"0px 2em\",t.innerHTML=e,t}function _errorButton(e){const t=document.createElement(\"button\");return t.setAttribute(\"type\",\"button\"),t.innerHTML=e,t.onclick=function(){location.reload()},t.style.position=\"absolute\",t.style.fontFamily=\"Montserrat-Bold\",t.style.top=\"50%\",t.style.left=\"50%\",t.style.transform=\"translate(-50%, 50%)\",t.style.overflow=\"hidden\",t.style.cursor=\"pointer\",t.style.color=\"#fff\",t.style.height=\"48px\",t.style.borderRadius=\"24px\",t.style.backgroundColor=\"#EB0055FF\",t.style.border=\"0px\",t.style.maxWidth=\"500px\",t.style.outline=\"none\",t.style.padding=\"0px 72px\",t.style.textDecoration=\"none\",t.style.boxSizing=\"border-box\",t}let isFirstChunkError=!1;window.onerror=function(e,t){const r=e.includes(\"Unexpected token '<'\")||e.includes(\"expected expression, got '<' string\");if(!isFirstChunkError&&r&&t&&t.includes(\"chunk\")&&(t.includes(\"passculture\")||t.includes(\"localhost\")||t.includes(\"127.0.0.1\"))&&\"serviceWorker\"in navigator){const e=\"retries_passculture_chunks\";isFirstChunkError=!0,caches.keys().then((function(t){const r=[];if(t.forEach((function(e){r.push(caches.delete(e))})),0===t.length)return document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),void console.error(new Error(\"CacheNamesEmpty: this is infra, not a service worker problem\"));Promise.all(r).catch(console.error).finally((function(){const t=Number(sessionStorage.getItem(e)||0)+1;sessionStorage.setItem(e,t),t<=3?(setTimeout(()=>location.reload(),3e3),document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, rechargement en cours...\"))):(document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),sessionStorage.removeItem(e))}))})).catch((function(e){document.body.append(_errorTitle(\"Un probl\u00E8me est survenu, veuillez r\u00E9essayer.\")),document.body.append(_errorButton(\"Recharger\")),console.error(e)}))}},\"serviceWorker\"in navigator&&navigator.serviceWorker.getRegistrations().then(e=>{e.forEach(e=>{e.unregister()})})</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -1177,7 +1180,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10050",
@@ -1194,15 +1197,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://passculture.app",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 1",
+							"evidence": "Age: 2265",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1210,7 +1205,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1",
+							"evidence": "Age: 2985",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1218,7 +1213,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3272",
+							"evidence": "Age: 811",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1226,7 +1221,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 863",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1242,7 +1237,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 2192",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1262,11 +1257,11 @@
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 1111",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1274,7 +1269,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1138",
+							"evidence": "Age: 496",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1282,11 +1277,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1313,7 +1308,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/sitemap.xml",
+							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1348,7 +1343,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/sitemap.xml",
+							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1383,7 +1378,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/sitemap.xml",
+							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1418,7 +1413,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/sitemap.xml",
+							"uri": "https://passculture.app/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1493,6 +1488,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://passculture.app/iosSplashscreens/iphoneplus_splash.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=3600",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://passculture.app/iosSplashscreens/iphonex_splash.png",
 							"method": "GET",
 							"param": "",
@@ -1501,15 +1504,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexr_splash.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=3600",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://passculture.app/iosSplashscreens/iphonexsmax_splash.png",
+							"uri": "https://passculture.app/recherche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1539,7 +1534,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}

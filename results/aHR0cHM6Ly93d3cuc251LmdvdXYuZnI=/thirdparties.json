@@ -10,7 +10,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
     },
     {
       "type": "unknown",
@@ -26,21 +26,21 @@
     },
     {
       "type": "unknown",
-      "url": "https://tarteaucitron.io/log/?account=116fc2aaf9a8e635ee3bd10f2d6999d8b768651a&domain=www.snu.gouv.fr&status=!adformsnu%3Dfalse!facebookpixel%3Dfalse!snapchat%3Dfalse!googletagmanager%3Dfalse&_time=1697374054618"
+      "url": "https://tarteaucitron.io/log/?account=116fc2aaf9a8e635ee3bd10f2d6999d8b768651a&domain=www.snu.gouv.fr&status=!adformsnu%3Dfalse!facebookpixel%3Dfalse!snapchat%3Dfalse!googletagmanager%3Dfalse&_time=1698583684932"
     }
   ],
   "cookies": [],
   "headers": {
     "cache-control": "max-age=0",
     "cf-cache-status": "DYNAMIC",
-    "cf-ray": "81682bcf7bd7081e-IAD",
+    "cf-ray": "81db87ce2a5b5914-IAD",
     "content-encoding": "br",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 15 Oct 2023 12:47:32 GMT",
-    "expires": "Sun, 15 Oct 2023 12:47:32 GMT",
-    "last-modified": "Sun, 15 Oct 2023 04:39:34 GMT",
+    "date": "Sun, 29 Oct 2023 12:48:02 GMT",
+    "expires": "Sun, 29 Oct 2023 12:48:02 GMT",
+    "last-modified": "Sun, 29 Oct 2023 02:41:47 GMT",
     "server": "cloudflare",
-    "sozu-id": "01HCSP17GJWMASAM75JWK6EM50",
+    "sozu-id": "01HDXQHC13HWCTND2SBDS5Q87Z",
     "vary": "X-Forwarded-Proto,Accept,Accept-Encoding,User-Agent"
   },
   "endpoints": [
@@ -240,7 +240,7 @@
     },
     {
       "hostname": "static.cloudflareinsights.com",
-      "ip": "104.16.57.101",
+      "ip": "104.16.56.101",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,

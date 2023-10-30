@@ -374,7 +374,7 @@
               "ip"           : "conseil-refondation.fr/172.67.130.24",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "102 >= 60 days"
+              "finding"      : "88 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,7 +542,7 @@
               "ip"           : "conseil-refondation.fr/172.67.130.24",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1697403531"
+              "finding"      : "1698614105"
           }
 ,         {
               "id"           : "HSTS",
@@ -1372,7 +1372,7 @@
               "ip"           : "conseil-refondation.fr/104.21.7.98",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1512,7 +1512,7 @@
               "ip"           : "conseil-refondation.fr/104.21.7.98",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "102 >= 60 days"
+              "finding"      : "88 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1680,7 +1680,7 @@
               "ip"           : "conseil-refondation.fr/104.21.7.98",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1697403585"
+              "finding"      : "1698614154"
           }
 ,         {
               "id"           : "HSTS",
@@ -2280,6 +2280,6 @@
               "ip"           : "conseil-refondation.fr/104.21.7.98",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "106"
+              "finding"      : "101"
           }
 ]

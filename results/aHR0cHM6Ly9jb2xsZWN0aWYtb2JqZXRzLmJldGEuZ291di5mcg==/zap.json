@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 18:19:09",
+	"@generated": "Sun, 29 Oct 2023 18:39:07",
 	"site":[ 
 		{
 			"@name": "https://collectif-objets.beta.gouv.fr",
@@ -90,7 +90,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1020"
+					"sourceid": "1015"
 				},
 				{
 					"pluginid": "10038",
@@ -176,7 +176,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "66"
+					"sourceid": "65"
 				},
 				{
 					"pluginid": "10063",
@@ -312,14 +312,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://collectif-objets.beta.gouv.fr/comment-ca-marche",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://collectif-objets.beta.gouv.fr/conservateurs/sign_in",
 							"method": "GET",
 							"param": "",
@@ -360,6 +352,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://collectif-objets.beta.gouv.fr/vite/assets/application-25f381a9.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://collectif-objets.beta.gouv.fr/vite/assets/gallery_component_controller-40792afe.css",
 							"method": "GET",
 							"param": "",
@@ -390,7 +390,7 @@
 					"reference": "<p>http://tools.ietf.org/html/rfc6797#section-8.1</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -553,7 +553,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "159"
+					"sourceid": "160"
 				},
 				{
 					"pluginid": "10021",
@@ -654,7 +654,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://collectif-objets.beta.gouv.fr/vite/assets/stimulus-babce4aa.js",
+							"uri": "https://collectif-objets.beta.gouv.fr/vite/assets/unfold_component_controller-0b543228.js",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -668,7 +668,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "150"
+					"sourceid": "149"
 				},
 				{
 					"pluginid": "10111",
@@ -703,7 +703,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1117"
+					"sourceid": "1288"
 				},
 				{
 					"pluginid": "10094",
@@ -720,88 +720,88 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "9IFFiAM5DbPJADauF3Cz6VUUcK3cqYKmhaEdgE",
-							"otherinfo": "\uFFFDE\uFFFD\\x00039\r\uFFFD\uFFFD\\x00006\uFFFD\\x0017p\uFFFD\uFFFDU\\x0014p\uFFFD\u0729\uFFFD\uFFFD\uFFFD\uFFFD\\x001d\uFFFD"
+							"evidence": "2FQuUff3Y5P9NEjmfxwVZWQF2KT72i2gYgjTLgE9r6mPqU",
+							"otherinfo": "\uFFFDT.Q\uFFFD\uFFFDc\uFFFD\uFFFD4H\uFFFD\\x001c\\x0015ed\\x0005\u0624\uFFFD\uFFFD-\uFFFDb\\x0008\uFFFD.\\x0001=\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FNAe2CN2qulWvKFVorfnzQZpT1i8UNj2fXbofb6hlSa8r4pBWVXVMoFnN7to5",
-							"otherinfo": "\uFFFDS@{`\uFFFD\u06AB\uFFFDZ\uFFFDV\uFFFD\u07DF4\\x0019\uFFFD=b\uFFFDCc\uFFFD\uFFFD\u06E1\uFFFD\uFFFD\uFFFDT\uFFFD\uFFFD)\\x0005eWT\uFFFD\\x0005\uFFFD\uFFFD\uFFFD"
+							"evidence": "oP1r4gFsGDZzYdTCtMIPmYYzQeQhmllDhXlR3FbvutrAxQlOSJr3HJVM1nlX4P7h5KEHmWrcLpcTWcLQzwVffu8JjKEtMjUZ59Bk1kvCCIOpUhhKfTi9w3Deyzat",
+							"otherinfo": "\uFFFD\uFFFDk\uFFFD\\x0001l\\x00186sa\uFFFD\u00B4\uFFFD\\x000f\uFFFD\uFFFD3A\uFFFD!\uFFFDYC\uFFFDyQ\uFFFDV\uFFFD\uFFFD\uFFFD\uFFFD\tNH\uFFFD\uFFFD\\x001c\uFFFDL\uFFFDyW\uFFFD\uFFFD\uFFFD\uFFFD\\x0007\uFFFDj\uFFFD.\uFFFD\\x0013Y\uFFFD\uFFFD\uFFFD\\x0005_~\uFFFD\t\uFFFD\uFFFD-25\\x0019\uFFFD\uFFFDd\uFFFDK\uFFFD\\x0008\uFFFD\uFFFDR\\x0018J}8\uFFFD\uFFFDp\uFFFD\uFFFD6\uFFFD"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "KujP81bgk8Qv8p1DcXJ6PQSH0ZNL2X9uMhivernGolwCvgHCvPkfrpBuDISbZIVg0pw3Qm6qTM1DmZLsTy7N0Fr02KRCK3B7z8vArweTdu",
-							"otherinfo": "*\uFFFD\uFFFD\uFFFDV\uFFFD\uFFFD\uFFFD/\uFFFDCqrz=\\x0004\uFFFD\u0453K\uFFFDn2\\x0018\uFFFDz\uFFFD\u01A2\\\\x0002\uFFFD\\x0001\u00BC\uFFFD\\x001f\uFFFD\uFFFDn\\x000c\uFFFD\uFFFDd\uFFFD`\u049C7Bn\uFFFDL\uFFFDC\uFFFD\uFFFD\uFFFDO.\uFFFD\uFFFDZ\uFFFD\u0624B+p{\uFFFD\uFFFD\uFFFD\uFFFD\\x0007\uFFFDv"
+							"evidence": "2FeEsDN1KpuJtKLbuyPbnvWcTCA9iuoF",
+							"otherinfo": "\uFFFDW\uFFFD\uFFFD3u*\uFFFD\uFFFD\uFFFD\uFFFD\u06FB#\u06DE\uFFFD\uFFFDL =\uFFFD\uFFFD\\x0005"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/accueil_conservateurs",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BuGPPGSh039CHaauqlTKoGnIDbR1tJIlpK8Q5jWXt",
-							"otherinfo": "\uFFFD\\x001b\uFFFD<\uFFFDM\uFFFD\\x0008v\uFFFD\uFFFD\uFFFDS*\uFFFD\uFFFD 6\uFFFD\uFFFD\uFFFDH\uFFFD\uFFFD\uFFFDC\uFFFD\uFFFD^"
+							"evidence": "2BD52ZekBhIWncpKN5qfO3EaEO4MQdQ7YPeUJoWDzuVP79ldMiNNo7eMQ85",
+							"otherinfo": "\uFFFD\\x0010\uFFFD\u0657\uFFFD\\x0006\\x0012\\x0016\uFFFD\uFFFDJ7\uFFFD\uFFFD;q\\x001a\\x0010\uFFFD\\x000cA\uFFFD;`\uFFFD\uFFFD&\uFFFD\uFFFD\uFFFD\uFFFDO\uFFFD\uFFFD]2#M\uFFFD\uFFFD\uFFFDC\uFFFD"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/comment-ca-marche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F4FchLDj6rOvJ464KUOKcEoybZ0tyaL2xKdVUujTqDIIOCsfb1dg8J5PdeUx5dsPRLCxdNDHPrV1beNK5C50qVdvsFfMfGU855W4JkBDW8wXenbOTd4KjLSm82Rj81SJ8raUzWm2QgvJZv9PhHw8BF8IRpts1",
-							"otherinfo": "\uFFFD^\\x0005r\\x0012\u00CF\uFFFD\u03BC\uFFFD:\uFFFD\\x000e)\uFFFD(\u0276t\uFFFD&\uFFFD\uFFFD\\x0012\uFFFDUK\uFFFDN\uFFFD\uFFFD \uFFFD}\uFFFD]\uFFFD\uFFFDy=\u05D4\u01D7l=\\x0012\uFFFD\uFFFD\uFFFDC\\x001c\uFFFD\uFFFD\u0577\uFFFD+\uFFFD\uFFFD\u04A5]\uFFFD\uFFFD_1\uFFFD\uFFFDV\uFFFD\uFFFD\\x0001\ro0]\uFFFD\uFFFD97x*2\u049B\u0351\uFFFD\uFFFDR'\uFFFD\uFFFDS5\uFFFD\uFFFD\\x0008/%\uFFFD\uFFFD>\\x0011\uFFFD\uFFFD\\x0011|!\\x001am\uFFFD"
+							"evidence": "2F1Os3m74vMb2Px5A7ybjCCdcKyktRMlM3JwDwdrvcJ250qeS8NF9rtK6IW",
+							"otherinfo": "\uFFFD]N\uFFFDy\uFFFD\uFFFD\uFFFD\\x001b\uFFFD\uFFFDy\\x0003\uFFFD\uFFFD\uFFFD \uFFFDp\uFFFD\uFFFD\uFFFD\\x0013%3rp\\x000f\\x0007k\uFFFD\uFFFDv\uFFFDJ\uFFFDK\uFFFDE\uFFFD\uFFFDJ\uFFFD"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/conservateurs/sign_in",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "7Bp3JtYYaWkV0rGbD0YL896VwNmzw5NDiAx2sP4vhc47kimjLmk5O4g",
-							"otherinfo": "\uFFFD\\x001aw&\uFFFD\\x0018ii\\x0015\u04B1\uFFFD\\x000fF\\x000b\uFFFD\u0795\uFFFD\u0673\u00D3C\uFFFD\\x000cv\uFFFD\uFFFD/\uFFFD\uFFFD;\uFFFD)\uFFFD.i9;\uFFFD"
+							"evidence": "2BdGgt3uHQQsOxX1XAurokuuE44SODt1Qo2tkgcKGLPhShV3fRkLfDaxZlCWoEtiBk",
+							"otherinfo": "\uFFFD\\x0017F\uFFFD\uFFFD\uFFFD\\x001d\\x0004,;\\x0015\uFFFD\\\\x000b\uFFFD\uFFFDK\uFFFD\\x0013\uFFFD\\x00128;uB\uFFFD\uFFFD\uFFFD\\x0007\n\\x0018\uFFFD\uFFFDJ\\x0015w}\\x0019\\x000b|6\uFFFDfP\uFFFD\uFFFDKb\\x0006"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/fiches",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B4vHabIur7H20otwHkid6SFPhfxEJUyvol76Pt7BSSptFxsrsAEzCrdkIIoCRoN",
-							"otherinfo": "\uFFFD\\x001e/\\x001d\uFFFD\u023A\uFFFD\uFFFD\uFFFDJ-\uFFFDy\"w\uFFFD\uFFFD>\\x0017\uFFFD\\x0010\uFFFD2\uFFFD\uFFFD{\uFFFD\uFFFD{\\x0005$\uFFFD\uFFFD\\l\uFFFD\uFFFD\\x0004\uFFFD*\u0750\uFFFD(\t\\x001a\r"
+							"evidence": "F5YyoSgGoliZGwJhvvQdihx0lqbdsekvYFL",
+							"otherinfo": "\\x0017\uFFFD2\uFFFD(\\x0006\uFFFDX\uFFFD\\x001b\\x0002a\uFFFD\uFFFD\\x001d\uFFFD\\x001ct\uFFFD\uFFFD\u0771\uFFFD/`R"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/guide-de-recensement",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FKAl4hjm4TSmqdWeSGWu1bQFE1HfYeRwvvgzLktHSSdIWqI",
-							"otherinfo": "\uFFFDR\uFFFD\uFFFD\uFFFDc\uFFFD\uFFFD\u049A\uFFFDVy!\uFFFD\uFFFDV\uFFFD\\x0014MG}\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0339-\\x001d$\uFFFD!j\uFFFD"
+							"evidence": "2BrGQB1HxmrdieKDtgKMthIPqbCY2hpCwfUJ",
+							"otherinfo": "\uFFFD\\x001a\uFFFD@\\x001dG\uFFFDj\u0749\u20F6\\x0002\uFFFD\uFFFD\\x0012\\x000f\uFFFD\uFFFD\uFFFD\uFFFD\\x001aB\uFFFD\uFFFD\t"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/presse",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B75NlF468bqqKle8EQ0tcG6G9lEmk",
-							"otherinfo": "\uFFFD\\x001e\uFFFD6Qx\uFFFD\uFFFD\uAA29^\uFFFDD4\uFFFD\uFFFD\uFFFD\\x001b\uFFFDD\uFFFD"
+							"evidence": "Ei82RYTo1yp73F0Qx83CP7xQXG7x4u0ooOETPrO8CqCYYm",
+							"otherinfo": "\\x0012/6E\uFFFD\uFFFD\uFFFD*{\uFFFD]\\x0010\uFFFD\uFFFD\uFFFD?\uFFFDP\\n\uFFFD\uFFFD\uFFFD(\uFFFD\uFFFD\\x0013>\uFFFD\uFFFD\n\uFFFD\uFFFDb"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/stats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FeP1Xm7reXE2VRslT334jPwsGUZTUKz2wrZEx9xiAcqI2euf3wc7cZSkgUeoo4CLqLotBSlGbRA4U5Pn0Vl0PTNA6S5yK9x3DkSN2KB0Yr2s7G",
-							"otherinfo": "\uFFFDW\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDTl\uFFFD=\uFFFD\uFFFD3\uFFFDe\\x0019MB\uFFFD\uFFFD\n\uFFFD\\x0013\\x001fq\uFFFD\\x0007*#g\uFFFD|\\x001c\uFFFD\uFFFDR\uFFFD\\x0005\\x001e\uFFFD\uFFFD\\x0002.\uFFFD\uFFFD\\x0014\uFFFD\\x0019\uFFFD@\uFFFDNO\uFFFDEe\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\u022Fq\uFFFD9\\x00127b\uFFFD\u044A\uFFFD\uFFFD\uFFFD"
+							"evidence": "eH9e0RNKD69RZiuHgYuLtih1Ns2muqpIl95fulXdyFrUdPC7L4VQAMnMokuBI1O2mC3DQd9NOSYrPWrTdykRXLr3rCJrn1HSaAoImgrIWbd",
+							"otherinfo": "x^\uFFFD\\x0013J\\x000f\uFFFDQf+\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD(u6\u0366\uFFFD\uFFFDH\uFFFD\uFFFD_\uFFFDU\uFFFD\uFFFDZ\uFFFDt\uFFFD/\uFFFDP\\x0000\uFFFD\u0322K\uFFFD#S\uFFFD\uFFFD-\uFFFDA\uFFFDM9&+=j\uFFFDw)\\x0011\\\uFFFD\uFFFD\uFFFD\"k\uFFFDQ\uFFFDh\n\\x0008\uFFFD\n\uFFFDY\uFFFD"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/users/sign_in",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Ftgdb6OGMsRCNe1e514RisgYzYTGp9O67D9Zhk3D0LcIjEECpd2kZWYAtfX",
-							"otherinfo": "\uFFFD[`u\uFFFD\uFFFD\\x0018\uFFFD\\x0011\\x0008\u05F5{\uFFFDxF+ c6\\x0013\\x001a\uFFFDN\uFFFD\uFFFDf\\x00197\\x000fB\uFFFD\"1\\x0004\n\uFFFDv\uFFFD\uFFFD\uFFFD\\x0002\uFFFD\uFFFD"
+							"evidence": "2BIJfxZJOGVcHEP2mRKjpxFH1XrkG4bWrJ0p",
+							"otherinfo": "\uFFFD\\x0012\t\\x0016I8e\\\\x001cC\uFFFD\uFFFD\\x0012\uFFFD\uFFFD\\x0011G\uFFFDz\uFFFD\\x001b\uFFFD\u05AC\uFFFD)"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/vite/assets/gallery_component_controller-40792afe.css",
@@ -814,7 +814,7 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDE\uFFFD\\x00039\r\uFFFD\uFFFD\\x00006\uFFFD\\x0017p\uFFFD\uFFFDU\\x0014p\uFFFD\u0729\uFFFD\uFFFD\uFFFD\uFFFD\\x001d\uFFFD</p>",
+					"otherinfo": "<p>\uFFFDT.Q\uFFFD\uFFFDc\uFFFD\uFFFD4H\uFFFD\\x001c\\x0015ed\\x0005\u0624\uFFFD\uFFFD-\uFFFDb\\x0008\uFFFD.\\x0001=\uFFFD\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -912,7 +912,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1049"
+					"sourceid": "1239"
 				},
 				{
 					"pluginid": "10027",
@@ -1027,7 +1027,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "66"
+					"sourceid": "65"
 				},
 				{
 					"pluginid": "10109",
@@ -1096,7 +1096,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://collectif-objets.beta.gouv.fr/mentions_legales",
+							"uri": "https://collectif-objets.beta.gouv.fr/plan",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1134,7 +1134,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1300,7 +1300,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1335,7 +1335,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1370,7 +1370,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1405,7 +1405,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1440,7 +1440,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10112",
@@ -1457,7 +1457,7 @@
 							"method": "GET",
 							"param": "_collectif_objets_session",
 							"attack": "",
-							"evidence": "3OPF%2B3Km%2FeOFVJCqX0bqfztP7lnfqNnE9MMR2zpJ%2Fe52gCmmr81UvEVYEWW8CMSa06KYUsU51SIu1WMbRcmFBNlW9B1A%2F67cO4kb%2Br%2FJbxt8etYJx3Lo7%2FklAelYLRYH1Pp%2BdpuTW05oueCkmc%2FgOJ2akPYjxNVKjOygj%2FpKAdRkKQ%2FNAe2CN2qulWvKFVorfnzQZpT1i8UNj2fXbofb6hlSa8r4pBWVXVMoFnN7to5%2FJLALLL8Q5ADCZVdVJ%2FVG7u2OXLhJrd6U%2BEOCMEdayFCYWN4DCPQvJzQBAfUvj1k1--DxK%2B0KDp0PTueXvo--mJg%2BblQ%2Fi3xSaRJoTwGCCA%3D%3D",
+							"evidence": "oP1r4gFsGDZzYdTCtMIPmYYzQeQhmllDhXlR3FbvutrAxQlOSJr3HJVM1nlX4P7h5KEHmWrcLpcTWcLQzwVffu8JjKEtMjUZ59Bk1kvCCIOpUhhKfTi9w3Deyzat%2BR5hEGnUinKyUlPL5kwqgCcIQJWpRqeQs4aoh9v3ZmB2oomn1WCK6FAJ24G%2Frn%2B0Nv825aUgaP9Ppd1%2BJ%2BS7sy5qBhwu9R3sUmJB%2FP360Y2%2FVEB1l8cNV9flP44HNN4M9k5XyeMgnznzK41c6ZVQ2D8KCZim4Uquq41QUA%2Bv4poeCMNn--HH6%2FaTkFPiEB2xbA--y3jsVFT2EO6GzgAonN4JXw%3D%3D",
 							"otherinfo": "\ncookie:_collectif_objets_session"
 						},
 						{
@@ -1465,7 +1465,7 @@
 							"method": "GET",
 							"param": "_collectif_objets_session",
 							"attack": "",
-							"evidence": "9IFFiAM5DbPJADauF3Cz6VUUcK3cqYKmhaEdgE%2Fr%2FyeKbl%2BV4JU%2B7z8fJgwENU6hUEyEuKw5Ub5%2BgMGXCGTx6ZBQdg6fuzN72NmU13T2jMLvih4HLehYawtjuuYUwt5UebiWQbvCNB%2Fr%2FzYRqK3g6KYNSU77LY6mMr2w1QroZESXoeTqZYi1ffA8%2BVNIK6qOKHOigtXbzCAcT7GWmwlLkjMyiGJbpPA6h9kxiQjd%2Bi24N2EcrvWx2SUJ5d2Vbnr%2Bf%2F6G%2FIWpC15hJwnBN4vJ2C5LY729ax0E7b3JBTHj6ffe--HnIYbDL4xE7kEhKC--PNehLm7e8AgP7PFVNCvgnA%3D%3D",
+							"evidence": "t3y%2FQuUff3Y5P9NEjmfxwVZWQF2KT72i2gYgjTLgE9r6mPqU%2BTJxhPchXJIQnR48QYPmyNfgqWxqATA7ESAZX%2BZWVzOkjIuGQ0GT%2FsS9cGX%2BZCEtY8KYuXodfk4yIOkLSXLANFNb1w7Up9tLZj3cO01xA6DMQF%2Brrnqh8uECFGxQ6Nn5q%2F25x3BxsHmpE%2FGs8bElj5bYbjS%2FscFeEyUXigF%2FFyW%2BG%2FgYRmv2w8rZBdsp%2FhkvIFhWXrw2t6Cyv584T6oUqn1UO%2FGWJzXLjn%2Bm%2BXIYST7dsgrlHM4RojVJLIK9--HilInh6yiz4cTty6--OfkfIE8Em6Nq%2Bxf9g9IzmQ%3D%3D",
 							"otherinfo": "\ncookie:_collectif_objets_session"
 						},
 						{
@@ -1473,15 +1473,15 @@
 							"method": "GET",
 							"param": "_collectif_objets_session",
 							"attack": "",
-							"evidence": "KujP81bgk8Qv8p1DcXJ6PQSH0ZNL2X9uMhivernGolwCvgHCvPkfrpBuDISbZIVg0pw3Qm6qTM1DmZLsTy7N0Fr02KRCK3B7z8vArweTdu%2BJuZISnEhXLJSUdKrMfhcwSq0mxwDHi53Yi5ah133ilgtuBodmWfb16AOhGHyG0jx1JyW85VeZHFnkvOl22kuDnrwrQUsPE1b0CXcfZAjnaes%2B%2FFX55p5fjuTFr3765BRA7OK14mdqDGIq9j8xTO6fSUdNEUXs79v9NFkD%2FMFkgVySp7RR%2BgsvAOrUalJ8reYF--JfCip1qopIxmwql9--AMnoqq2C0NqupUHmUB6EaA%3D%3D",
+							"evidence": "ULM4%2FeEsDN1KpuJtKLbuyPbnvWcTCA9iuoF%2FBck%2Bnjr%2FjccStu3C2VKTJYQhxiwmUTSGqy%2BakW675sRWaVH1g8ag7xsvRuzbzNqRqDnLkPdUYFmVx8m143Q%2BKnGHDIwUnJTLptgkJ%2BYuphcKju2ksUuSj26beN54rDQN7AU%2BpKd9MMQDUl%2B9RUlfG4OwOf7FmP0HtzRLYKJHc09TB9jOoI8PqIvQ5ma6EGIWxVEJropv8QPb8o4VstuIzF3ch9M8KN0nA53Bobjt5S15e34GZSpkhCdZLFPFUv6i%2BqkZCqBU--kPOVi%2FroXE6le%2B8q--8uBPZ%2Fx%2Fw97nXaXX%2BsRq%2Bw%3D%3D",
 							"otherinfo": "\ncookie:_collectif_objets_session"
 						},
 						{
-							"uri": "https://collectif-objets.beta.gouv.fr/users/sign_in",
+							"uri": "https://collectif-objets.beta.gouv.fr/conservateurs/sign_in",
 							"method": "GET",
 							"param": "_collectif_objets_session",
 							"attack": "",
-							"evidence": "TYxPfO6X%2FvSC4t%2Bpm5I9f9oH1haRP7klDBvfST%2Ftgdb6OGMsRCNe1e514RisgYzYTGp9O67D9Zhk3D0LcIjEECpd2kZWYAtfX%2F9xIRZH46CgbwQHrqHQsT0c1UIb%2BF5s294frZYRiGk2MO37yhsKsILz9Dm34sfnwi0BSPjJaTciZNhXqnDm%2Fmp6GuUacCL4AlUuR5djS%2BXk3J8bOHQ5wTMCQMkupGUaLJJTwPtlyQbBS6QfVsFvYh8KIJ%2FaIinwWVvU3vXAbx0RspUvejKCXlO0F5doJKK9ITyH00%2Buzoo8--INBiCVfVD1Z50E97--wNFKzMtVGLZQIMod2GE1Fw%3D%3D",
+							"evidence": "41VGt%2B4XtSfpQtBajlmml9dYLsE3cZnzjS7dxwKUty04r1WoOrnK48SGxgOgGawY3W1iR%2BdGgt3uHQQsOxX1XAurokuuE44SODt1Qo2tkgcKGLPhShV3fRkLfDaxZlCWoEtiBk%2BK7llj9ZZIeqLwClAe0OM6b0eWK0meEJ4XTxHNzKij96f%2BE4Gk1GMcS4SgtYVK21iVQiG2ZacOWfye5pEtNEWPauJaVxicq%2F8i%2FecQH9TvUS53gI1JhK9Ob49JoLmiPIlZG789P0Z8%2B0Oye34NkPVIMzHbo%2BgTNFkXOqbv--ZpDk%2B8%2BKPnEGl6Ea--jkqu7oZShJlfAl7XUnSIwQ%3D%3D",
 							"otherinfo": "\ncookie:_collectif_objets_session"
 						},
 						{
@@ -1489,7 +1489,7 @@
 							"method": "GET",
 							"param": "_collectif_objets_session",
 							"attack": "",
-							"evidence": "9IFFiAM5DbPJADauF3Cz6VUUcK3cqYKmhaEdgE%2Fr%2FyeKbl%2BV4JU%2B7z8fJgwENU6hUEyEuKw5Ub5%2BgMGXCGTx6ZBQdg6fuzN72NmU13T2jMLvih4HLehYawtjuuYUwt5UebiWQbvCNB%2Fr%2FzYRqK3g6KYNSU77LY6mMr2w1QroZESXoeTqZYi1ffA8%2BVNIK6qOKHOigtXbzCAcT7GWmwlLkjMyiGJbpPA6h9kxiQjd%2Bi24N2EcrvWx2SUJ5d2Vbnr%2Bf%2F6G%2FIWpC15hJwnBN4vJ2C5LY729ax0E7b3JBTHj6ffe--HnIYbDL4xE7kEhKC--PNehLm7e8AgP7PFVNCvgnA%3D%3D",
+							"evidence": "t3y%2FQuUff3Y5P9NEjmfxwVZWQF2KT72i2gYgjTLgE9r6mPqU%2BTJxhPchXJIQnR48QYPmyNfgqWxqATA7ESAZX%2BZWVzOkjIuGQ0GT%2FsS9cGX%2BZCEtY8KYuXodfk4yIOkLSXLANFNb1w7Up9tLZj3cO01xA6DMQF%2Brrnqh8uECFGxQ6Nn5q%2F25x3BxsHmpE%2FGs8bElj5bYbjS%2FscFeEyUXigF%2FFyW%2BG%2FgYRmv2w8rZBdsp%2FhkvIFhWXrw2t6Cyv584T6oUqn1UO%2FGWJzXLjn%2Bm%2BXIYST7dsgrlHM4RojVJLIK9--HilInh6yiz4cTty6--OfkfIE8Em6Nq%2Bxf9g9IzmQ%3D%3D",
 							"otherinfo": "\ncookie:_collectif_objets_session"
 						}
 					],
@@ -1657,7 +1657,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1049"
+					"sourceid": "1239"
 				}
 			]
 		}

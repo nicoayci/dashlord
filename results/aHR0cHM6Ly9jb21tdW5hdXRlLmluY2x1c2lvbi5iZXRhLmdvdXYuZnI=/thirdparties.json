@@ -40,10 +40,10 @@
   "cookies": [
     {
       "name": "sessionid",
-      "value": "jav13bd3dg0hddx0j2bjgcn4k1q7w8p4",
+      "value": "8swnayy7s7zryjqojqwz4p36t3dmrmfq",
       "domain": "communaute.inclusion.beta.gouv.fr",
       "path": "/",
-      "expires": 1698552714.514806,
+      "expires": 1699762927.11112,
       "size": 41,
       "httpOnly": true,
       "secure": true,
@@ -55,10 +55,10 @@
     },
     {
       "name": "csrftoken",
-      "value": "Gddbrvn0XH3JlVaCw6bEcuBBGfpQUKso",
+      "value": "ElN8sL02zOqb3bME7klW3HU0mInGh0Ad",
       "domain": "communaute.inclusion.beta.gouv.fr",
       "path": "/",
-      "expires": 1728792714.514699,
+      "expires": 1730002927.110999,
       "size": 41,
       "httpOnly": false,
       "secure": true,
@@ -71,15 +71,15 @@
   ],
   "headers": {
     "content-encoding": "gzip",
-    "content-length": "7560",
-    "content-security-policy": "font-src 'self' https://fonts.gstatic.com/ data:; img-src 'self' data: cellar-c2.services.clever-cloud.com https://matomo.inclusion.beta.gouv.fr/; default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@4.0.1 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js https://tally.so https://matomo.inclusion.beta.gouv.fr/ 'nonce-vESW6IPAAGByslVdKHIvpA=='; frame-src 'self' https://tally.so; style-src-elem 'self' https://fonts.googleapis.com 'unsafe-inline'; script-src-elem 'self' https://cdn.jsdelivr.net/npm/chart.js@4.0.1 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js https://tally.so https://matomo.inclusion.beta.gouv.fr/ 'nonce-vESW6IPAAGByslVdKHIvpA=='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; connect-src 'self' *.sentry.io https://matomo.inclusion.beta.gouv.fr/",
+    "content-length": "7490",
+    "content-security-policy": "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data: cellar-c2.services.clever-cloud.com https://matomo.inclusion.beta.gouv.fr/; script-src-elem 'self' https://cdn.jsdelivr.net/npm/chart.js@4.0.1 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js https://tally.so https://matomo.inclusion.beta.gouv.fr/ 'nonce-dYJub1zAOMZ3nkpx53k3bw=='; default-src 'self'; frame-src 'self' https://tally.so; font-src 'self' https://fonts.gstatic.com/ data:; style-src-elem 'self' https://fonts.googleapis.com 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@4.0.1 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js https://tally.so https://matomo.inclusion.beta.gouv.fr/ 'nonce-dYJub1zAOMZ3nkpx53k3bw=='; connect-src 'self' *.sentry.io https://matomo.inclusion.beta.gouv.fr/",
     "content-type": "text/html; charset=utf-8",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 15 Oct 2023 04:11:54 GMT",
+    "date": "Sun, 29 Oct 2023 04:22:07 GMT",
     "permissions-policy": "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()",
     "referrer-policy": "same-origin",
-    "set-cookie": "csrftoken=Gddbrvn0XH3JlVaCw6bEcuBBGfpQUKso; expires=Sun, 13 Oct 2024 04:11:54 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure\nsessionid=jav13bd3dg0hddx0j2bjgcn4k1q7w8p4; expires=Sun, 29 Oct 2023 04:11:54 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax; Secure",
-    "sozu-id": "01HCRRH2R3PC8QY2V8VBDWBEFZ",
+    "set-cookie": "csrftoken=ElN8sL02zOqb3bME7klW3HU0mInGh0Ad; expires=Sun, 27 Oct 2024 04:22:07 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure\nsessionid=8swnayy7s7zryjqojqwz4p36t3dmrmfq; expires=Sun, 12 Nov 2023 04:22:07 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax; Secure",
+    "sozu-id": "01HDWTNV5W9P6EAYEB9D4XH0TN",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "vary": "Cookie, Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -88,7 +88,7 @@
   "endpoints": [
     {
       "hostname": "communaute.inclusion.beta.gouv.fr",
-      "ip": "46.252.181.103",
+      "ip": "185.42.117.109",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -144,19 +144,13 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "146.75.93.229",
+      "ip": "146.75.29.229",
       "geoip": {
         "city": {
-          "geoname_id": 5368361,
+          "geoname_id": 4744870,
           "names": {
-            "de": "Los Angeles",
-            "en": "Los Angeles",
-            "es": "Los Ángeles",
-            "fr": "Los Angeles",
-            "ja": "ロサンゼルス",
-            "pt-BR": "Los Angeles",
-            "ru": "Лос-Анджелес",
-            "zh-CN": "洛杉矶"
+            "en": "Ashburn",
+            "ru": "Ашберн"
           }
         },
         "continent": {
@@ -189,13 +183,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 34.0544,
-          "longitude": -118.244,
-          "metro_code": 803,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 39.018,
+          "longitude": -77.539,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "90012"
+          "code": "20147"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -213,17 +207,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
@@ -251,7 +243,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.217.138",
+      "ip": "142.251.167.95",
       "geoip": {
         "continent": {
           "code": "NA",

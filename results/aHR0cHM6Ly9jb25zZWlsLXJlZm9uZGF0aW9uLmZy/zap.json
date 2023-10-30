@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 20:56:25",
+	"@generated": "Sun, 29 Oct 2023 21:12:59",
 	"site":[ 
 		{
 			"@name": "https://conseil-refondation.fr",
@@ -40,7 +40,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; default-src 'self' data: localhost:8000; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
+							"evidence": "img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; default-src 'self' data: localhost:8000; connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nframe-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
@@ -56,6 +56,14 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
+							"evidence": "img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; default-src 'self' data: localhost:8000; connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nframe-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
+						},
+						{
+							"uri": "https://conseil-refondation.fr/fonctionnement/sessions-plenieres/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
 							"evidence": "connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; default-src 'self' data: localhost:8000; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nframe-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
@@ -68,13 +76,13 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nframe-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10055",
@@ -107,7 +115,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; default-src 'self' data: localhost:8000; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
+							"evidence": "img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; default-src 'self' data: localhost:8000; connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
 							"otherinfo": "style-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes."
 						},
 						{
@@ -123,6 +131,14 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
+							"evidence": "img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; default-src 'self' data: localhost:8000; connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
+							"otherinfo": "style-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes."
+						},
+						{
+							"uri": "https://conseil-refondation.fr/fonctionnement/sessions-plenieres/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
 							"evidence": "connect-src connect.facebook.net *.facebook.com 'self' stats.conseil-refondation.fr client.axept.io api.axept.io googletagmanager.com googleadservices.com googleads.g.doubleclick.net/ form.typeform.com; frame-src *.youtube.com *.facebook.com *.vimeo.com datawrapper.dwcdn.net form.typeform.com; img-src 'self' data: localhost:8000 *.google.com *.gstatic.com *.facebook.com *.google.fr cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-hashes' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A=' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-Xhd5+zYamb/dMdyIkYwXmzaXokrsMrINTdCsO/s+Hcc=' 'sha256-dDZkVrIJy1Xyahb04E1npPS7ONJw3g8949x7gAc/kEY=' 'sha256-/68szNaQXdlDug09n2c6rD/J5VWzEfkXCRsVxk+Bc7s=' 'sha256-AthIs6YNuVjwfheHgESE8WAfJ61fXMZXX7s/UwRV5Dg=' embed.typeform.com; default-src 'self' data: localhost:8000; script-src 'self' 'sha256-bniFC3kd4JwCYRuTuxW9AjUYecKEuyTLJ+5NH6TJBWE=' stats.conseil-refondation.fr 'sha256-1neh+DsrMKevQd7CmK4xkhFjYHtrpaiR8ncbjLw/w5E=' connect.facebook.net static.axept.io www.googletagmanager.com www.googleadservices.com googleads.g.doubleclick.net embed.typeform.com",
 							"otherinfo": "style-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes."
 						},
@@ -135,13 +151,13 @@
 							"otherinfo": "style-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes."
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP3/#unsafe-hashes-usage</p><p>https://content-security-policy.com/examples/allow-inline-style/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10038",
@@ -168,7 +184,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "231"
+					"sourceid": "229"
 				},
 				{
 					"pluginid": "10010",
@@ -203,7 +219,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "246"
+					"sourceid": "244"
 				},
 				{
 					"pluginid": "10011",
@@ -238,7 +254,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "246"
+					"sourceid": "244"
 				},
 				{
 					"pluginid": "10063",
@@ -469,29 +485,29 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1697406968",
-							"otherinfo": "1697406968, which evaluates to: 2023-10-15 21:56:08"
+							"evidence": "1698617567",
+							"otherinfo": "1698617567, which evaluates to: 2023-10-29 22:12:47"
 						},
 						{
 							"uri": "https://conseil-refondation.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1697406969",
-							"otherinfo": "1697406969, which evaluates to: 2023-10-15 21:56:09"
+							"evidence": "1698617568",
+							"otherinfo": "1698617568, which evaluates to: 2023-10-29 22:12:48"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1697406969",
-							"otherinfo": "1697406969, which evaluates to: 2023-10-15 21:56:09"
+							"evidence": "1698617568",
+							"otherinfo": "1698617568, which evaluates to: 2023-10-29 22:12:48"
 						}
 					],
 					"count": "3",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1697406968, which evaluates to: 2023-10-15 21:56:08</p>",
+					"otherinfo": "<p>1698617567, which evaluates to: 2023-10-29 22:12:47</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -516,7 +532,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://conseil-refondation.fr/static/dsfr/dist/artwork/system.svg",
+							"uri": "https://conseil-refondation.fr/static/dsfr/dist/artwork/dark.svg",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -524,7 +540,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://conseil-refondation.fr/static/dsfr/dist/dsfr/dsfr.module.min.js",
+							"uri": "https://conseil-refondation.fr/static/dsfr/dist/dsfr/dsfr.min.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -627,105 +643,105 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BvZ8YNalzyuuMFGDzUOsHrhmAqg1f4",
-							"otherinfo": "\uFFFD\\x001b\uFFFD\uFFFDZ\uFFFD<\uFFFD\uFFFD\uFFFDF\\x000f5\\x000e\uFFFDz\uFFFD\n\uFFFD\uFFFD\uFFFD"
+							"evidence": "2BHnBTD1xqGnhFMunvERiyroajUxKaK5DsPFzIo4KneXWLnT4L6O2w2BzmTDg7ZJ4Tbe",
+							"otherinfo": "\uFFFD\\x0011\uFFFD\\x00050\uFFFD\u01A1\uFFFD\uFFFDS.\uFFFD\uFFFD\\x0011\uFFFD*\uFFFDj51)\uFFFD\uFFFD\\x000e\uFFFD\uFFFD\u030A8*w\uFFFDX\uFFFD\uFFFD\u0F8E\uFFFD\r\uFFFD\uFFFDd\u00C3\uFFFDI\uFFFD6\uFFFD"
 						},
 						{
 							"uri": "https://conseil-refondation.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/documents/76/v10-Brochure_CNR_THEMATIQUES-SEPTEMBRE-2023-vf",
-							"otherinfo": "\uFFFD\uFFFD\\x001c\uFFFDg\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDk\uFFFD\uFFFDn\uFFFD\uFFFD\uFFFD5\\x001f\uFFFD\\x001cC\\x0000L\uFFFD\\x0014\\x0011/\uFFFD\\x0010\uFFFD\uFFFD0\\x0014D\uFFFDm6\uFFFD\uFFFD\uFFFD"
+							"evidence": "2FgGr7Y79VltuPI1T9wDFHhNZNaCxL9fqWYE",
+							"otherinfo": "\uFFFDX\\x0006\uFFFD\uFFFD;\uFFFDYm\uFFFD\uFFFD5O\uFFFD\\x0003\\x0014xMd\u0582\u013F_\uFFFDf\\x0004"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "4k0f8yacPRtJxdDDJPMXpXJkt3t6V2T3LOEOeuWcPotiTgiCbhBv8qjL3pc",
-							"otherinfo": "\uFFFDM\\x001f\uFFFD&\uFFFD=\\x001bI\uFFFD\uFFFD\uFFFD$\uFFFD\\x0017\uFFFDrd\uFFFD{zWd\uFFFD,\uFFFD\\x000ez\uFFFD>\uFFFDbN\\x0008\uFFFDn\\x0010o\uFFFD\uFFFD\u0797"
+							"evidence": "2BoehPzR6Cbyf71emoR2F3smmfoBwjhEZZ4z",
+							"otherinfo": "\uFFFD\\x001a\\x001e\uFFFD\uFFFD\uFFFD\uFFFD&\uFFFD\uFFFD^\uFFFD\uFFFDv\\x0017{&\uFFFD\uFFFD\\x0001\uFFFD8De\uFFFD3"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/confidentialite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BELBZ0saG4PLyth2wyg13gGBUdEwTLTTBwcVCEvBdBhQnIAzpfky52hXkOfVo33jHx7Q7Vd7XniAjj",
-							"otherinfo": "\uFFFD\\x0011\\x000b\\x0005\uFFFD,hn\\x000f/+a\uFFFD\\x000c\uFFFD\uFFFDx\\x0006\\x0005GD\uFFFD2\uFFFDL\\x001c\\x001cT!/\\x0005\uFFFDaBr\\x0000\u0397\uFFFD\u02DD\uFFFD^C\uFFFDV\uFFFD\uFFFD\uFFFD|{C\uFFFD]\uFFFDy\uFFFD\\x00028"
+							"evidence": "2FSw0938zKaRKJOlefC80M4AGOJJbFf6WQOU7OQHWUGSnVYnXMYa4SbSNidhnj0Tag",
+							"otherinfo": "\uFFFDT\uFFFD\uFFFD\uFFFD\uFFFD\u0326\uFFFD(\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFD\\x0000\\x0018\uFFFDIlW\uFFFDY\\x0003\uFFFD\uFFFD\uFFFD\\x0007YA\uFFFD\uFFFDV'\\\uFFFD\\x001a\uFFFD&\uFFFD6'a\uFFFD=\\x0013j"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/fonctionnement/concertations-locales/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "OQNzufsANdNzqgCvnZkQkaVNhoiP4DaYKKzHlUJdERONajjvhma",
-							"otherinfo": "9\\x0003s\uFFFD\uFFFD\\x00005\uFFFDs\uFFFD\\x0000\uFFFD\uFFFD\uFFFD\\x0010\uFFFD\uFFFDM\uFFFD\uFFFD\uFFFD\uFFFD6\uFFFD(\uFFFD\u01D5B]\\x0011\\x0013\uFFFDj8\uFFFDf"
+							"evidence": "IaY6FkXost700bsLOW2IvdeVIfceCMNmlIc789S3I5PPmuCCrLdpe3U3A3Si2jhnHbvdmorYnh",
+							"otherinfo": "!\uFFFD:\\x0016E\uFFFD\uFFFD\uFFFD\u047B\\x000b9m\uFFFD\uFFFD\u05D5!\uFFFD\\x001e\\x0008\uFFFDf\uFFFD\uFFFD;\uFFFD\u0537#\uFFFD\u03DA\uFFFD\uFFFD\uFFFD\uFFFDi{u7\\x0003t\uFFFD\uFFFD8g\\x001d\uFFFD\u075A\uFFFD\u061E"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/fonctionnement/concertations-nationales/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "n48OQ8SVuBTPMJcjwxtx0QrHV73cgRULrTGfOwOxRg8zkqlc08DK5AmU82gOxP6FLbP3r4hpd3XysNSQKvG9dzz5",
-							"otherinfo": "\uFFFD\uFFFD\\x000eC\u0115\uFFFD\\x0014\uFFFD0\uFFFD#\uFFFD\\x001bq\uFFFD\n\uFFFDW\uFFFD\u0701\\x0015\\x000b\uFFFD1\uFFFD;\\x0003\uFFFDF\\x000f3\uFFFD\uFFFD\\\uFFFD\uFFFD\uFFFD\uFFFD\t\uFFFD\uFFFDh\\x000e\uFFFD\uFFFD\uFFFD-\uFFFD\uFFFD\uFFFD\uFFFDiwu\uFFFD\u0510*\uFFFDw<\uFFFD"
+							"evidence": "2FjrlEDBYzDu6RH5xY0T8dWVJKUcZM",
+							"otherinfo": "\uFFFDX\uFFFD@\uFFFDc0\uFFFD\uFFFD\\x0011\uFFFD\u014D\\x0013\uFFFD\u0555$\uFFFD\\x001cd"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/fonctionnement/fonctionnement/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BWmbXBBgw1yWz6kkye1wJT7JTJpgipepnyfafjm6nmPu6pmYaxY",
-							"otherinfo": "\uFFFD\\x0015\uFFFDmpA\uFFFD\rr[>\uFFFD\uFFFD'\uFFFD\uFFFD\uFFFD\uFFFD%2i\uFFFD*^\uFFFD|\uFFFDi\uFFFD\uFFFD\uFFFDy\uFFFD\uFFFD\uFFFDfa\uFFFDX"
+							"evidence": "2BLTfFoKnU280CmGBh9Q05FxMyHWBtJO9D67DMMWqcquwACY1GNM7zZCcr6kFa5TynyeTot1YPUmirlG5murTiGgEE6H1cV",
+							"otherinfo": "\uFFFD\\x0012\uFFFD|Z\n\uFFFDM\uFFFD\uFFFD)\uFFFD\\x0006\\x001fP\u04D1q3!\uFFFD\\x0006\uFFFDN\uFFFD>\uFFFD\\x000c\uFFFD\\x0016\uFFFD\u02AE\uFFFD\\x0000\uFFFD\uFFFDcL\uFFFD6Br\uFFFD\uFFFD\\x0015\uFFFDS\uFFFD|\uFFFDN\uFFFDu`\uFFFD&\uFFFD\uFFFDF\uFFFDk\uFFFDN!\uFFFD\\x0010N\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/fonctionnement/sessions-plenieres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BBFhRPu6oZZv3ZURKrzYHfklJ4w10WzrbI9Zm8QdFGv1mzTVzyV2h9ZQUeF8DUEY8iWHyDZb32H7Z2kH0hmxiY5PSe",
-							"otherinfo": "\uFFFD\\x0010E\uFFFD\\x0013\uFFFD\uFFFDY\uFFFDvTD\uFFFD\uFFFD`w\u451E0\uFFFDE\uFFFD\uFFFD\uFFFD=fo\\x0010tQ\uFFFD\uFFFDl\uFFFDW<\uFFFD\uFFFD\\x001fYAG\uFFFD\uFFFD5\\x0004c\u0216\\x001f \uFFFDo}\uFFFD\uD764\\x001fHf\uFFFD&9='"
+							"evidence": "2FqLEnyTLwFeM8XmY6akmqW70LbnY7",
+							"otherinfo": "\uFFFDZ\uFFFD\\x0012|\uFFFD/\\x0001^3\uFFFD\uFFFDc\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0436\uFFFDc"
+						},
+						{
+							"uri": "https://conseil-refondation.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FroLH4KiHlg5Vt9tne5MuRehwXYVhrl4EV7UIGYVdNNLaPFdq0OFepnin6l7wSl",
+							"otherinfo": "\uFFFDZ\uFFFD,~\n\uFFFDy`\uFFFD[}\uFFFDw\uFFFD2\uFFFD^\uFFFD\\x0005\uFFFDV\\x001a\uFFFD\uFFFDE{P\uFFFD\uFFFDU\uFFFDM-\uFFFD\uFFFDv\uFFFD\\x000e\\x0015\uFFFDg\uFFFD~\uFFFD\uFFFD\\x0004\uFFFD"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sTDKBTOArdcKeJ3gFfm5d7aPlekzSphYrX4HRx5ohwxGphQKN4O",
-							"otherinfo": "\uFFFD0\uFFFD\\x00053\uFFFD\uFFFD\uFFFD\nx\uFFFD\uFFFD\\x0015\uFFFD\uFFFDw\uFFFD\uFFFD\uFFFD\uFFFD3J\uFFFDX\uFFFD~\\x0007G\\x001eh\uFFFD\\x000cF\uFFFD\\x0014\n7\uFFFD"
+							"evidence": "2FBTl2Y7re6k8VkabsybC7OfepKQwT",
+							"otherinfo": "\uFFFDPS\uFFFDf;\uFFFD\uFFFD\uFFFDY\\x001an\u031B\\x000b\uFFFD\uFFFDz\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/thematiques/bien-vieillir/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FUnDEh2vmQ6WN6JtC6BKrct9f0odMfVIpB",
-							"otherinfo": "\uFFFDU'\\x000cHv\uFFFDd:X\u0789\uFFFD.\uFFFD*\uFFFD-\uFFFD\uFFFD(t\uFFFD\uFFFD\"\uFFFD"
+							"evidence": "2Fld47nQWfu9vmddaF2x9OmF6ELjmmNbaMLfPJS1BriSOgcXOyUn",
+							"otherinfo": "\uFFFDY]\uFFFD\uFFFDY\uFFFD\uFFFD\uFFFDg]h]\uFFFD\uFFFD\uFFFD\uFFFDB\uFFFDc[h\uFFFD\uFFFD<\uFFFD\uFFFD\\x0006\uFFFD\uFFFD:\\x0007\\x0017;%'"
 						},
 						{
 							"uri": "https://conseil-refondation.fr/thematiques/economie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "yIYmw93DroE6n36mo4lLfbKrwssvZYnNYVdiASQxfRu96l",
-							"otherinfo": "\u0206&\uFFFD\uFFFD\u00EE\uFFFD:\uFFFD~\uFFFD\uFFFD\uFFFDK}\uFFFD\uFFFD\uFFFD\uFFFD/e\uFFFD\uFFFDaWb\\x0001$1}\\x001b\uFFFD\uFFFD"
-						},
-						{
-							"uri": "https://conseil-refondation.fr/thematiques/travail/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Bn7K437dDdU8pwZTX340eZUgSpKJ5yRUraJaQ1RvOctV7CPdQv6egYlFo9JioGw",
-							"otherinfo": "\uFFFD\\x0019\uFFFD+\uFFFD\uFFFDt7T\uFFFD\\x0019M}\uFFFD\uFFFD\uFFFDT\uFFFD*J'\uFFFD\uFFFDR\uFFFD\uFFFDi\rQ\uFFFD\uFFFD-W\uFFFD\uFFFDu\\x000b\uFFFDz\\x0006%\\x0016\uFFFDI\uFFFD\uFFFD\uFFFD"
+							"evidence": "2BBKWWq09kgr4383WACOrS6CZvFsV6Kc3ztzLdtQywlQasMayHK",
+							"otherinfo": "\uFFFD\\x0010JYj\uFFFD\uFFFDH+\uFFFD7X\\x0000\uFFFD\uFFFD.\uFFFDf\uFFFDlW\uFFFD\uFFFD\uFFFD;s-\uFFFDP\uFFFD\tPj\uFFFD\\x001a\uFFFDr"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x001b\uFFFD\uFFFDZ\uFFFD<\uFFFD\uFFFD\uFFFDF\\x000f5\\x000e\uFFFDz\uFFFD</p><p>\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0011\uFFFD\\x00050\uFFFD\u01A1\uFFFD\uFFFDS.\uFFFD\uFFFD\\x0011\uFFFD*\uFFFDj51)\uFFFD\uFFFD\\x000e\uFFFD\uFFFD\u030A8*w\uFFFDX\uFFFD\uFFFD\u0F8E\uFFFD\r\uFFFD\uFFFDd\u00C3\uFFFDI\uFFFD6\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10027",
@@ -987,93 +1003,29 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://conseil-refondation.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 71",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/avatar.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 129",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/coding.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 129",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/france-localization.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 103",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/map.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 130",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/money.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 129",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/artwork/notification.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 103",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
 							"uri": "https://conseil-refondation.fr/static/css/style.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 130",
+							"evidence": "Age: 107",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"uri": "https://conseil-refondation.fr/static/dsfr/dist/artwork/system.svg",
+							"uri": "https://conseil-refondation.fr/static/dsfr/dist/artwork/dark.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 130",
-							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"uri": "https://conseil-refondation.fr/static/dsfr/dist/utility/utility.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 103",
+							"evidence": "Age: 108",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "10",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "193"
 				},
 				{
 					"pluginid": "90005",
@@ -1262,7 +1214,7 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "XXwrcBUGCUzYtRrxe537srudUEplN89PW4YesvQYzZUtSM2yZVXUSGiH4aPjYt6n",
+							"evidence": "kCx7DG0jh2fmKozi529uDy49i7kAP7mz2RuUSaTan7Vp0t2AGF5xsXwEbqiFLtxZ",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
@@ -1270,7 +1222,7 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "XXwrcBUGCUzYtRrxe537srudUEplN89PW4YesvQYzZUtSM2yZVXUSGiH4aPjYt6n",
+							"evidence": "kCx7DG0jh2fmKozi529uDy49i7kAP7mz2RuUSaTan7Vp0t2AGF5xsXwEbqiFLtxZ",
 							"otherinfo": "\ncookie:csrftoken"
 						}
 					],
@@ -1280,7 +1232,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "246"
+					"sourceid": "244"
 				},
 				{
 					"pluginid": "10049",

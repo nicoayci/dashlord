@@ -21,13 +21,13 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az485-529:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az174-50:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>185.42.117.109 46.252.181.103 46.252.181.104 185.42.117.108
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-10-15 04:12:40                --&gt;&gt; 185.42.117.109:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-10-29 04:22:49                --&gt;&gt; 185.42.117.109:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   46.252.181.104 46.252.181.103 185.42.117.108 
  rDNS (185.42.117.109):  --
@@ -108,7 +108,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">51 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">37 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -134,21 +134,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
-                                https://fonts.gstatic.com/ data:; img-src
-                                &apos;self&apos; data:
+                              <span style="color:#008817;">Content-Security-Policy</span>: style-src &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                img-src &apos;self&apos; data:
                                 cellar-c2.services.clever-cloud.com
                                 https://matomo.inclusion.beta.gouv.fr/;
-                                default-src &apos;self&apos;; script-src &apos;self&apos;
-                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
-                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
-                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
-                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
-                                ttps://tally.so
-                                https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-Mm8e7auoROkZzf+AFpRP4A==&apos;; frame-src
-                                &apos;self&apos; https://tally.so; style-src-elem &apos;self&apos;
-                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
                                 script-src-elem &apos;self&apos;
                                 https://cdn.jsdelivr.net/npm/chart.js@4.0.1
                                 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
@@ -156,9 +146,20 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
                                 ttps://tally.so
                                 https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-Mm8e7auoROkZzf+AFpRP4A==&apos;; style-src
-                                &apos;self&apos; https://fonts.googleapis.com
-                                &apos;unsafe-inline&apos;; connect-src &apos;self&apos; *.sentry.io
+                                &apos;nonce-Npzeo7p9rJduS/TSToOsHA==&apos;; default-src
+                                &apos;self&apos;; frame-src &apos;self&apos; https://tally.so;
+                                font-src &apos;self&apos; https://fonts.gstatic.com/
+                                data:; style-src-elem &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                script-src &apos;self&apos;
+                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
+                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
+                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
+                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
+                                ttps://tally.so
+                                https://matomo.inclusion.beta.gouv.fr/
+                                &apos;nonce-Npzeo7p9rJduS/TSToOsHA==&apos;; connect-src
+                                &apos;self&apos; *.sentry.io
                                 https://matomo.inclusion.beta.gouv.fr/
                               <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
                                 autoplay=(), camera=(), encrypted-media=(),
@@ -246,12 +247,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-10-15 04:14:42 [ 124s] --&gt;&gt; 185.42.117.109:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-10-29 04:24:10 [  84s] --&gt;&gt; 185.42.117.109:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-10-15 04:14:43                --&gt;&gt; 46.252.181.103:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-10-29 04:24:10                --&gt;&gt; 46.252.181.103:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   46.252.181.104 185.42.117.108 185.42.117.109 
+ Further IP addresses:   46.252.181.104 185.42.117.109 185.42.117.108 
  rDNS (46.252.181.103):  --
  Service detected:       HTTP
 
@@ -300,8 +301,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing robust forward secrecy (FS)</span><u> -- omitting Null Authentication/Encryption, 3DES, RC4 </u>
 
 
-<span style="color:#008817;"> FS is offered (OK) </span>          DHE-RSA-AES128-GCM-SHA256
-                              ECDHE-RSA-AES128-GCM-SHA256
+<span style="color:#008817;"> FS is offered (OK) </span>          ECDHE-RSA-AES128-GCM-SHA256
                               ECDHE-RSA-AES256-GCM-SHA384 
 <span style="font-weight:bold;"> Elliptic curves offered:     </span><span style="color:#008817;">prime256v1</span> 
 
@@ -329,7 +329,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">51 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">37 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -347,7 +347,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -355,21 +355,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
-                                https://fonts.gstatic.com/ data:; img-src
-                                &apos;self&apos; data:
+                              <span style="color:#008817;">Content-Security-Policy</span>: style-src &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                img-src &apos;self&apos; data:
                                 cellar-c2.services.clever-cloud.com
                                 https://matomo.inclusion.beta.gouv.fr/;
-                                default-src &apos;self&apos;; script-src &apos;self&apos;
-                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
-                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
-                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
-                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
-                                ttps://tally.so
-                                https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-MjTvPsuDo3QRRjBS+rx20Q==&apos;; frame-src
-                                &apos;self&apos; https://tally.so; style-src-elem &apos;self&apos;
-                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
                                 script-src-elem &apos;self&apos;
                                 https://cdn.jsdelivr.net/npm/chart.js@4.0.1
                                 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
@@ -377,9 +367,20 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
                                 ttps://tally.so
                                 https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-MjTvPsuDo3QRRjBS+rx20Q==&apos;; style-src
-                                &apos;self&apos; https://fonts.googleapis.com
-                                &apos;unsafe-inline&apos;; connect-src &apos;self&apos; *.sentry.io
+                                &apos;nonce-yqs9em82LaSpOFMtPjJTYQ==&apos;; default-src
+                                &apos;self&apos;; frame-src &apos;self&apos; https://tally.so;
+                                font-src &apos;self&apos; https://fonts.gstatic.com/
+                                data:; style-src-elem &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                script-src &apos;self&apos;
+                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
+                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
+                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
+                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
+                                ttps://tally.so
+                                https://matomo.inclusion.beta.gouv.fr/
+                                &apos;nonce-yqs9em82LaSpOFMtPjJTYQ==&apos;; connect-src
+                                &apos;self&apos; *.sentry.io
                                 https://matomo.inclusion.beta.gouv.fr/
                               <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
                                 autoplay=(), camera=(), encrypted-media=(),
@@ -421,7 +422,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
  Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 9.0 (native)         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 10.0 (native)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
@@ -434,7 +435,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  IE 6 XP                      No connection
  IE 8 Win 7                   No connection
  IE 8 XP                      No connection
- IE 11 Win 7                  TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">2048 bit DH  </span>
+ IE 11 Win 7                  No connection
  IE 11 Win 8.1                No connection
  IE 11 Win Phone 8.1          No connection
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
@@ -453,7 +454,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  OpenSSL 1.1.0l (Debian)      TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  OpenSSL 1.1.1d (Debian)      TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
  OpenSSL 3.0.3 (git)          TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Apple Mail (16.0)            TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Apple Mail (16.0)            TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Thunderbird (91.9)           TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
 
 
@@ -467,12 +468,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-10-15 04:16:40 [ 242s] --&gt;&gt; 46.252.181.103:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-10-29 04:25:30 [ 164s] --&gt;&gt; 46.252.181.103:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-10-15 04:16:40                --&gt;&gt; 46.252.181.104:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-10-29 04:25:30                --&gt;&gt; 46.252.181.104:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   46.252.181.103 185.42.117.108 185.42.117.109 
+ Further IP addresses:   185.42.117.109 46.252.181.103 185.42.117.108 
  rDNS (46.252.181.104):  --
  Service detected:       HTTP
 
@@ -531,7 +532,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
 <span style="font-weight:bold;"> TLS extensions (standard)    </span>&quot;renegotiation info/#65281&quot;
                               &quot;supported versions/#43&quot; &quot;key share/#51&quot;
-                              &quot;max fragment length/#1&quot; &quot;EC point formats/#11&quot;
+                              &quot;max fragment length/#1&quot;
                               &quot;extended master secret/#23&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>no -- no lifetime advertised
 <span style="font-weight:bold;"> SSL Session ID support       </span>no
@@ -551,7 +552,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">51 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">37 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -577,21 +578,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
-                                https://fonts.gstatic.com/ data:; img-src
-                                &apos;self&apos; data:
+                              <span style="color:#008817;">Content-Security-Policy</span>: style-src &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                img-src &apos;self&apos; data:
                                 cellar-c2.services.clever-cloud.com
                                 https://matomo.inclusion.beta.gouv.fr/;
-                                default-src &apos;self&apos;; script-src &apos;self&apos;
-                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
-                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
-                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
-                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
-                                ttps://tally.so
-                                https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-5A3DsMrvmLyzDX+yKziucw==&apos;; frame-src
-                                &apos;self&apos; https://tally.so; style-src-elem &apos;self&apos;
-                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
                                 script-src-elem &apos;self&apos;
                                 https://cdn.jsdelivr.net/npm/chart.js@4.0.1
                                 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
@@ -599,9 +590,20 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
                                 ttps://tally.so
                                 https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-5A3DsMrvmLyzDX+yKziucw==&apos;; style-src
-                                &apos;self&apos; https://fonts.googleapis.com
-                                &apos;unsafe-inline&apos;; connect-src &apos;self&apos; *.sentry.io
+                                &apos;nonce-I9VfnjMGigOSm7kOU6rLPw==&apos;; default-src
+                                &apos;self&apos;; frame-src &apos;self&apos; https://tally.so;
+                                font-src &apos;self&apos; https://fonts.gstatic.com/
+                                data:; style-src-elem &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                script-src &apos;self&apos;
+                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
+                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
+                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
+                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
+                                ttps://tally.so
+                                https://matomo.inclusion.beta.gouv.fr/
+                                &apos;nonce-I9VfnjMGigOSm7kOU6rLPw==&apos;; connect-src
+                                &apos;self&apos; *.sentry.io
                                 https://matomo.inclusion.beta.gouv.fr/
                               <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
                                 autoplay=(), camera=(), encrypted-media=(),
@@ -642,8 +644,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
- Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Android 6.0                  TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">2048 bit DH  </span>
+ Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 9.0 (native)         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 10.0 (native)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">256 bit ECDH (P-256)</span>
@@ -689,12 +691,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-10-15 04:18:39 [ 361s] --&gt;&gt; 46.252.181.104:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-10-29 04:26:51 [ 245s] --&gt;&gt; 46.252.181.104:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-10-15 04:18:40                --&gt;&gt; 185.42.117.108:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-10-29 04:26:52                --&gt;&gt; 185.42.117.108:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   46.252.181.104 46.252.181.103 185.42.117.109 
+ Further IP addresses:   46.252.181.104 185.42.117.109 46.252.181.103 
  rDNS (185.42.117.108):  --
  Service detected:       HTTP
 
@@ -773,7 +775,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">51 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">37 &gt;= 30 days</span> (2023-09-06 19:43 --&gt; 2023-12-05 19:43)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -799,21 +801,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
-                                https://fonts.gstatic.com/ data:; img-src
-                                &apos;self&apos; data:
+                              <span style="color:#008817;">Content-Security-Policy</span>: style-src &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                img-src &apos;self&apos; data:
                                 cellar-c2.services.clever-cloud.com
                                 https://matomo.inclusion.beta.gouv.fr/;
-                                default-src &apos;self&apos;; script-src &apos;self&apos;
-                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
-                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
-                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
-                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
-                                ttps://tally.so
-                                https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-Gicg8RUC1fwhlD0QmWJH2g==&apos;; frame-src
-                                &apos;self&apos; https://tally.so; style-src-elem &apos;self&apos;
-                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
                                 script-src-elem &apos;self&apos;
                                 https://cdn.jsdelivr.net/npm/chart.js@4.0.1
                                 https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
@@ -821,9 +813,20 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
                                 ttps://tally.so
                                 https://matomo.inclusion.beta.gouv.fr/
-                                &apos;nonce-Gicg8RUC1fwhlD0QmWJH2g==&apos;; style-src
-                                &apos;self&apos; https://fonts.googleapis.com
-                                &apos;unsafe-inline&apos;; connect-src &apos;self&apos; *.sentry.io
+                                &apos;nonce-lbwKnOpRzamvL9ogwstXEw==&apos;; default-src
+                                &apos;self&apos;; frame-src &apos;self&apos; https://tally.so;
+                                font-src &apos;self&apos; https://fonts.gstatic.com/
+                                data:; style-src-elem &apos;self&apos;
+                                https://fonts.googleapis.com &apos;unsafe-inline&apos;;
+                                script-src &apos;self&apos;
+                                https://cdn.jsdelivr.net/npm/chart.js@4.0.1
+                                https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js 
+                                ttps://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js 
+                                ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js 
+                                ttps://tally.so
+                                https://matomo.inclusion.beta.gouv.fr/
+                                &apos;nonce-lbwKnOpRzamvL9ogwstXEw==&apos;; connect-src
+                                &apos;self&apos; *.sentry.io
                                 https://matomo.inclusion.beta.gouv.fr/
                               <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
                                 autoplay=(), camera=(), encrypted-media=(),
@@ -911,7 +914,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-10-15 04:20:39 [ 481s] --&gt;&gt; 185.42.117.108:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-10-29 04:28:12 [ 326s] --&gt;&gt; 185.42.117.108:443 (communaute.inclusion.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>185.42.117.109 46.252.181.103 46.252.181.104 185.42.117.108

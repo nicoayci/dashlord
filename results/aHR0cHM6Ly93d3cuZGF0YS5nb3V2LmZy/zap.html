@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 15 Oct 2023 12:12:38
+		Generated on Sun, 29 Oct 2023 12:15:47
 	</h3>
 
 	<h3>
@@ -164,7 +164,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>8</div>
+					<div>6</div>
 				</td>
 			</tr>
 			<tr>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>12</div>
+					<div>11</div>
 				</td>
 			</tr>
 			<tr>
@@ -210,12 +210,12 @@ td {
 			<tr>
 				<td><a href="#10098">Cross-Domain Misconfiguration</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - SQL</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
@@ -224,16 +224,6 @@ td {
 			</tr>
 			<tr>
 				<td><a href="#10044">Big Redirect Detected (Potential Sensitive Information Leak)</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">12</td>
-			</tr>
-			<tr>
-				<td><a href="#10011">Cookie Without Secure Flag</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">12</td>
-			</tr>
-			<tr>
-				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">12</td>
 			</tr>
@@ -263,11 +253,6 @@ td {
 				<td align="center">4</td>
 			</tr>
 			<tr>
-				<td><a href="#10111">Authentication Request Identified</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">12</td>
@@ -290,22 +275,22 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Mode Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
@@ -320,7 +305,7 @@ td {
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">32</td>
+				<td align="center">34</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -1619,9 +1604,40 @@ td {
 						<td width="80%">The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">access-control-allow-origin: *</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1710,71 +1726,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/">https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Update frequency not set
-    </td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/es/datasets/">https://www.data.gouv.fr/es/datasets/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Update frequency not set
-    </td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/es/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/">https://www.data.gouv.fr/es/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1805,7 +1757,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1879,7 +1831,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link href=&quot;https://static.data.gouv.fr/_themes/gouvfr/assets/index.css?_=3.2.6&quot; rel=&quot;stylesheet&quot;&gt;</td>
+						<td width="80%">&lt;link href=&quot;https://static.data.gouv.fr/_themes/gouvfr/assets/index.css?_=3.2.8&quot; rel=&quot;stylesheet&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1910,7 +1862,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link href=&quot;https://static.data.gouv.fr/_themes/gouvfr/assets/style.css?_=3.2.6&quot; rel=&quot;stylesheet&quot;&gt;</td>
+						<td width="80%">&lt;link href=&quot;https://static.data.gouv.fr/_themes/gouvfr/assets/style.css?_=3.2.8&quot; rel=&quot;stylesheet&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1972,7 +1924,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://static.data.gouv.fr/_themes/gouvfr/img/favicon.png?_=3.2.6&quot;&gt;</td>
+						<td width="80%">&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://static.data.gouv.fr/_themes/gouvfr/img/favicon.png?_=3.2.8&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2003,7 +1955,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2034,7 +1986,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.6.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.8.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2065,7 +2017,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2096,7 +2048,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2127,7 +2079,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2158,7 +2110,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2189,7 +2141,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2220,7 +2172,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2251,7 +2203,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2282,7 +2234,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2371,7 +2323,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-054652/export-dataset-20231015-054652.csv].
+						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-054656/export-dataset-20231029-054656.csv].
 Predicted response size: 426.
 Response Body Length: 439.</td>
 					</tr>
@@ -2404,7 +2356,7 @@ Response Body Length: 439.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055426/export-organization-20231015-055426.csv].
+						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055426/export-organization-20231029-055426.csv].
 Predicted response size: 431.
 Response Body Length: 449.</td>
 					</tr>
@@ -2437,7 +2389,7 @@ Response Body Length: 449.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055146/export-resource-20231015-055146.csv].
+						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055144/export-resource-20231029-055144.csv].
 Predicted response size: 427.
 Response Body Length: 441.</td>
 					</tr>
@@ -2470,7 +2422,7 @@ Response Body Length: 441.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055509/export-reuse-20231015-055509.csv].
+						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055511/export-reuse-20231029-055511.csv].
 Predicted response size: 424.
 Response Body Length: 435.</td>
 					</tr>
@@ -2503,7 +2455,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-054652/export-dataset-20231015-054652.csv].
+						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-054656/export-dataset-20231029-054656.csv].
 Predicted response size: 426.
 Response Body Length: 439.</td>
 					</tr>
@@ -2536,7 +2488,7 @@ Response Body Length: 439.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055426/export-organization-20231015-055426.csv].
+						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055426/export-organization-20231029-055426.csv].
 Predicted response size: 431.
 Response Body Length: 449.</td>
 					</tr>
@@ -2569,7 +2521,7 @@ Response Body Length: 449.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055146/export-resource-20231015-055146.csv].
+						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055144/export-resource-20231029-055144.csv].
 Predicted response size: 427.
 Response Body Length: 441.</td>
 					</tr>
@@ -2602,7 +2554,7 @@ Response Body Length: 441.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055509/export-reuse-20231015-055509.csv].
+						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055511/export-reuse-20231029-055511.csv].
 Predicted response size: 424.
 Response Body Length: 435.</td>
 					</tr>
@@ -2635,7 +2587,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-054652/export-dataset-20231015-054652.csv].
+						<td width="80%">Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-054656/export-dataset-20231029-054656.csv].
 Predicted response size: 426.
 Response Body Length: 439.</td>
 					</tr>
@@ -2668,7 +2620,7 @@ Response Body Length: 439.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055426/export-organization-20231015-055426.csv].
+						<td width="80%">Location header URI length: 131 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055426/export-organization-20231029-055426.csv].
 Predicted response size: 431.
 Response Body Length: 449.</td>
 					</tr>
@@ -2701,7 +2653,7 @@ Response Body Length: 449.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055146/export-resource-20231015-055146.csv].
+						<td width="80%">Location header URI length: 127 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055144/export-resource-20231029-055144.csv].
 Predicted response size: 427.
 Response Body Length: 441.</td>
 					</tr>
@@ -2734,7 +2686,7 @@ Response Body Length: 441.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231015-055509/export-reuse-20231015-055509.csv].
+						<td width="80%">Location header URI length: 124 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20231029-055511/export-reuse-20231029-055511.csv].
 Predicted response size: 424.
 Response Body Length: 435.</td>
 					</tr>
@@ -2774,856 +2726,6 @@ Response Body Length: 435.</td>
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10011"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Cookie Without Secure Flag</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr">https://www.data.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/admin/dataset/new/">https://www.data.gouv.fr/en/admin/dataset/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/admin/reuse/new/">https://www.data.gouv.fr/en/admin/reuse/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets.csv">https://www.data.gouv.fr/en/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/">https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/catalogue-des-donnees-de-data-gouv-fr/">https://www.data.gouv.fr/en/datasets/catalogue-des-donnees-de-data-gouv-fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/concentrations-cartographiees-de-la-moyenne-annuelle-de-pm10-en-2022-strasbourg/">https://www.data.gouv.fr/en/datasets/concentrations-cartographiees-de-la-moyenne-annuelle-de-pm10-en-2022-strasbourg/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/">https://www.data.gouv.fr/fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/admin/dataset/new/">https://www.data.gouv.fr/fr/admin/dataset/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/admin/reuse/new/">https://www.data.gouv.fr/fr/admin/reuse/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/datasets/catalogue-des-donnees-de-data-gouv-fr/">https://www.data.gouv.fr/fr/datasets/catalogue-des-donnees-de-data-gouv-fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">12</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/614.html">614</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10011/">10011</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10054"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Cookie without SameSite Attribute</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr">https://www.data.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/admin/dataset/new/">https://www.data.gouv.fr/en/admin/dataset/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/admin/reuse/new/">https://www.data.gouv.fr/en/admin/reuse/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets.csv">https://www.data.gouv.fr/en/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/">https://www.data.gouv.fr/en/datasets/bilan-statistique-de-l-energie-mondiale-bp-nd/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/catalogue-des-donnees-de-data-gouv-fr/">https://www.data.gouv.fr/en/datasets/catalogue-des-donnees-de-data-gouv-fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/en/datasets/concentrations-cartographiees-de-la-moyenne-annuelle-de-pm10-en-2022-strasbourg/">https://www.data.gouv.fr/en/datasets/concentrations-cartographiees-de-la-moyenne-annuelle-de-pm10-en-2022-strasbourg/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/">https://www.data.gouv.fr/fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/admin/dataset/new/">https://www.data.gouv.fr/fr/admin/dataset/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/admin/reuse/new/">https://www.data.gouv.fr/fr/admin/reuse/new/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/datasets/catalogue-des-donnees-de-data-gouv-fr/">https://www.data.gouv.fr/fr/datasets/catalogue-des-donnees-de-data-gouv-fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">12</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10054/">10054</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
 						id="10017"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
@@ -3652,7 +2754,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.6.js</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.8.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3662,7 +2764,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.6.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.8.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3683,7 +2785,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3693,7 +2795,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3714,7 +2816,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3724,7 +2826,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3745,7 +2847,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3755,7 +2857,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3776,7 +2878,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3786,7 +2888,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3807,7 +2909,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3817,7 +2919,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3838,7 +2940,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3848,7 +2950,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3869,7 +2971,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3879,7 +2981,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3900,7 +3002,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3910,7 +3012,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3931,7 +3033,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3941,7 +3043,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3962,7 +3064,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.6.js</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.8.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3972,7 +3074,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.6.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/_commonjsHelpers-legacy.3.2.8.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3993,7 +3095,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4003,7 +3105,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async type=&quot;module&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/es-module-shims.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4024,7 +3126,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4034,7 +3136,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4055,7 +3157,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4065,7 +3167,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/index.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4086,7 +3188,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4096,7 +3198,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/polyfills-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4117,7 +3219,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4127,7 +3229,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/s.min.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4148,7 +3250,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4158,7 +3260,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4179,7 +3281,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4189,7 +3291,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue-content-loader.es.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4210,7 +3312,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4220,7 +3322,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod-legacy.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4241,7 +3343,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.6</td>
+						<td width="80%">https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.8</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4251,7 +3353,7 @@ Response Body Length: 435.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.6&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module-shim&quot; src=&quot;https://static.data.gouv.fr/_themes/gouvfr/js/vue.esm-browser.prod.js?_=3.2.8&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5436,93 +4538,6 @@ Response Body Length: 435.</td>
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10111"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Authentication Request Identified</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/login">https://www.data.gouv.fr/fr/login</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">email</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">password</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">userParam=email
-userValue=zaproxy@example.com
-passwordParam=password
-referer=https://www.data.gouv.fr/fr/login?next=%2Ffr%2F
-csrfToken=csrf_token</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>This is an informational alert rather than a vulnerability and so there is nothing to fix.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10111/">10111</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
 						id="10094"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Base64 Disclosure</th>
@@ -5561,43 +4576,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">eyJjc3JmX3Rva2VuIjoiYWNiZDVhMDQwNzYyMjE5NzQ1YjhhYjBhYWVhY2U1NTE4ZDRhY2U1OCJ9</td>
+						<td width="80%">eyJjc3JmX3Rva2VuIjoiYzM0MjA5Y2RhZGRiMTQ0NmVhYzE0OTBmYmI2ZWI0NjdhMzMzZDgyYyJ9</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">{&quot;csrf_token&quot;:&quot;acbd5a040762219745b8ab0aaeace5518d4ace58&quot;}</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">{&quot;_fresh&quot;:false,&quot;csrf_token&quot;:&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;}</td>
+						<td width="80%">{&quot;csrf_token&quot;:&quot;c34209cdaddb1446eac1490fbb6eb467a333d82c&quot;}</td>
 					</tr>
 				
 					<tr>
@@ -5623,12 +4607,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9</td>
+						<td width="80%">eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">{&quot;_fresh&quot;:false,&quot;csrf_token&quot;:&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;}</td>
+						<td width="80%">{&quot;_fresh&quot;:false,&quot;csrf_token&quot;:&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;}</td>
 					</tr>
 				
 					<tr>
@@ -5654,12 +4638,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
 					</tr>
 				
 					<tr>
@@ -5685,12 +4669,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
 					</tr>
 				
 					<tr>
@@ -5727,6 +4711,68 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/es/datasets.csv">https://www.data.gouv.fr/es/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">{&quot;_fresh&quot;:false,&quot;csrf_token&quot;:&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;}</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/es/datasets/r/7161c9f2-3d91-4caf-afa2-cfe535807f04">https://www.data.gouv.fr/es/datasets/r/7161c9f2-3d91-4caf-afa2-cfe535807f04</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/es/tabular/preview/">https://www.data.gouv.fr/es/tabular/preview/</a></td>
 					</tr>
 					<tr>
@@ -5747,12 +4793,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
 					</tr>
 				
 					<tr>
@@ -5778,43 +4824,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">eyJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9</td>
+						<td width="80%">eyJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">{&quot;csrf_token&quot;:&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;}</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/fr/datasets/r/7161c9f2-3d91-4caf-afa2-cfe535807f04">https://www.data.gouv.fr/fr/datasets/r/7161c9f2-3d91-4caf-afa2-cfe535807f04</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">{&quot;csrf_token&quot;:&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;}</td>
 					</tr>
 				
 					<tr>
@@ -5840,12 +4855,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
 					</tr>
 				
 					<tr>
@@ -5902,12 +4917,12 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ImI1NzAwZDM2MGI0ZmZmZDI3NzA4MmM3M2QyOTUxMDFhODA4NWVjNzgi</td>
+						<td width="80%">IjJjMmNiOGM4ZTkxYjg2MjE4NDBlZTU5ODk2OTIwNTBkNGI3ZTk0YjQi</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&quot;b5700d360b4fffd277082c73d295101a8085ec78&quot;</td>
+						<td width="80%">&quot;2c2cb8c8e91b8621840ee5989692050d4b7e94b4&quot;</td>
 					</tr>
 				
 				<tr>
@@ -7379,6 +6394,37 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/robots.txt">https://www.data.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -7409,7 +6455,7 @@ csrfToken=csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7494,6 +6540,37 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/robots.txt">https://www.data.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -7524,7 +6601,7 @@ csrfToken=csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7609,6 +6686,37 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/robots.txt">https://www.data.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -7639,7 +6747,7 @@ csrfToken=csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7724,6 +6832,37 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.data.gouv.fr/robots.txt">https://www.data.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -7754,7 +6893,7 @@ csrfToken=csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7828,39 +6967,7 @@ csrfToken=csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">d2~eyJjc3JmX3Rva2VuIjoiYWNiZDVhMDQwNzYyMjE5NzQ1YjhhYjBhYWVhY2U1NTE4ZDRhY2U1OCJ9.ZSvW8g.hNCiY4i-1EI-hR6RxQIFCvUbRzI</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-cookie:session</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">session</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9.ZSvW8w.eVaLvnJr_-vdWWM2F5SWGQuxjFY</td>
+						<td width="80%">d3~eyJjc3JmX3Rva2VuIjoiYzM0MjA5Y2RhZGRiMTQ0NmVhYzE0OTBmYmI2ZWI0NjdhMzMzZDgyYyJ9.ZT5Mrw.QlDawdx-v9Z1q4l3aQDiaroMuGw</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7892,7 +6999,39 @@ cookie:session</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9.ZSvW8w.eVaLvnJr_-vdWWM2F5SWGQuxjFY</td>
+						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9.ZT5MsA.jGMZ0-LNwNF7l_1Iz3L-_YF_Gds</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:session</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/es/datasets.csv">https://www.data.gouv.fr/es/datasets.csv</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">session</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9.ZT5MsA.jGMZ0-LNwNF7l_1Iz3L-_YF_Gds</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7924,7 +7063,7 @@ cookie:session</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">d1~eyJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9.ZSvW8w.epf5UkRE7Mrlwa4tyjVLNjeaZvk</td>
+						<td width="80%">d1~eyJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9.ZT5MsA.CSIC9Ud-oqRtwUU9UmMPb2HjcXk</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7956,7 +7095,7 @@ cookie:session</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9.ZSvW8w.eVaLvnJr_-vdWWM2F5SWGQuxjFY</td>
+						<td width="80%">d1~eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9.ZT5MsA.jGMZ0-LNwNF7l_1Iz3L-_YF_Gds</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7988,7 +7127,7 @@ cookie:session</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">d1~eyJjc3JmX3Rva2VuIjoiYjU3MDBkMzYwYjRmZmZkMjc3MDgyYzczZDI5NTEwMWE4MDg1ZWM3OCJ9.ZSvW8w.epf5UkRE7Mrlwa4tyjVLNjeaZvk</td>
+						<td width="80%">d1~eyJjc3JmX3Rva2VuIjoiMmMyY2I4YzhlOTFiODYyMTg0MGVlNTk4OTY5MjA1MGQ0YjdlOTRiNCJ9.ZT5MsA.CSIC9Ud-oqRtwUU9UmMPb2HjcXk</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8460,6 +7599,92 @@ cookie:session</td>
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/fr/login?next=%2Ffr%2F">https://www.data.gouv.fr/fr/login?next=%2Ffr%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">next</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
+
+https://www.data.gouv.fr/fr/login?next=%2Ffr%2F
+
+appears to include user input in: 
+
+a(n) [a] tag [data-content-target] attribute 
+
+The user input found was:
+next=/fr/
+
+The user-controlled value was:
+/fr/admin/dataset/new/</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.data.gouv.fr/fr/login?next=%2Ffr%2F">https://www.data.gouv.fr/fr/login?next=%2Ffr%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">next</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
+
+https://www.data.gouv.fr/fr/login?next=%2Ffr%2F
+
+appears to include user input in: 
+
+a(n) [a] tag [data-content-target] attribute 
+
+The user input found was:
+next=/fr/
+
+The user-controlled value was:
+/fr/admin/reuse/new/</td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -9839,7 +9064,7 @@ The user-controlled value was:
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">32</td>
+					<td width="80%">34</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>

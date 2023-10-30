@@ -1,50 +1,21 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "fcNonce",
-      "value": "2e625351-a509-45b8-9d19-17aae2c8d3f4",
-      "domain": "mfc-web-dev.osc-secnum-fr1.scalingo.io",
-      "path": "/",
-      "expires": -1,
-      "size": 43,
-      "httpOnly": false,
-      "secure": false,
-      "session": true,
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "fcState",
-      "value": "85a4fd1c-6797-4f1c-8c2a-e4eb89ce9397",
-      "domain": "mfc-web-dev.osc-secnum-fr1.scalingo.io",
-      "path": "/",
-      "expires": -1,
-      "size": 43,
-      "httpOnly": false,
-      "secure": false,
-      "session": true,
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 21:29:19 GMT",
-    "etag": "\"115t9bytpoc90a\"",
+    "date": "Sun, 29 Oct 2023 21:49:28 GMT",
+    "etag": "\"zyual33vcwc2u\"",
     "strict-transport-security": "max-age=31536000",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js",
-    "x-request-id": "b39b2ced-37c9-473b-be85-12357700a95e"
+    "x-request-id": "467697bf-e441-4746-9454-499afb90bc69"
   },
   "endpoints": [
     {
       "hostname": "mfc-web-dev.osc-secnum-fr1.scalingo.io",
-      "ip": "80.247.12.255",
+      "ip": "80.247.13.145",
       "geoip": {
         "continent": {
           "code": "EU",

@@ -38,11 +38,11 @@
     },
     {
       "name": "challenge",
-      "value": "OrJnFulThd51IoOBsI_inZ1Dzp7CQJM7xRBVWgp7p_PXrX2Cy_XyJd_7hBd6xv6xrYcO2ieIqyj9oQxYib2eG1Dibudfshw8DjF-f_6m2e-tcf3ejZ-PR5AL0ie4Ci5nvKw_fmIjBFZr1SMGEUg6hdACWL-UAXLzvObBcCCOur42mN67PjMyah9TVUuCUc0IdsDAZxzisk-pVUx5beixIlVwnwr8VpwLbrWMwTkwJcEO4jBhs7ksICILu2ZYPiyn",
+      "value": "QHbILtM2iYPT-642lSqlT3W38nvqVDkitX17UFp0GalMl0igDtX4BUEGqXj-xRipiu8F1n6OqKQzGZRFHaeMExr-JhVpT9aF-OCR2_diMqDRf4lTQiz2Zpzeam3Y-4n6xPBxWFWC4rzTCiL9F8sgAWyjpF66XW-jT1r-Q0AHXpiVcxs8owaJbgG2BMxPfPsQ9RRD9hlaGiu0ej4g4Y9moGXZ7SEzD90jhGoIdjKPzvpYU4jzWoyrMUuUVqjGn9uKAnljWpSEX_YU_NJagQVmww",
       "domain": ".pix.fr",
       "path": "/",
-      "expires": 1697367001.360533,
-      "size": 265,
+      "expires": 1698577492.829218,
+      "size": 287,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -56,23 +56,23 @@
     "age": "0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 09:50:01 GMT",
-    "etag": "W/\"6529599c-228e6\"",
-    "last-modified": "Fri, 13 Oct 2023 14:52:12 GMT",
+    "date": "Sun, 29 Oct 2023 10:04:52 GMT",
+    "etag": "W/\"653bc01e-23113\"",
+    "last-modified": "Fri, 27 Oct 2023 13:50:22 GMT",
     "referrer-policy": "origin-when-cross-origin",
     "strict-transport-security": "max-age=31536000",
     "vary": "Accept-Encoding",
     "via": "1.1 varnish (Varnish/6.0)",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-request-id": "7a7cc0abaece8e3da87f1119ec0b9d6d",
-    "x-varnish": "26362501",
+    "x-request-id": "c89e7c514657d6c0fa18ca1d5e0bb501",
+    "x-varnish": "35670129",
     "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
       "hostname": "pix.fr",
-      "ip": "185.179.149.141",
+      "ip": "185.231.167.141",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -128,7 +128,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.115.95",
+      "ip": "142.251.111.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -185,12 +185,16 @@
       "ip": "154.41.70.3",
       "geoip": {
         "city": {
-          "geoname_id": 2994798,
+          "geoname_id": 2972191,
           "names": {
-            "en": "Meaux",
-            "ja": "モー",
-            "ru": "Мо",
-            "zh-CN": "莫城"
+            "de": "Tours",
+            "en": "Tours",
+            "es": "Tours",
+            "fr": "Tours",
+            "ja": "トゥール",
+            "pt-BR": "Tours",
+            "ru": "Тур",
+            "zh-CN": "图尔"
           }
         },
         "continent": {
@@ -223,13 +227,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 200,
-          "latitude": 48.9579,
-          "longitude": 2.8794,
+          "accuracy_radius": 20,
+          "latitude": 47.3983,
+          "longitude": 0.7037,
           "time_zone": "Europe/Paris"
-        },
-        "postal": {
-          "code": "77100"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -247,24 +248,23 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
+            "geoname_id": 3027939,
+            "iso_code": "CVL",
             "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "de": "Centre-Val de Loire",
+              "en": "Centre-Val de Loire",
+              "es": "Centro-Valle de Loira",
+              "fr": "Centre-Val de Loire"
             }
           },
           {
-            "geoname_id": 2975249,
-            "iso_code": "77",
+            "geoname_id": 3012804,
+            "iso_code": "37",
             "names": {
-              "de": "Seine-et-Marne",
-              "en": "Seine-et-Marne",
-              "es": "Sena y Marne",
-              "fr": "Seine-et-Marne"
+              "de": "Indre-et-Loire",
+              "en": "Indre-et-Loire",
+              "es": "Indre y Loira",
+              "fr": "Indre-et-Loire"
             }
           }
         ]
@@ -272,7 +272,7 @@
     },
     {
       "hostname": "static.cdn.prismic.io",
-      "ip": "18.161.156.28",
+      "ip": "99.84.191.33",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -326,7 +326,7 @@
     },
     {
       "hostname": "pix-site.prismic.io",
-      "ip": "3.211.59.80",
+      "ip": "3.218.210.92",
       "geoip": {
         "city": {
           "geoname_id": 4744870,

@@ -2,18 +2,19 @@
   "trackers": [],
   "cookies": [],
   "headers": {
+    "access-control-allow-headers": "sentry-trace, baggage",
     "access-control-allow-origin": "*",
     "cache-control": "max-age 1800",
     "content-length": "174",
     "content-security-policy": "default-src 'none'",
     "content-type": "application/json; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 23:00:08 GMT",
+    "date": "Sun, 29 Oct 2023 23:06:20 GMT",
     "etag": "W/\"ae-aaepo/6j8eK5LAryuhO1tqx1gP0\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
     "x-powered-by": "Express",
-    "x-request-id": "f1099572-6ab1-4b8d-8eb7-303f1bef24d0"
+    "x-request-id": "ef7004ec-21bb-457b-8788-c38c3e403bbe"
   },
   "endpoints": [
     {

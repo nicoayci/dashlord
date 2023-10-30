@@ -63,8 +63,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "frame-ancestors https://diagoriente.beta.gouv.fr/ app.diagoriente.beta.gouv.fr diagoriente.beta.gouv.fr",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 05:20:59 GMT",
-    "etag": "\"1ff45-5NlT48K87w90MxFVqTJM5jVSSUE\"",
+    "date": "Sun, 29 Oct 2023 05:20:07 GMT",
+    "etag": "\"1ff46-BAyw0pDRWgpquPT8/tYs6RP5SvM\"",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-frame-options": "ALLOW-FROM diagoriente.beta.gouv.fr",
@@ -129,7 +129,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.217.12.106",
+      "ip": "142.251.111.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -183,7 +183,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.217.12.99",
+      "ip": "172.253.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -237,7 +237,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.250.189.246",
+      "ip": "172.253.122.119",
       "geoip": {
         "continent": {
           "code": "NA",

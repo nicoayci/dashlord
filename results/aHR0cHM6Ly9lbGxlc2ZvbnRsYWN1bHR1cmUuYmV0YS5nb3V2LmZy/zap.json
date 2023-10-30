@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 17:36:31",
+	"@generated": "Sun, 29 Oct 2023 18:04:16",
 	"site":[ 
 		{
 			"@name": "https://ellesfontlaculture.beta.gouv.fr",
@@ -121,13 +121,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Bj3EmtKBkstauqdwALe0vDEuuZEbuutTDJ6Na",
-							"otherinfo": "\uFFFD\\x0018\uFFFD\\x0012kJ\\x0006K-j\uFFFD\uFFFD\\x0002\uFFFD\uFFFD\uFFFD\u013A\uFFFDDn\uFFFDL2z5"
+							"evidence": "2BwrbyOwEo3YAV8yPbbTULc9ZWiZeb",
+							"otherinfo": "\uFFFD\\x001c+o#\uFFFD\\x0012\uFFFD\uFFFD\\x0001_2=\uFFFD\uFFFDP\uFFFD=eh\uFFFDy"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0018\uFFFD\\x0012kJ\\x0006K-j\uFFFD\uFFFD\\x0002\uFFFD\uFFFD\uFFFD\u013A\uFFFDDn\uFFFDL2z5</p>",
+					"otherinfo": "<p>\uFFFD\\x001c+o#\uFFFD\\x0012\uFFFD\uFFFD\\x0001_2=\uFFFD\uFFFDP\uFFFD=eh\uFFFDy</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -239,9 +239,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://ellesfontlaculture.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -274,9 +282,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://ellesfontlaculture.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -309,9 +325,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://ellesfontlaculture.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -344,9 +368,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://ellesfontlaculture.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -369,7 +401,7 @@
 							"method": "GET",
 							"param": "_ellesfontlaphoto_session",
 							"attack": "",
-							"evidence": "WJVHHSYXhI5Y4vRAQvux7m%2F2xwG7IolDAm4nIGpQjOdQP%2Bj3EmtKBkstauqdwALe0vDEuuZEbuutTDJ6Na%2FhEpq%2FR00tY0pxmXbqRgnjTV8TlmaY7oM3q%2BpFouLrUXuAFXj4a6PsA2d0rtrY74P%2FFqJCwsKab3l0qrbyFy1UTTYV9c6lDbeOtBygGlfm%2Fu8m4K%2FOLEkxwQdOOAYvIDvMKGGeN0mQcaa3r1t1mFImWG9bY7BLPWd1oHCQgL%2FLSwBPgVSTF%2BwRSmz%2BgGMr60DOw7skDfhyTgYRtjBHJPTsKOG%2Bg%2BVYPN8b64ete%2BgQecfdTn%2BAwqem1zYMNP0c6jcOfxwEaMMMe375Eo8FKpKRKyJKcshJK%2FfIHe0mVzTFpkSaQVfo0RHl7HqF0d%2Brq6acOw%2FqfdaEa4g6fBkbwnDWj%2Ft%2Bfq27nTc8xbMGvjar8ZisrKqJ%2Bd271o57Of9Q54OGj%2BigrJtKv%2Bx46U0aO%2ByM%2FfJIKVTU%2FqRWC6iDg%2BRb--%2B8SvaR2YKI8q5Gps--xQ2l7sZTHo0Aaz7YBxMthQ%3D%3D",
+							"evidence": "TUfr2d70CLdHe%2B%2BwrbyOwEo3YAV8yPbbTULc9ZWiZeb%2FXuNo7kSQgaybkr%2BYu3m72GaD0NDUOyL%2FxmDHB1TQWs52EByKBg7Rl%2BAwkEWaWpdzUt4IcmeO9vbus2wH%2Bznb%2BtxwJgkdGE7HyKbOzaog8LHxtdDsC4K%2BcGXm5UiYy%2F8owwSO5lPTMJHWZ%2BtZMrQ%2FI5jcOLw7H9XGeZu180gF3RPYETc%2FnWOqyra1xVwh32LxK%2BwvHGgvI5%2BCqYamQRxSPase7LJduEuKoekdbKJol4NPjow44ywR4seYq9yoPmTeuNOxBEm9l48V70oNe8ZURBOX36ZJYLmqyKF1tjf9mZ3jWb%2FBQcgJdW5wUGz4BgB%2FQ0iq%2BlnjNvgWeFT3euR0JDGitj41%2BpuO1FDgC01tz6RumOu8BIdtW3EG3MvOEtqPR7wd8GyLyzBdzN6CN1vmywtokYvEv25KZAjvKIZTQiPXHrYThXpqJfUz9mraew1cLVYMzOWyRQpMky77--VGFNoV4O0uvk7rZ%2B--qY1QTBMSKlc5y8vEGjdw8A%3D%3D",
 							"otherinfo": "\ncookie:_ellesfontlaphoto_session"
 						}
 					],

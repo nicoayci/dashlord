@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ma-cantine.agriculture.gouv.fr</pre>
-<p class="lead">Sun Oct 15 07:34:43 2023 – Sun Oct 15 07:37:53 2023<br>1 hosts scanned.
+<p class="lead">Sun Oct 29 07:34:04 2023 – Sun Oct 29 07:37:14 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>46.252.181.103</td>
 <td>ma-cantine.agriculture.gouv.fr</td>
-<td>12</td>
+<td>11</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -107,15 +107,6 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="warning">
-<td>22</td>
-<td>tcp</td>
-<td>filtered<br>no-response</td>
-<td>ssh</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -133,6 +124,16 @@
     Cache-Control: no-cache
     Connection: close</pre>
 </td></tr>
+<tr class="success">
+<td title="Port">179</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
@@ -183,23 +184,14 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Kerberos: 
-    +b&lt;JQm
-    \x8aW
-    Z,Mn
-    3.&lt;{
-    ~/:^
-    uS@/R
-    34Z!
-  SMBProgNeg: 
-    fod&gt;
-    6@Yj
-    IDf,2a
-    g\x99?
-    \xb5
-    :\x16
+    Pp3-
+    sYmA&lt;
+    qvH&gt;
+    \xfb
   TLSSessionReq: 
-    :$/m
-    Bf~F</pre>
+    \x87
+    \x1d
+    MuH\xdbD0</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">5002</td>
@@ -237,22 +229,12 @@
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
-<td title="Port">5432</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
-<tr class="success">
 <td title="Port">5800</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">amqp</td>
 <td title="Product">RabbitMQ</td>
-<td title="Version">3.7.28</td>
+<td title="Version">3.12.6</td>
 <td title="Extra Info">0-9</td>
 </tr>
 <tr><td colspan="7">
@@ -268,13 +250,13 @@
     authentication_failure_close: YES
     per_consumer_qos: YES
     direct_reply_to: YES
-  cluster_name: rabbit@da4680c839fa
-  copyright: Copyright (c) 2007-2020 Pivotal Software, Inc.
-  information: Licensed under the MPL.  See https://www.rabbitmq.com/
-  platform: Erlang/OTP 22.3.4.7
+  cluster_name: rabbit@e04f7fbd5629
+  copyright: Copyright (c) 2007-2023 VMware, Inc. or its affiliates.
+  information: Licensed under the MPL 2.0. Website: https://rabbitmq.com
+  platform: Erlang/OTP 25.3.2.7
   product: RabbitMQ
-  version: 3.7.28
-  mechanisms: PLAIN AMQPLAIN
+  version: 3.12.6
+  mechanisms: AMQPLAIN PLAIN
   locales: en_US
 </pre>
 </td></tr>
@@ -308,16 +290,6 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
-<tr class="success">
-<td title="Port">9999</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 </tbody>
 </table></div>
 </div>
@@ -340,6 +312,16 @@
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>46.252.181.103 - ma-cantine.agriculture.gouv.fr</td>
+<td>179</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
 <td></td>
 <td></td>
 <td></td>
@@ -397,21 +379,11 @@
 </tr>
 <tr>
 <td>46.252.181.103 - ma-cantine.agriculture.gouv.fr</td>
-<td>5432</td>
-<td>tcp</td>
-<td>tcpwrapped</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>46.252.181.103 - ma-cantine.agriculture.gouv.fr</td>
 <td>5800</td>
 <td>tcp</td>
 <td>amqp</td>
 <td>RabbitMQ</td>
-<td>3.7.28</td>
+<td>3.12.6</td>
 <td></td>
 <td>0-9</td>
 </tr>
@@ -440,16 +412,6 @@
 <td>5962</td>
 <td>tcp</td>
 <td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>46.252.181.103 - ma-cantine.agriculture.gouv.fr</td>
-<td>9999</td>
-<td>tcp</td>
-<td>tcpwrapped</td>
 <td></td>
 <td></td>
 <td></td>

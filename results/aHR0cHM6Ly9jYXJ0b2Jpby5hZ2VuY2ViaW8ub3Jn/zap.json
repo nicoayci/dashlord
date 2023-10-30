@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 03:10:00",
+	"@generated": "Sun, 29 Oct 2023 03:15:22",
 	"site":[ 
 		{
 			"@name": "https://cartobio.agencebio.org",
@@ -241,17 +241,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://cartobio.agencebio.org/sitemap.xml",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -485,7 +477,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "30"
+					"sourceid": "29"
 				},
 				{
 					"pluginid": "10021",
@@ -585,105 +577,105 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F6Z34bNz8JaYVMmxKuLke3dEYlU2bMp2joh8cwLwSsVLlS",
-							"otherinfo": "\uFFFD^\uFFFD\u07C6\uFFFD\uFFFD\uFFFDZaS&\u012B\uFFFD\uFFFD\uFFFD\uFFFD\\x0011\uFFFDT\u0673)\uFFFD:!\uFFFD\uFFFD\\x000b\uFFFD+\\x0015.T"
+							"evidence": "2BNv24Ltd8m4yEFaJGdWpYHzaPOxHk0T4yKScNo",
+							"otherinfo": "\uFFFD\\x0013o\u06C2\uFFFDw\u0278\uFFFDAZ$gV\uFFFD\uFFFD\uFFFDh\uFFFD\\x001eM\\x0013\uFFFD\"\uFFFDp\uFFFD"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FFU7DE9CJ0a4jwIeTJnMLPHmdr6EG5EJnzIeQQXuL1y",
-							"otherinfo": "\uFFFDQT\uFFFD1=\\x0008\uFFFD\\x001a\uFFFD<\\x0008y2g0\uFFFD\u01D9\uFFFD\uFFFD\\x0010nD&|\uFFFDy\\x0004\\x0017\uFFFD\uFFFDr"
+							"evidence": "2Fbr7Dd9uYagbde2bnOlOQypHnjgKTURARjZ",
+							"otherinfo": "\uFFFDV\uFFFD\uFFFD7}\uFFFD\uFFFD\uFFFDm\u05F6ns\uFFFD9\\x000c\uFFFD\\x001ex\uFFFD)5\\x0011\\x0001\\x0018\uFFFD"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BLKsqxBDrWpREgexkzwttYEzpkaIN1vkbeOnEjelNaEOhAgA151h8wCB9",
-							"otherinfo": "\uFFFD\\x0012\u02B2\uFFFDA\\x000e\uFFFD\uFFFDDH\\x001e\uFFFDL\uFFFD\uFFFD\\x0004\u0399\\x001a \uFFFDo\uFFFD\uFFFD\uFFFD\uFFFDH\u0794\u0584:\\x0010 \\x0003^u\uFFFD\uFFFD\\x0002\\x0007"
+							"evidence": "2FU9E4bqYwrRIShs41vKC5TMkK0nvvmv419Fl3Wqhij2",
+							"otherinfo": "\uFFFDU=\\x0013\uFFFD\uFFFDc\n\uFFFD!(l\uFFFD[\uFFFD\\x000b\uFFFD\u0310\uFFFD'\uFFFD\uFFFD\uFFFD\uFFFD_E\uFFFDu\uFFFD\uFFFD(\uFFFD"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/api",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2By842GOrGTwVyZnZMvvasyVuFViYtBIR4HN9pNZQv5HkvD0sBdepihinGgafVeFb3zgjZl4xi3WXB6M968PTiOXWu0a9fZBo10xONGA",
-							"otherinfo": "\uFFFD\\x001c\uFFFD\uFFFDa\uFFFD\uFFFDd\uFFFDW&gd\uFFFD\uFFFDj\u0315\uFFFDUbb\uFFFDHG\uFFFD\uFFFD\uFFFD\uFFFDYB\uFFFDG\uFFFD\uFFFD\uFFFD\uFFFD\\x0017^\uFFFD(b\uFFFDh\\x001a}W\uFFFDo|\uFFFD\uFFFD\uFFFDx\uFFFD-\uFFFD\\\\x001e\uFFFD\uFFFD\uFFFD\\x000fN#\uFFFDZ\uFFFD\\x001a\uFFFD\uFFFDA\uFFFD]18\u0440"
+							"evidence": "2B5oewxldjCPvyCzkse114mmskYTvmB1vAFDhm1mIy75D75ilEF",
+							"otherinfo": "\uFFFD\\x001eh{\\x000cev0\uFFFD\uFFFD \uFFFD\uFFFD\u01F5\u05C9\uFFFD\uFFFDF\\x0013\uFFFD`u\uFFFD\\x0001C\uFFFDmf#.\uFFFD\\x000f\uFFFDb\uFFFDA"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/api/v2/stats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BoAEgUuLftIlbDGH2nUDMuqk5vafUx2VUsPrs",
-							"otherinfo": "\uFFFD\\x001a\\x0000\\x0012\\x0005.-\uFFFDH\uFFFD\uFFFD\uFFFD\\x001fi\uFFFD\\x000c\u02EA\uFFFD\uFFFD\uFFFD}LvUK\\x000f\uFFFD"
+							"evidence": "2FnuKnzU0Y72dGu3jSxtaR84zbAQICp56Nnkx5FfIElNXZonxaEcrDAr",
+							"otherinfo": "\uFFFDY\uFFFD*|\uFFFD\u044E\uFFFDtk\uFFFD\uFFFD,mi\\x001f8\u0370\\x0010 *y\uFFFD\uFFFD\uFFFD\u01D1_ IM]\uFFFD'\u0161\\x001c\uFFFD0+"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/assets/index-9202e61c.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FjEynOzgaxu636wYXHCVaPO9rSGdivBV9BKZMdQjSZ7ploOY1MWPWOW8G0Oipo6xq8PXp0pNsUJjvBvfWURE0Zv",
-							"otherinfo": "\uFFFDX\uFFFD\uFFFDs\uFFFD\uFFFD\uFFFDn\uFFFD~\uFFFDaq\uFFFDU\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv+\uFFFDW\uFFFDJd\uFFFDP\uFFFD&{\uFFFDZ\\x000ecS\\x0016=c\uFFFD\uFFFDm\\x000e\uFFFD\uFFFD:\u01AF\\x000f^\uFFFD)6\uFFFD\t\uFFFD\uFFFDo}e\\x0011\\x0013Fo"
-						},
-						{
-							"uri": "https://cartobio.agencebio.org/assets/index-fc0e86a2.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2B0UsXNuUAFYjgx2F9w6kuyPBCJ9ussmb1aAWSpylk",
-							"otherinfo": "\uFFFD\\x001d\\x0014\uFFFDsnP\\x0001X\uFFFD\\x000cv\\x0017\uFFFD:\uFFFD\uFFFD\\x0004\"}\uFFFD\uFFFD&oV\uFFFDY*r\uFFFD"
+							"evidence": "hweqqYnXCatJNJDA2BNyb9SASuTBarXBqjpHKYLs2CO8E0",
+							"otherinfo": "\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\t\uFFFDI4\uFFFD\uFFFD\uFFFD\\x0013ro\u0500J\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD:G)\uFFFD\uFFFD\uFFFD#\uFFFD\\x0013"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/assets/logo-agence-bio-53254a8f.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Bw7NeF5JyujjfOr8J1r36aoH5vX58fQiZnDS2eZWcITJXkGygqpi4CRqhza91hS0uIoWie6zrOZU9",
-							"otherinfo": "\uFFFD\\x001c;5\uFFFDy'+\uFFFD\uFFFD\uFFFD\uFFFDk\u07E6\uFFFD\\x001f\uFFFD\uFFFD\uFFFD\uFFFD\u0409\uFFFD\uFFFDKg\uFFFDY\uFFFD\\x0013%y\\x0006\uFFFD\n\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\uFFFDXR\uFFFD\uFFFD(Z'\uFFFD\u03B3\uFFFDS"
+							"evidence": "2BjPbpL1qLdXdjZo3oGCbCI0wQrtFaBSmwBSX7XuR5XNhqwG2ioUX4T915o5riHkelQoZL",
+							"otherinfo": "\uFFFD\\x0018\uFFFDn\uFFFD\uFFFD\uFFFD\uFFFDWv6h\u0781\uFFFDl\"4\uFFFD\n\uFFFD\\x0015\uFFFDR\uFFFD\\x0000R_\uFFFD\uFFFDG\uFFFD\u0346\uFFFD\\x0006\uFFFD*\\x0014_\uFFFD\uFFFD\u05DA9\uFFFD!\uFFFDzT(d"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jMSgEnpeMC9eGItDZMFaEow7d06oDzNOEWyoeGgeO67AJVv7lU9ITEwSPHeitqjbEWA494wqWte0bCkeZcTgyNerCH",
-							"otherinfo": "\uFFFD\u0120\\x0012z^0/^\\x0018\uFFFDCd\uFFFDZ\\x0012\uFFFD;wN\uFFFD\\x000f3N\\x0011l\uFFFDxh\\x001e;\uFFFD\uFFFD%[\uFFFD\uFFFDOHLL\\x0012<w\uFFFD\uFFFD\uFFFD\uFFFD\\x0011`8\uFFFD\uFFFD*Z\u05F4l)\\x001ee\uFFFD\uFFFD\uFFFD\u05EB\\x0008"
+							"evidence": "2FBYZyZgp64wxUdEqm0xNRHZnXqGPTeauP98lX7DQKDOJ0LamvyWoirBEssldGXJrejVuA3Iw25r4zKrUwQmjucNC3em027tAwu12acQMME",
+							"otherinfo": "\uFFFDPXg&`\uFFFD\uFFFD0\uFFFDGD\uFFFDm15\\x0011\u065Dz\uFFFD=7\uFFFD\uFFFD\uFFFD|\uFFFD~\uFFFD@\uFFFD\uFFFD'B\u069A\uFFFD\uFFFD\uFFFD*\uFFFD\\x0012\uFFFD%te\u026D\uFFFD\u0578\r\uFFFD\uFFFDnk\uFFFD2\uFFFDS\\x0004&\uFFFD\uFFFD\r\\x000bw\uFFFD\uFFFDn\uFFFD\\x0003\\x000b\uFFFD\u0667\\x00100\uFFFD"
+						},
+						{
+							"uri": "https://cartobio.agencebio.org/s/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "TiyLoYmozONxvgFlrKYu8HERo17e5ZthymxngbZ3z6o2GqPqseLy5iGfWg4NzfKSEhF",
+							"otherinfo": "N,\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDq\uFFFD\\x0001e\uFFFD\uFFFD.\uFFFDq\\x0011\uFFFD^\uFFFD\uFFFDa\uFFFDlg\uFFFD\uFFFDw\u03EA6\\x001a\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD!\uFFFDZ\\x000e\r\uFFFD\uFFFD\\x0012\\x0011"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/s/index.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F1UQUqprNNVMdj1qoO7mbTGizR55AnuaQtlIy2xY8me",
-							"otherinfo": "\uFFFD]TAJ\uFFFD\uFFFD\uFFFDU1\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u018B4y\uFFFD\t\uFFFDi\\x000be#-\uFFFDc\u025E"
+							"evidence": "2BJPUKKweCfqo8863fWbYJETX0m94u",
+							"otherinfo": "\uFFFD\\x0012OP\uFFFD\uFFFDx'\uFFFD\uFFFD:\uFFFD\uFFFD\uFFFD`\uFFFD\\x0013_I\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/s/index.php",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "iPfJImM8i0PGlj5tfpvhUIzIymQQyr7i70Rm",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\"c<\uFFFDC\u0196>m~\uFFFD\uFFFDP\uFFFD\uFFFD\uFFFDd\\x0010\u02BE\uFFFD\uFFFDDf"
+							"evidence": "2FY3i8QCNsP4t2aPOMQ3DiM9pVtjXa4nciZJ0zPJ7PWh8536SgncnrPcLfUtsFIQhDsUWLzpcOvtQkf0UzE51k59nqNI4nkRYtt51LB",
+							"otherinfo": "\uFFFDV7\uFFFD\uFFFD\\x00026\uFFFD\uFFFD\uFFFDf\uFFFD8\uFFFD7\\x000e#=\uFFFD[c]\uFFFD'r&I\uFFFD3\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDJ\t\u071E\uFFFD\uFFFD-\uFFFD-\uFFFDR\\x0010\uFFFD;\\x0014X\uFFFD\uFFFDp\uFFFD\uFFFDBG\uFFFDS19\uFFFDN}\uFFFD\uFFFDH\uFFFDy\\x0011b\uFFFDy\u0530"
 						},
 						{
 							"uri": "https://cartobio.agencebio.org/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "7WfpeXjk64Q1y5VqauQnKzkTsLnsrtZB",
-							"otherinfo": "\uFFFDg\uFFFDyx\uFFFD\uFFFD5\u02D5jj\uFFFD'+9\\x0013\uFFFD\uFFFD\uFFFD\uFFFDA"
+							"evidence": "o0DQQZQC4LiJzXhD7wU4XJoTmljl2eraOeAw49MtvgJQZ3VSBoBZ6mSA0oeYgJTvIMRSLuFFbRwWC0AgAElGfu8ql0ZM2bvzHh",
+							"otherinfo": "\uFFFD@\uFFFDA\uFFFD\\x0002\u0E09\uFFFDxC\uFFFD\\x00058\\\uFFFD\\x0013\uFFFDX\uFFFD\uFFFD\uFFFD\uFFFD9\uFFFD0\uFFFD\uFFFD-\uFFFD\\x0002PguR\\x0006\uFFFDY\uFFFDd\uFFFD\u0487\uFFFD\uFFFD\uFFFD\uFFFD \uFFFDR.\uFFFDEm\\x001c\\x0016\\x000b@ \\x0000IF~\uFFFD*\uFFFDFL\u067B\uFFFD\\x001e"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD^\uFFFD\u07C6\uFFFD\uFFFD\uFFFDZaS&\u012B\uFFFD\uFFFD\uFFFD\uFFFD\\x0011\uFFFDT\u0673)\uFFFD:!\uFFFD\uFFFD\\x000b\uFFFD+\\x0015.T</p>",
+					"otherinfo": "<p>\uFFFD\\x0013o\u06C2\uFFFDw\u0278\uFFFDAZ$gV\uFFFD\uFFFD\uFFFDh\uFFFD\\x001eM\\x0013\uFFFD\"\uFFFDp\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10027",
@@ -887,6 +879,33 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10050",
+					"alertRef": "10050",
+					"alert": "Retrieved from Cache",
+					"name": "Retrieved from Cache",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
+					"instances":[ 
+						{
+							"uri": "https://cartobio.agencebio.org/s/index.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 70",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						}
+					],
+					"count": "1",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "29"
+				},
+				{
 					"pluginid": "90005",
 					"alertRef": "90005-3",
 					"alert": "Sec-Fetch-Dest Header is Missing",
@@ -905,7 +924,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://cartobio.agencebio.org/robots.txt",
+							"uri": "https://cartobio.agencebio.org/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -940,7 +959,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://cartobio.agencebio.org/robots.txt",
+							"uri": "https://cartobio.agencebio.org/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -975,7 +994,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://cartobio.agencebio.org/robots.txt",
+							"uri": "https://cartobio.agencebio.org/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1010,7 +1029,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://cartobio.agencebio.org/robots.txt",
+							"uri": "https://cartobio.agencebio.org/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1045,6 +1064,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://cartobio.agencebio.org/assets/index-fc0e86a2.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=31536000",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://cartobio.agencebio.org/assets/logo-agence-bio-53254a8f.png",
 							"method": "GET",
 							"param": "",
@@ -1067,14 +1094,6 @@
 							"attack": "",
 							"evidence": "max-age=31536000",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://cartobio.agencebio.org/s/index.php",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
 					"count": "5",

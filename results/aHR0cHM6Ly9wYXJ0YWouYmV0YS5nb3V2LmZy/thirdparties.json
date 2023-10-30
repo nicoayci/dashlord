@@ -6,15 +6,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://client.crisp.chat/static/javascripts/client.js?96815b1"
+      "url": "https://client.crisp.chat/static/javascripts/client.js?8d32644"
     },
     {
       "type": "unknown",
-      "url": "https://client.crisp.chat/static/stylesheets/client_default.css?96815b1"
+      "url": "https://client.crisp.chat/static/stylesheets/client_default.css?8d32644"
     },
     {
       "type": "unknown",
-      "url": "https://client.crisp.chat/settings/website/1ece6c2f-2fa1-4425-a3bb-c6be0432354a/prelude/?callback=window.%24__CRISP_INSTANCE.__spool.website_handler&2023-9-15-9-12"
+      "url": "https://client.crisp.chat/settings/website/1ece6c2f-2fa1-4425-a3bb-c6be0432354a/prelude/?callback=window.%24__CRISP_INSTANCE.__spool.website_handler&2023-9-29-9-18"
     },
     {
       "type": "unknown",
@@ -22,16 +22,16 @@
     },
     {
       "type": "unknown",
-      "url": "https://client.crisp.chat/static/javascripts/locales/fr.js?96815b1"
+      "url": "https://client.crisp.chat/static/javascripts/locales/fr.js?8d32644"
     }
   ],
   "cookies": [
     {
       "name": "csrftoken",
-      "value": "LKjok6a2cTLhhWO1dscza0yxt9kwxtORRDugqB3zgVCkpG4SYbAQ8J2WImF5vb3V",
+      "value": "zFpDeWQaeNGmzYCMY29t6HRt1uzSLXuq073VueCHAPEJUWfTrKwoYaTyenv72XQr",
       "domain": "partaj.beta.gouv.fr",
       "path": "/",
-      "expires": 1728810768.176245,
+      "expires": 1730020707.535315,
       "size": 73,
       "httpOnly": false,
       "secure": true,
@@ -45,13 +45,13 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 09:12:48 GMT",
-    "set-cookie": "csrftoken=LKjok6a2cTLhhWO1dscza0yxt9kwxtORRDugqB3zgVCkpG4SYbAQ8J2WImF5vb3V; expires=Sun, 13 Oct 2024 09:12:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
+    "date": "Sun, 29 Oct 2023 09:18:27 GMT",
+    "set-cookie": "csrftoken=zFpDeWQaeNGmzYCMY29t6HRt1uzSLXuq073VueCHAPEJUWfTrKwoYaTyenv72XQr; expires=Sun, 27 Oct 2024 09:18:27 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
     "strict-transport-security": "max-age=31536000",
     "vary": "Cookie",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-request-id": "c479d02d-ce5a-424d-83c8-147932beb209",
+    "x-request-id": "062f32ab-8205-4980-8fcf-48687e4e9498",
     "x-xss-protection": "1; mode=block"
   },
   "endpoints": [

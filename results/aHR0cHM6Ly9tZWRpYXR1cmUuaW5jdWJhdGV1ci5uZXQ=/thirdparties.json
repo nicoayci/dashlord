@@ -9,8 +9,8 @@
     "cross-origin-embedder-policy": "require-corp",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "same-origin",
-    "date": "Sun, 15 Oct 2023 07:37:38 GMT",
-    "etag": "\"48hrsayjftdin\"",
+    "date": "Sun, 29 Oct 2023 07:48:26 GMT",
+    "etag": "\"9sz74lae8qdin\"",
     "origin-agent-cluster": "?1",
     "referrer-policy": "no-referrer",
     "strict-transport-security": "max-age=31536000\nmax-age=15552000; includeSubDomains",
@@ -21,7 +21,7 @@
     "x-frame-options": "SAMEORIGIN",
     "x-nextjs-cache": "HIT",
     "x-permitted-cross-domain-policies": "none",
-    "x-request-id": "7568c934-e7ae-46c3-b0e1-6b8964f71d8f",
+    "x-request-id": "239bac9f-1df7-411e-89c9-14c80e8fcbe7",
     "x-xss-protection": "0"
   },
   "endpoints": [

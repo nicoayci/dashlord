@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 15 Oct 2023 02:03:59
+		Generated on Sun, 29 Oct 2023 02:00:28
 	</h3>
 
 	<h3>
@@ -164,7 +164,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>4</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -230,7 +230,12 @@ td {
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">12</td>
+				<td align="center">11</td>
+			</tr>
+			<tr>
+				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -270,27 +275,27 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Mode Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">7</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -300,7 +305,7 @@ td {
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">16</td>
+				<td align="center">12</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -534,7 +539,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/">https://aides-territoires.beta.gouv.fr/aides/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/">https://aides-territoires.beta.gouv.fr/projets/projets-publics/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -554,12 +559,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;search-form&quot; method=&quot;get&quot;  action=&quot;/aides/&quot;  autocomplete=&#39;off&#39;&gt;</td>
+						<td width="80%">&lt;form id=&quot;project-search-form&quot; method=&quot;get&quot; action=&quot;/projets/projets-publics/&quot; autocomplete=&#39;off&#39;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;id_apply_before&quot; &quot;id_call_for_projects_only&quot; &quot;id_integration&quot; ].</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;&quot; ].</td>
 					</tr>
 				
 					<tr>
@@ -746,7 +751,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-3bkFdLSVqsQwVDcnxgQzPg==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-cKy8E9kyWoiRENnauYCkgg==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -780,7 +785,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-tjYkKyNJ3T0/KWTy0J2Q0g==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-p5aY3wA8E/qhfNqQEKM9GA==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -814,7 +819,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-4bSvyrUbTSGG2aiJeXDWdw==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-YLDI4GVY2Vk7aOn0xwooQw==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -848,7 +853,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -882,7 +887,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-bCyxzP3qrcLWzV/WZN+7kA==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-lTz6H7mvfEkIWMEFyDLMSw==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -916,7 +921,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-zYf0+0AP4rxQyRpYH2Zfdw==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-roj+FvzSsvXJnLq8nVD0Zg==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1018,7 +1023,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-3bkFdLSVqsQwVDcnxgQzPg==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-cKy8E9kyWoiRENnauYCkgg==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1049,7 +1054,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-tjYkKyNJ3T0/KWTy0J2Q0g==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-p5aY3wA8E/qhfNqQEKM9GA==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1080,7 +1085,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-4bSvyrUbTSGG2aiJeXDWdw==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-YLDI4GVY2Vk7aOn0xwooQw==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1111,7 +1116,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1142,7 +1147,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-bCyxzP3qrcLWzV/WZN+7kA==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-lTz6H7mvfEkIWMEFyDLMSw==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1173,7 +1178,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">font-src &#39;self&#39;; frame-ancestors *; form-action &#39;self&#39;; default-src https://*.scw.cloud; base-uri &#39;self&#39;; object-src &#39;none&#39;; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-zYf0+0AP4rxQyRpYH2Zfdw==&#39;; worker-src blob:; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr</td>
+						<td width="80%">frame-ancestors *; script-src &#39;self&#39; https://stats.data.gouv.fr https://aides-territoires-metabase.osc-fr1.scalingo.io https://sibautomation.com &#39;nonce-roj+FvzSsvXJnLq8nVD0Zg==&#39;; worker-src blob:; default-src https://*.scw.cloud; frame-src &#39;self&#39; https://stats.data.gouv.fr https://www.youtube.com https://www.dailymotion.com https://aides-territoires-metabase.osc-fr1.scalingo.io; font-src &#39;self&#39;; form-action &#39;self&#39;; base-uri &#39;self&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr https://in-automate.brevo.com/; img-src &#39;self&#39; data: https://stats.data.gouv.fr https://*.scw.cloud https://*.forte.tiles.quaidorsay.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://stats.beta.gouv.fr; object-src &#39;none&#39;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1500,7 +1505,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/programmes/">https://aides-territoires.beta.gouv.fr/programmes/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/portails/europe/">https://aides-territoires.beta.gouv.fr/portails/europe/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1531,7 +1536,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/">https://aides-territoires.beta.gouv.fr/projets/projets-publics/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/programmes/">https://aides-territoires.beta.gouv.fr/programmes/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2338,37 +2343,6 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/plateforme-aides-territoires/">https://aides-territoires.beta.gouv.fr/plateforme-aides-territoires/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/portails/">https://aides-territoires.beta.gouv.fr/portails/</a></td>
 					</tr>
 					<tr>
@@ -2492,7 +2466,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">11</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2540,6 +2514,90 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
+						id="10096"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Timestamp Disclosure - Unix</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>A timestamp was disclosed by the application/web server - Unix</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/blog/collectivites-doutre-mer-financez-vos-projets-en-f/">https://aides-territoires.beta.gouv.fr/blog/collectivites-doutre-mer-financez-vos-projets-en-f/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1695113390</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1695113390, which evaluates to: 2023-09-19 08:49:50</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10096/">10096</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
 						id="10021"></a>
 						<div>Low</div></th>
 					<th class="risk-1">X-Content-Type-Options Header Missing</th>
@@ -2558,7 +2616,7 @@ The directive(s): frame-ancestors are among the directives that do not fallback 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/CACHE/css/output.05a79404bcb1.css">https://aides-territoires.beta.gouv.fr/static/CACHE/css/output.05a79404bcb1.css</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/CACHE/css/output.029d5515619b.css">https://aides-territoires.beta.gouv.fr/static/CACHE/css/output.029d5515619b.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2655,38 +2713,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/dsfr/dist/dsfr/dsfr.module.min.298f9f76f010.js">https://aides-territoires.beta.gouv.fr/static/dsfr/dist/dsfr/dsfr.module.min.298f9f76f010.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/dsfr/dist/dsfr/dsfr.nomodule.min.2d55fdc1fd31.js">https://aides-territoires.beta.gouv.fr/static/dsfr/dist/dsfr/dsfr.nomodule.min.2d55fdc1fd31.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2815,6 +2841,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/favicons/favicon.93b88edf055e.svg">https://aides-territoires.beta.gouv.fr/static/favicons/favicon.93b88edf055e.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-content-type-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/static/img/logo-anct.f7cfe1786dbe.svg">https://aides-territoires.beta.gouv.fr/static/img/logo-anct.f7cfe1786dbe.svg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3205,12 +3263,14 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">��d��{�	U�0���EooN�ގ�K</td>
+						<td width="80%">
+._+�7�a�
+��b��B�fЏ</td>
 					</tr>
 				
 					<tr>
@@ -3298,12 +3358,14 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">��d��{�	U�0���EooN�ގ�K</td>
+						<td width="80%">
+._+�7�a�
+��b��B�fЏ</td>
 					</tr>
 				
 					<tr>
@@ -3329,12 +3391,12 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">4CilBW2Jh8EjzniInM7zDxp71bJHp1dJ</td>
+						<td width="80%">rHQf3ZTAScFAMdQy1d8ZIQhOkIbynnIz</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">�(�m���#�x����{ղG�WI</td>
+						<td width="80%">�tݔ�I�@1�2��!N���r3</td>
 					</tr>
 				
 					<tr>
@@ -3371,7 +3433,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/programmes/">https://aides-territoires.beta.gouv.fr/programmes/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/portails/europe/">https://aides-territoires.beta.gouv.fr/portails/europe/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3402,7 +3464,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/">https://aides-territoires.beta.gouv.fr/projets/projets-publics/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/programmes/">https://aides-territoires.beta.gouv.fr/programmes/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3517,7 +3579,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/45ef-beneficier-du-soutien-et-de-laccompagnement-e/">https://aides-territoires.beta.gouv.fr/aides/45ef-beneficier-du-soutien-et-de-laccompagnement-e/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/2292-financer-des-projets-culturels-de-territoire/">https://aides-territoires.beta.gouv.fr/aides/2292-financer-des-projets-culturels-de-territoire/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3542,7 +3604,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;3MCUpxpZ78gu+G3DdU+9Zg==&quot;&gt;
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;kjxFSyDtShBLYQ7dCl6HYA==&quot;&gt;
         if (&#39;False&#39; !== &quot;False&quot;) {
             var PREPOPULATE_APPLICATION_URL = true;&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
@@ -3550,7 +3612,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/8f38-accompagner-la-definition-de-projets-dinvesti/">https://aides-territoires.beta.gouv.fr/aides/8f38-accompagner-la-definition-de-projets-dinvesti/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/837d-financer-des-projets-culturels-de-territoire/">https://aides-territoires.beta.gouv.fr/aides/837d-financer-des-projets-culturels-de-territoire/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3575,7 +3637,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;htKC5EnAfuVDXp8O7ywg5A==&quot;&gt;
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;gIwv9BwetEoCZn6FVvEj1g==&quot;&gt;
         if (&#39;False&#39; !== &quot;False&quot;) {
             var PREPOPULATE_APPLICATION_URL = true;&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
@@ -3583,7 +3645,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/a614-developper-des-actions-deducation-artistique-/">https://aides-territoires.beta.gouv.fr/aides/a614-developper-des-actions-deducation-artistique-/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/c064-financer-des-projets-culturels-de-territoire/">https://aides-territoires.beta.gouv.fr/aides/c064-financer-des-projets-culturels-de-territoire/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3608,7 +3670,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;r65H8BVld8/PFx0uTusquA==&quot;&gt;
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script nonce=&quot;Cl8cOfa5EJXfyOyD6QNrww==&quot;&gt;
         if (&#39;False&#39; !== &quot;False&quot;) {
             var PREPOPULATE_APPLICATION_URL = true;&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
@@ -5013,6 +5075,37 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/">https://aides-territoires.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/robots.txt">https://aides-territoires.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5043,7 +5136,7 @@ csrfToken=csrfmiddlewaretoken</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5128,6 +5221,37 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/">https://aides-territoires.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/robots.txt">https://aides-territoires.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5158,7 +5282,7 @@ csrfToken=csrfmiddlewaretoken</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5243,6 +5367,37 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/">https://aides-territoires.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/robots.txt">https://aides-territoires.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5273,7 +5428,7 @@ csrfToken=csrfmiddlewaretoken</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5358,6 +5513,37 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/">https://aides-territoires.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/robots.txt">https://aides-territoires.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5388,7 +5574,7 @@ csrfToken=csrfmiddlewaretoken</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5462,7 +5648,7 @@ csrfToken=csrfmiddlewaretoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5495,7 +5681,7 @@ cookie:sessionid</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5527,13 +5713,45 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">4CilBW2Jh8EjzniInM7zDxp71bJHp1dJ</td>
+						<td width="80%">rHQf3ZTAScFAMdQy1d8ZIQhOkIbynnIz</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
 cookie:csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/portails/europe/">https://aides-territoires.beta.gouv.fr/portails/europe/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">sessionid</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">vc34whjw2n0ybutbnp54mqrk3x0ad40r</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:sessionid</td>
 					</tr>
 				
 					<tr>
@@ -5559,7 +5777,7 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">lgw1jxu4he26sxt5b836pwofpdsp99m8</td>
+						<td width="80%">gst76g2bcsg2r0rd0l0wlxj4mn4gm5l2</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5571,7 +5789,7 @@ cookie:sessionid</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/8f38-accompagner-la-definition-de-projets-dinvesti/">https://aides-territoires.beta.gouv.fr/aides/8f38-accompagner-la-definition-de-projets-dinvesti/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/2292-financer-des-projets-culturels-de-territoire/">https://aides-territoires.beta.gouv.fr/aides/2292-financer-des-projets-culturels-de-territoire/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5591,7 +5809,7 @@ cookie:sessionid</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5603,7 +5821,7 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/contact/">https://aides-territoires.beta.gouv.fr/contact/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/comptes/connexion/?next=/projets/projets-publics/">https://aides-territoires.beta.gouv.fr/comptes/connexion/?next=/projets/projets-publics/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5623,7 +5841,7 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">79Zkyd57ggkVVcMwp7ysRW9vTpzejt9L</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5635,7 +5853,39 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/programmes/petites-villes-de-demain/">https://aides-territoires.beta.gouv.fr/programmes/petites-villes-de-demain/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/comptes/demande-nouveau-mot-de-passe/">https://aides-territoires.beta.gouv.fr/comptes/demande-nouveau-mot-de-passe/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered">https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5655,7 +5905,7 @@ cookie:csrftoken</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">lgw1jxu4he26sxt5b836pwofpdsp99m8</td>
+						<td width="80%">vc34whjw2n0ybutbnp54mqrk3x0ad40r</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5664,9 +5914,41 @@ cookie:csrftoken</td>
 cookie:sessionid</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/comptes/connexion/">https://aides-territoires.beta.gouv.fr/comptes/connexion/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Ci4eXysNqzfEYeYKtc9isgcZw0K3ZtCP</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:csrftoken</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5781,7 +6063,7 @@ cookie:sessionid</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/">https://aides-territoires.beta.gouv.fr/aides/</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/cartographie/">https://aides-territoires.beta.gouv.fr/cartographie/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6069,7 +6351,7 @@ cookie:sessionid</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6096,7 +6378,7 @@ cookie:sessionid</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6112,7 +6394,7 @@ search-filter</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6139,7 +6421,7 @@ search-filter</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6155,7 +6437,7 @@ loan</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6182,23 +6464,23 @@ loan</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-apply_before=2023-10-15
+apply_before=2023-10-29
 
 The user-controlled value was:
-2023-10-15</td>
+2023-10-29</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6225,7 +6507,7 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6241,7 +6523,7 @@ livres</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6268,7 +6550,7 @@ livres</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6284,7 +6566,7 @@ investment</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6311,7 +6593,7 @@ investment</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6327,7 +6609,7 @@ european</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6354,7 +6636,7 @@ european</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6370,7 +6652,7 @@ european_aid</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6397,7 +6679,7 @@ european_aid</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6413,7 +6695,7 @@ true</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6440,7 +6722,7 @@ true</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6456,7 +6738,7 @@ true</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6483,7 +6765,7 @@ true</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6499,7 +6781,7 @@ op</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6526,7 +6808,7 @@ op</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6542,7 +6824,7 @@ actee-action-des-collectivites-territoriales-pour</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
+						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text">https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6569,7 +6851,7 @@ actee-action-des-collectivites-territoriales-pour</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-15&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
+https://aides-territoires.beta.gouv.fr/aides/?action=search-filter&amp;aid_type=loan&amp;apply_before=2023-10-29&amp;call_for_projects_only=on&amp;categories=livres&amp;destinations=investment&amp;european_aid=european&amp;integration&amp;is_charged=True&amp;mobilization_step=op&amp;perimeter&amp;programs=actee-action-des-collectivites-territoriales-pour&amp;targeted_audiences=commune&amp;text
 
 appears to include user input in: 
 
@@ -6582,181 +6864,9 @@ The user-controlled value was:
 commune</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered">https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">action</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
-
-https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered
-
-appears to include user input in: 
-
-a(n) [button] tag [value] attribute 
-
-The user input found was:
-action=search-filter
-
-The user-controlled value was:
-search-filter</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered">https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">contract_link</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
-
-https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered
-
-appears to include user input in: 
-
-a(n) [option] tag [value] attribute 
-
-The user input found was:
-contract_link=ACV1
-
-The user-controlled value was:
-acv1</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered">https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">organization</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
-
-https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered
-
-appears to include user input in: 
-
-a(n) [option] tag [value] attribute 
-
-The user input found was:
-organization=commune
-
-The user-controlled value was:
-commune</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered">https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">step</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
-
-https://aides-territoires.beta.gouv.fr/projets/projets-publics/?action=search-filter&amp;contract_link=ACV1&amp;organization=commune&amp;project_perimeter&amp;step=considered
-
-appears to include user input in: 
-
-a(n) [option] tag [value] attribute 
-
-The user input found was:
-step=considered
-
-The user-controlled value was:
-considered</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">16</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>

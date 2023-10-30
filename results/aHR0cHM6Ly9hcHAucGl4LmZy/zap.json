@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 02:12:18",
+	"@generated": "Sun, 29 Oct 2023 02:22:44",
 	"site":[ 
 		{
 			"@name": "https://app.pix.fr",
@@ -153,41 +153,33 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "q8QlAktHqTNBC-r0rLFwP1PI9nvMajmLE7GJq533VyEWvxebZ1na1UxcxDIcJutEsc37UcoT2zVRXqlMloMTQibFVhZiz1OBEaiSzQqv7P9wH1P16AfT9aAoJValgrlWpAkbcf2bH9x-F6nCVE0kCXR4r2eztntEV2ho3HaCUZakqIE9LHqtK7zV3kKNMh8seJiBE2uM4hjrAOP_OlepfZuotD0kBVfjr38fPYT90kxm7nCr3tK1BOjjU_AMFhpT",
-							"otherinfo": "\uFFFD\uFFFD%\\x0002KG\uFFFD3A\\x000b\uFFFD\uFFFD\uFFFD\uFFFDp?S\uFFFD\uFFFD{\uFFFDj9\uFFFD\\x0013\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW!\\x0016\uFFFD\\x0017\uFFFDgY\uFFFD\uFFFDL\\\uFFFD2\\x001c&\uFFFDD\uFFFD\uFFFD\uFFFDQ\uFFFD\\x0013\uFFFD5Q^\uFFFDL\uFFFD\uFFFD\\x0013B&\uFFFDV\\x0016b\uFFFDS\uFFFD\\x0011\uFFFD\uFFFD\uFFFD\n\uFFFD\uFFFD\uFFFDp\\x001fS\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD(%V\uFFFD\uFFFD\uFFFDV\uFFFD\t\\x001bq\uFFFD\uFFFD\\x001f\uFFFD~\\x0017\uFFFD\uFFFDTM$\ttx\uFFFDg\uFFFD\uFFFD{DWhh\uFFFDv\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD=,z\uFFFD+\uFFFD\uFFFD\uFFFDB\uFFFD2\\x001f,x\uFFFD\uFFFD\\x0013k\uFFFD\uFFFD\\x0018\uFFFD\\x0000\uFFFD\uFFFD:W\uFFFD}\uFFFD\uFFFD\uFFFD=$\\x0005W\uFFFD\\x001f=\uFFFD\uFFFD\uFFFDLf\uFFFDp\uFFFD\uFFFD\u04B5\\x0004\uFFFD\uFFFDS\uFFFD\\x000c\\x0016\\x001aS"
-						},
-						{
-							"uri": "https://app.pix.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "ja7tTEq0xG4-K8Yn9n2aMdQHGu6_7nPSjqk5zNbE4aou50nJBj6YmZ1uYuOqnL9CfoNOojoMOKPLmPE3FTV3PEs5FhHXMF1APi3tYZdrrHa5029KHxC7t3Idn01CtGDncAe7D051vqCOrAmp2j_nhPsOnv5FA9MKd8hM-rGIhtN_Qvn2Hpl9AF-LUSsUFVnZhNj4BpxpMo_i-Vv9VvAm-f18NmwWtakoV3I3KDVn9Kz5BBIQNUdNz3cV2dsQOMCu",
-							"otherinfo": "\uFFFD\uFFFD\uFFFDLJ\uFFFD\uFFFDn>+\uFFFD'\uFFFD}\uFFFD1\uFFFD\\x0007\\x001a\uFFFD\uFFFDs\u048E\uFFFD9\uFFFD\uFFFD\uFFFD\uFFFD.\uFFFDI\uFFFD\\x0006>\uFFFD\uFFFD\uFFFDnb\u3A9C\uFFFDB~\uFFFDN\uFFFD:\\x000c8\uFFFD\u02D8\uFFFD7\\x00155w<K9\\x0016\\x0011\uFFFD0]@>-\uFFFDa\uFFFDk\uFFFDv\uFFFD\uFFFDoJ\\x001f\\x0010\uFFFD\uFFFDr\\x001d\uFFFDMB\uFFFD`\uFFFDp\\x0007\uFFFD\\x000fNu\uFFFD\uFFFD\uFFFD\uFFFD\t\uFFFD\uFFFD?\uFFFD\uFFFD\\x000e\uFFFD\uFFFDE\\x0003\uFFFD\nw\uFFFDL\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\uFFFD\uFFFD\\x001e\uFFFD}\\x0000_\uFFFDQ+\\x0014\\x0015Y\u0644\uFFFD\uFFFD\\x0006\uFFFDi2\uFFFD\uFFFD\uFFFD[\uFFFDV\uFFFD&\uFFFD\uFFFD|6l\\x0016\uFFFD\uFFFD(Wr7(5g\uFFFD\uFFFD\uFFFD\\x0004\\x0012\\x00105GM\uFFFDw\\x0015\uFFFD\uFFFD\\x00108\uFFFD\uFFFD"
+							"evidence": "iW2OuOXwW9tpPRFYU15QZXd4O9tQsdpnAGd1_J1UbXyZFkXHpJoK0ceb3HELWakFWFw3dGaTy312R7Ov2oO820gDeC5f7ujEAncEuj9qKqNS3JIOaEt1sc5_72YA2Mj9FtfMm4ovuffmG6gEXzM065tcPoDLNiqGUG80E1sXTRhTD-Ja-VnBRaFus2VkP7sUl5cJf3oEa2YwcG4WXrYFF7DnrJrTBDEQgyKvg12HeB1QDbKoGbvWyYktbC-a7zG6eueLKcKBU08A9Tc1h7fTQw",
+							"otherinfo": "\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD[\uFFFDi=\\x0011XS^Pewx;\uFFFDP\uFFFD\uFFFDg\\x0000gu\uFFFD\uFFFDTm|\uFFFD\\x0016E\u01E4\uFFFD\n\uFFFD\u01DB\uFFFDq\\x000bY\uFFFD\\x0005X\\7tf\uFFFD\uFFFD}vG\uFFFD\uFFFD\u0683\uFFFD\uFFFDH\\x0003x._\uFFFD\uFFFD\uFFFD\\x0002w\\x0004\uFFFD?j*\uFFFDR\u0712\\x000ehKu\uFFFD\uFFFD\uFFFDf\\x0000\uFFFD\uFFFD\uFFFD\\x0016\uFFFD\u031B\uFFFD/\uFFFD\uFFFD\uFFFD\\x001b\uFFFD\\x0004_34\uFFFD\\>\uFFFD\uFFFD6*\uFFFDPo4\\x0013[\\x0017M\\x0018S\\x000f\uFFFDZ\uFFFDY\uFFFDE\uFFFDn\uFFFDed?\uFFFD\\x0014\uFFFD\uFFFD\tz\\x0004kf0pn\\x0016^\uFFFD\\x0005\\x0017\uFFFD\u7B1A\uFFFD\\x00041\\x0010\uFFFD\"\uFFFD\uFFFD]\uFFFDx\\x001dP\r\uFFFD\uFFFD\\x0019\uFFFD\uFFFD\u0249-l/\uFFFD\uFFFD1\uFFFDz\uFFFD)\u0081SO\\x0000\uFFFD75\uFFFD\uFFFD\uFFFDC"
 						},
 						{
 							"uri": "https://app.pix.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "q8QlAktHqTNBC-r0rLFwP1PI9nvMajmLE7GJq533VyEWvxebZ1na1UxcxDIcJutEsc37UcoT2zVRXqlMloMTQibFVhZiz1OBEaiSzQqv7P9wH1P16AfT9aAoJValgrlWpAkbcf2bH9x-F6nCVE0kCXR4r2eztntEV2ho3HaCUZakqIE9LHqtK7zV3kKNMh8suEjL2fIbePQz6i92iESIPWw3PJg2xvMJ0FyO1s127d-_ddhKUyPRiSdXLoym8h51",
-							"otherinfo": "\uFFFD\uFFFD%\\x0002KG\uFFFD3A\\x000b\uFFFD\uFFFD\uFFFD\uFFFDp?S\uFFFD\uFFFD{\uFFFDj9\uFFFD\\x0013\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW!\\x0016\uFFFD\\x0017\uFFFDgY\uFFFD\uFFFDL\\\uFFFD2\\x001c&\uFFFDD\uFFFD\uFFFD\uFFFDQ\uFFFD\\x0013\uFFFD5Q^\uFFFDL\uFFFD\uFFFD\\x0013B&\uFFFDV\\x0016b\uFFFDS\uFFFD\\x0011\uFFFD\uFFFD\uFFFD\n\uFFFD\uFFFD\uFFFDp\\x001fS\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD(%V\uFFFD\uFFFD\uFFFDV\uFFFD\t\\x001bq\uFFFD\uFFFD\\x001f\uFFFD~\\x0017\uFFFD\uFFFDTM$\ttx\uFFFDg\uFFFD\uFFFD{DWhh\uFFFDv\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD=,z\uFFFD+\uFFFD\uFFFD\uFFFDB\uFFFD2\\x001f,\uFFFDH\uFFFD\uFFFD\uFFFD\\x001bx\uFFFD3\uFFFD/v\uFFFDD\uFFFD=l7<\uFFFD6\uFFFD\uFFFD\t\uFFFD\\\uFFFD\uFFFD\uFFFDv\uFFFD\u07FFu\uFFFDJS#\u0449'W.\uFFFD\uFFFD\uFFFD\\x001eu"
+							"evidence": "q8QlAktHqTNBC-r0rLFwP1PI9nvMajmLE7GJq533VyEWvxebZ1na1UxcxDIcJutEsc37UcoT2zVRXqlMloMTQibFVhZiz1OBEaiSzQqv7P9wH1P16AfT9aAoJValgrlWpAkbcf2bH9x-F6nCVE0kCXR4r2eztntEV2ho3HaCUZYRpAggyYc69PSWM3dhm-QQMw7M4fGwM06Zps058axkVhxRDgDNhwzQDLu9dEP2rLaJayRbKiBGlweW6h7_sQR_-clxYYx3B2SJHzRt1FItWA",
+							"otherinfo": "\uFFFD\uFFFD%\\x0002KG\uFFFD3A\\x000b\uFFFD\uFFFD\uFFFD\uFFFDp?S\uFFFD\uFFFD{\uFFFDj9\uFFFD\\x0013\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW!\\x0016\uFFFD\\x0017\uFFFDgY\uFFFD\uFFFDL\\\uFFFD2\\x001c&\uFFFDD\uFFFD\uFFFD\uFFFDQ\uFFFD\\x0013\uFFFD5Q^\uFFFDL\uFFFD\uFFFD\\x0013B&\uFFFDV\\x0016b\uFFFDS\uFFFD\\x0011\uFFFD\uFFFD\uFFFD\n\uFFFD\uFFFD\uFFFDp\\x001fS\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD(%V\uFFFD\uFFFD\uFFFDV\uFFFD\t\\x001bq\uFFFD\uFFFD\\x001f\uFFFD~\\x0017\uFFFD\uFFFDTM$\ttx\uFFFDg\uFFFD\uFFFD{DWhh\uFFFDv\uFFFDQ\uFFFD\\x0011\uFFFD\\x0008 \u0247:\uFFFD\uFFFD\uFFFD3wa\uFFFD\uFFFD\\x00103\\x000e\uFFFD\uFFFD\uFFFD3N\uFFFD\uFFFD\uFFFD9\uFFFDdV\\x001cQ\\x000e\\x0000\u0347\\x000c\uFFFD\\x000c\uFFFD\uFFFDtC\uFFFD\uFFFD\uFFFD\uFFFDk$[* F\uFFFD\\x0007\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\\x0004\uFFFD\uFFFDqa\uFFFDw\\x0007d\uFFFD\\x001f4m\uFFFDR-X"
 						},
 						{
 							"uri": "https://app.pix.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ja7tTEq0xG4-K8Yn9n2aMZ_0SHG4JFpPkc3HdHhy4vJh_QYgIlvZ40VHXu3h9bWUqHFTL89QAnGfi3AA5Rowk8a3da1ri_zN3b_kUbqTUniRtG4oB0Jn3Y_De9bakQNQx0mS7519kuFXx6kvx_N9tPAGs4wjtWSjJDO9BrPr2i7cZCyAA6u6a-9-K_Vfunqz7Q3DuSEodFcgl-J1Aq7YEOU6lPFyJbC5cxiDVOaPQuBice1CtSIvHEWsZ-KSDkdZ",
-							"otherinfo": "\uFFFD\uFFFD\uFFFDLJ\uFFFD\uFFFDn>+\uFFFD'\uFFFD}\uFFFD1\uFFFD\uFFFDHq\uFFFD$ZO\uFFFD\uFFFD\uFFFDtxr\uFFFD\uFFFDa\uFFFD\\x0006 \"[\uFFFD\uFFFDEG^\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDqS/\uFFFDP\\x0002q\uFFFD\uFFFDp\\x0000\uFFFD\\x001a0\uFFFD\u01B7u\uFFFDk\uFFFD\uFFFD\uFFFD\u077F\uFFFDQ\uFFFD\uFFFDRx\uFFFD\uFFFDn(\\x0007Bg\u074F\uFFFD{\uFFFD\u0691\\x0003P\uFFFDI\uFFFD\uFFFD}\uFFFD\uFFFDW\u01E9/\uFFFD\uFFFD}\uFFFD\uFFFD\\x0006\uFFFD\uFFFD#\uFFFDd\uFFFD$3\uFFFD\\x0006\uFFFD\uFFFD\uFFFD.\uFFFDd,\uFFFD\\x0003\uFFFD\uFFFDk\uFFFD~+\uFFFD_\uFFFDz\uFFFD\uFFFD\r\u00F9!(tW \uFFFD\uFFFDu\\x0002\uFFFD\uFFFD\\x0010\uFFFD:\uFFFD\uFFFDr%\uFFFD\uFFFDs\\x0018\uFFFDT\uFFFDB\uFFFDbq\uFFFDB\uFFFD\"/\\x001cE\uFFFDg\uFFFD\\x000eGY"
+							"evidence": "q8QlAktHqTNBC-r0rLFwP1PI9nvMajmLE7GJq533VyEWvxebZ1na1UxcxDIcJutEsc37UcoT2zVRXqlMloMTQibFVhZiz1OBEaiSzQqv7P9wH1P16AfT9aAoJValgrlWpAkbcf2bH9x-F6nCVE0kCXR4r2eztntEV2ho3HaCUZYRpAggyYc69PSWM3dhm-QQCamNqvrXSbx175sw_Fmy7GqBNH3HEiVWbfnu2Nu0LZ6GXTUCCse0FbLF_CXlcz_yazwDJVZXIYB5dpXYdQO2IQ",
+							"otherinfo": "\uFFFD\uFFFD%\\x0002KG\uFFFD3A\\x000b\uFFFD\uFFFD\uFFFD\uFFFDp?S\uFFFD\uFFFD{\uFFFDj9\uFFFD\\x0013\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW!\\x0016\uFFFD\\x0017\uFFFDgY\uFFFD\uFFFDL\\\uFFFD2\\x001c&\uFFFDD\uFFFD\uFFFD\uFFFDQ\uFFFD\\x0013\uFFFD5Q^\uFFFDL\uFFFD\uFFFD\\x0013B&\uFFFDV\\x0016b\uFFFDS\uFFFD\\x0011\uFFFD\uFFFD\uFFFD\n\uFFFD\uFFFD\uFFFDp\\x001fS\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD(%V\uFFFD\uFFFD\uFFFDV\uFFFD\t\\x001bq\uFFFD\uFFFD\\x001f\uFFFD~\\x0017\uFFFD\uFFFDTM$\ttx\uFFFDg\uFFFD\uFFFD{DWhh\uFFFDv\uFFFDQ\uFFFD\\x0011\uFFFD\\x0008 \u0247:\uFFFD\uFFFD\uFFFD3wa\uFFFD\uFFFD\\x0010\t\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDI\uFFFDu\uFFFD0\uFFFDY\uFFFD\uFFFDj\uFFFD4}\uFFFD\\x0012%Vm\uFFFD\uFFFD\uFFFD\u06F4-\uFFFD\uFFFD]5\\x0002\n\u01F4\\x0015\uFFFD\uFFFD\uFFFD%\uFFFDs?\uFFFDk<\\x0003%VW!\uFFFDyv\uFFFD\uFFFDu\\x0003\uFFFD!"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD%\\x0002KG\uFFFD3A\\x000b\uFFFD\uFFFD\uFFFD\uFFFDp?S\uFFFD\uFFFD{\uFFFDj9\uFFFD\\x0013\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDW!\\x0016\uFFFD\\x0017\uFFFDgY\uFFFD\uFFFDL\\\uFFFD2\\x001c&\uFFFDD\uFFFD\uFFFD\uFFFDQ\uFFFD\\x0013\uFFFD5Q^\uFFFDL\uFFFD\uFFFD\\x0013B&\uFFFDV\\x0016b\uFFFDS\uFFFD\\x0011\uFFFD\uFFFD\uFFFD</p><p>\uFFFD\uFFFD\uFFFDp\\x001fS\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\uFFFD(%V\uFFFD\uFFFD\uFFFDV\uFFFD\t\\x001bq\uFFFD\uFFFD\\x001f\uFFFD~\\x0017\uFFFD\uFFFDTM$\ttx\uFFFDg\uFFFD\uFFFD{DWhh\uFFFDv\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD=,z\uFFFD+\uFFFD\uFFFD\uFFFDB\uFFFD2\\x001f,x\uFFFD\uFFFD\\x0013k\uFFFD\uFFFD\\x0018\uFFFD\\x0000\uFFFD\uFFFD:W\uFFFD}\uFFFD\uFFFD\uFFFD=$\\x0005W\uFFFD\\x001f=\uFFFD\uFFFD\uFFFDLf\uFFFDp\uFFFD\uFFFD\u04B5\\x0004\uFFFD\uFFFDS\uFFFD\\x000c\\x0016\\x001aS</p>",
+					"otherinfo": "<p>\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD[\uFFFDi=\\x0011XS^Pewx;\uFFFDP\uFFFD\uFFFDg\\x0000gu\uFFFD\uFFFDTm|\uFFFD\\x0016E\u01E4\uFFFD</p><p>\uFFFD\u01DB\uFFFDq\\x000bY\uFFFD\\x0005X\\7tf\uFFFD\uFFFD}vG\uFFFD\uFFFD\u0683\uFFFD\uFFFDH\\x0003x._\uFFFD\uFFFD\uFFFD\\x0002w\\x0004\uFFFD?j*\uFFFDR\u0712\\x000ehKu\uFFFD\uFFFD\uFFFDf\\x0000\uFFFD\uFFFD\uFFFD\\x0016\uFFFD\u031B\uFFFD/\uFFFD\uFFFD\uFFFD\\x001b\uFFFD\\x0004_34\uFFFD\\>\uFFFD\uFFFD6*\uFFFDPo4\\x0013[\\x0017M\\x0018S\\x000f\uFFFDZ\uFFFDY\uFFFDE\uFFFDn\uFFFDed?\uFFFD\\x0014\uFFFD\uFFFD\tz\\x0004kf0pn\\x0016^\uFFFD\\x0005\\x0017\uFFFD\u7B1A\uFFFD\\x00041\\x0010\uFFFD\"\uFFFD\uFFFD]\uFFFDx\\x001dP\r\uFFFD\uFFFD\\x0019\uFFFD\uFFFD\u0249-l/\uFFFD\uFFFD1\uFFFDz\uFFFD)\u0081SO\\x0000\uFFFD75\uFFFD\uFFFD\uFFFDC</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -300,9 +292,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://app.pix.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -335,9 +335,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://app.pix.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -370,9 +378,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://app.pix.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -405,9 +421,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://app.pix.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",

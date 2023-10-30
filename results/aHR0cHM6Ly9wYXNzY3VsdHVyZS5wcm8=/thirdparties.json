@@ -21,15 +21,15 @@
     "content-encoding": "br",
     "content-length": "627",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Oct 2023 09:43:05 GMT",
-    "etag": "\"307357c4a48c9212491c6449df0a19766528337cb761ee466af9364b3488d00a-br\"",
-    "last-modified": "Thu, 12 Oct 2023 13:14:40 GMT",
+    "date": "Sun, 29 Oct 2023 09:47:02 GMT",
+    "etag": "\"704e0ea638b846a5c79c1d71879b21cc657e942ee0480cdbac28d1dcd605c681-br\"",
+    "last-modified": "Tue, 24 Oct 2023 10:55:34 GMT",
     "strict-transport-security": "max-age=31556926",
     "vary": "x-fh-requested-host, accept-encoding",
     "x-cache": "HIT",
-    "x-cache-hits": "4",
-    "x-served-by": "cache-pao-kpao1770034-PAO",
-    "x-timer": "S1697362985.258849,VS0,VE0"
+    "x-cache-hits": "5",
+    "x-served-by": "cache-dfw-kdfw8210063-DFW",
+    "x-timer": "S1698572822.273360,VS0,VE0"
   },
   "endpoints": [
     {
@@ -172,7 +172,7 @@
     },
     {
       "hostname": "static.hotjar.com",
-      "ip": "18.65.25.19",
+      "ip": "52.84.18.67",
       "geoip": {
         "continent": {
           "code": "NA",

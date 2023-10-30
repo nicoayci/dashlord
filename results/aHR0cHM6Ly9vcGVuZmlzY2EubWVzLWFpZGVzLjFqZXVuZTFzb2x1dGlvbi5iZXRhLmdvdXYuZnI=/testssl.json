@@ -31,15 +31,15 @@
               "id"           : "TLS1",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "offered (deprecated)"
+              "severity"     : "INFO",
+              "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_1",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "offered (deprecated)"
+              "severity"     : "INFO",
+              "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_2",
@@ -52,8 +52,15 @@
               "id"           : "TLS1_3",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "not offered + downgraded to weaker protocol"
+              "severity"     : "OK",
+              "finding"      : "offered with final"
+          }
+,         {
+              "id"           : "ALPN_HTTP2",
+              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "h2"
           }
 ,         {
               "id"           : "ALPN",
@@ -106,9 +113,9 @@
               "id"           : "cipherlist_OBSOLETED",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "INFO",
               "cwe"          : "CWE-310",
-              "finding"      : "offered"
+              "finding"      : "not offered"
           }
 ,         {
               "id"           : "cipherlist_STRONG_NOFS",
@@ -125,53 +132,53 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipher_order-tls1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "DHE-RSA-AES256-SHA"
-          }
-,         {
-              "id"           : "cipher_order-tls1_1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1_1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "DHE-RSA-AES256-SHA"
-          }
-,         {
               "id"           : "cipher_order-tls1_2",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
+              "severity"     : "INFO",
+              "finding"      : "NOT a cipher order configured"
           }
 ,         {
-              "id"           : "cipherorder_TLSv1_2",
+              "id"           : "cipher-tls1_2_xc030",
+              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 521   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9f",
+              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9f     DHE-RSA-AES256-GCM-SHA384         DH 2048    AESGCM      256      TLS_DHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 521   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9e",
+              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9e     DHE-RSA-AES128-GCM-SHA256         DH 2048    AESGCM      128      TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "supportedciphers_TLSv1_2",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "ECDHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "cipher_order",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
+              "severity"     : "INFO",
+              "finding"      : "NOT a cipher order configured"
           }
 ,         {
               "id"           : "FS",
@@ -185,7 +192,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA DHE-RSA-CAMELLIA128-SHA256 DHE-RSA-CAMELLIA128-SHA DHE-RSA-CAMELLIA256-SHA256 DHE-RSA-CAMELLIA256-SHA DHE-RSA-SEED-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-CAMELLIA128-SHA256 ECDHE-RSA-CAMELLIA256-SHA384"
+              "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "FS_ECDHE_curves",
@@ -199,7 +206,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -237,11 +244,11 @@
               "finding"      : "random"
           }
 ,         {
-              "id"           : "cert_compression",
+              "id"           : "certificate_compression",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "N/A"
+              "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
@@ -290,7 +297,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "048648BB09F6F45E72A0E968310B3965FEE5"
+              "finding"      : "03FED92516B39526E89D05C03560D22B6802"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -304,21 +311,21 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1992744F0C5AE827D908BCAD1B282FDDC1D210A4"
+              "finding"      : "5996576104738A1E631E2A2BBCA1D6E4DC07858D"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "9C8527FB7527D2B395715BE6145A915308369C4C453F493C7A662DE5842216A4"
+              "finding"      : "6C57065209A44D776B8E7EAB55190D85C8686A20C398C2954B8C19C256258626"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFWTCCBEGgAwIBAgISBIZIuwn29F5yoOloMQs5Zf7lMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA4MzAwNzIxNTJaFw0yMzExMjgwNzIxNTFaMDsxOTA3BgNVBAMTMG9wZW5maXNjYS5tZXMtYWlkZXMuMWpldW5lMXNvbHV0aW9uLmJldGEuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOd5CyXqglcbFA354QtcGcm/+Yrt7CQ4IDfEnaxWNMwhOWVNKbTujXrcvrR6eeFoOtQcWJMyo7lDq10nuX3OIHN/ANY5GA9VH4XnUpZT9ECgXTaagrO+FeAXE+MkGW/I9Xaz2j/Yns+5JFr7iQH7xt39QFIb2soAKq5cJraiec/ebJk03gpelHwSZJWOX2VCSDB0rtlMseqeynr5mT/x7uXE6txveUHTJcZd1E76xUzqySQKxJnhYQszJFghxnui05wR8ewUSIQsWzy3RivQLLQklGbOx1XRgdCE5eNofeNv9ce6JlsyE68zMqmig9UXtTdt9K/U/h2fktks+uqGSXECAwEAAaOCAl4wggJaMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUp5LywbR/T+hHxhQDjVOGWTGKX4wwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wZwYDVR0RBGAwXoIwb3BlbmZpc2NhLm1lcy1haWRlcy4xamV1bmUxc29sdXRpb24uYmV0YS5nb3V2LmZygip3d3cubWVzLWFpZGVzLjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYpFiOD+AAAEAwBHMEUCIEZoC88x+dUfY1LZPpVylDYQ2/t8tY93oMilyo5p+XB8AiEAtDAAo7mqXTLeQVkTiqs8k6Tp3VpRPsJq6ECoWpuySXcAdgCt9776fP8QyIudPZwePhhqtGcpXc+xDCTKhYY069yCigAAAYpFiOEpAAAEAwBHMEUCIQDd413LDSwnCY2lUbDXqMeATkKUqk0tWq+q9QD9GqGgbQIgdipW7PtAJKumalTqvfiw/KL1O+RtyNiELAluxpZB1eQwDQYJKoZIhvcNAQELBQADggEBAJCRmVWAdeM7yFp9ksC1JAeeOxf3wb0HjNbAgUY3NXtaphg1Q7zAqeOS2TOO64ehQJ0bPR7Sh2WHJcPhKDoWWvcxUfN25A8PmrBJ6yIUQMoUeaXLSW4WGOPLbGOFNfq8+oNsUISDsIhZ3gr06RfBObAIpHSMJx5MWBvdZH1sbLy5vPX2IOh53PQFG/77f/pGr+raWNU2PTNufM+LY5eBDV/mHGgkw8MN90kWAqbjLtaikBptHOgKm0XYmr3+P+VW6t6ellgOLK93R/Sklg4/7nwNEB6AQX6BbaBeURML2O5nBXPkfbbBp2at32tMv4IZw+njD64/qaTZD5Q6PZhTMWk=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFWTCCBEGgAwIBAgISA/7ZJRazlSbonQXANWDSK2gCMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzEwMjkwNzIyMjZaFw0yNDAxMjcwNzIyMjVaMDsxOTA3BgNVBAMTMG9wZW5maXNjYS5tZXMtYWlkZXMuMWpldW5lMXNvbHV0aW9uLmJldGEuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKNegdzB75YjOpWOB9szCJ5HqgEEOumy7TstqRmPUwPQyoF5JM2XoitI9QK4MUnwZKLAipRJ4Y2m49la+OC0xU6jxZEJiSFlb/snmmS9xFl5DDVbvgQnvAxwET60/ejZ1gowOvVtF8Wf1bNO2TqPll7CQI9JH+WYl5BHFbaOMpdGt4Yqn+lGDDpsZW2H5tu9NKvtH1SOSMfO+gmrTHwwSS4iexddzNTmNbr6/4sywJ8qX83VvJHpLcBOLeBBQPFCFEcVZKf7BY+qdL1fHrKEdHlv7+Zx0yqztzRuMfQciG5PhKV2gQBBoN/8haIYK8j9QJFeiUlWVL2OuhlyMN0ypysCAwEAAaOCAl4wggJaMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUxdyOv2xBbkbvoJzn/ReXh9fifvAwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wZwYDVR0RBGAwXoIwb3BlbmZpc2NhLm1lcy1haWRlcy4xamV1bmUxc29sdXRpb24uYmV0YS5nb3V2LmZygip3d3cubWVzLWFpZGVzLjFqZXVuZTFzb2x1dGlvbi5iZXRhLmdvdXYuZnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwA7U3d1Pi25gE6LMFsG/kA7Z9hPw/THvQANLXJv4frUFwAAAYt6hvNaAAAEAwBIMEYCIQDXLCkvimE82QeEo1x4FcNoM4/G+PHULwmpMl7Cs+y/bAIhAJRz/gXpCNgDgPNgltqT2o0sHoa3ck31IIZxyiKJcKzTAHUA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLeobzVwAABAMARjBEAiAUbW3UtDVo1uCp6AGJ6uti2Tqp0KBiQldW703FPCsBXAIgTFOEtsRUol3mjtY21OQLtlrPzhnbaEqCbXGY72OXEVkwDQYJKoZIhvcNAQELBQADggEBAICXtl14U0Ae7V5/3Yg6OFlHtM9N6H+jctFY36I190vJU4KeJzeN3v514XQd0Wesjp6ojiI06AsLV+HRroJ1L2DY461r9Sbksp9j7OYu4mG0wf3p3xoVkOOocdHx0buVqGoQ9OnKUf6QxtQlEWE960zNSFlP683w4A59ZvbHoVKeFwkUNofMJYc+AOWU+UCw/lxU/wkKmobkKuYD58Zn7Ag3/EMmm+ry9Frcg2kHTRCZWQK1miVj4YBso3sflRd+qHWVbsKLF5Kg5vuM/TQpLFAdEU1trYKB8NSw3NL1EIfBQy2FpZhEIMRsjgNgvdtljY3BlSrpS7yyMaQM8p0siKY=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -367,21 +374,21 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "43 >= 30 days"
+              "finding"      : "89 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-08-30 07:21"
+              "finding"      : "2023-10-29 07:22"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-11-28 07:21"
+              "finding"      : "2024-01-27 07:22"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -570,7 +577,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1697360326"
+              "finding"      : "1698569986"
           }
 ,         {
               "id"           : "HSTS",
@@ -707,7 +714,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "supported"
+              "finding"      : "no protocol below TLS 1.2 offered"
           }
 ,         {
               "id"           : "SWEET32",
@@ -743,7 +750,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=9C8527FB7527D2B395715BE6145A915308369C4C453F493C7A662DE5842216A4"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6C57065209A44D776B8E7EAB55190D85C8686A20C398C2954B8C19C256258626"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -764,31 +771,22 @@
               "finding"      : "--"
           }
 ,         {
-              "id"           : "BEAST_CBC_TLS1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "MEDIUM",
-              "cve"          : "CVE-2011-3389",
-              "cwe"          : "CWE-20",
-              "finding"      : "DHE-RSA-AES256-SHA DHE-RSA-CAMELLIA256-SHA DHE-RSA-AES128-SHA DHE-RSA-SEED-SHA DHE-RSA-CAMELLIA128-SHA ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-SHA"
-          }
-,         {
               "id"           : "BEAST",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "OK",
               "cve"          : "CVE-2011-3389",
               "cwe"          : "CWE-20",
-              "finding"      : "VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)"
+              "finding"      : "not vulnerable, no SSL3 or TLS1"
           }
 ,         {
               "id"           : "LUCKY13",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "OK",
               "cve"          : "CVE-2013-0169",
               "cwe"          : "CWE-310",
-              "finding"      : "potentially vulnerable, uses TLS CBC ciphers"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "winshock",
@@ -820,70 +818,70 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_81",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_90",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_11",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_12",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-chrome_101_win10",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-firefox_100_win10",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
@@ -897,7 +895,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.0 ECDHE-RSA-AES256-SHA"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_8_xp",
@@ -925,7 +923,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win10",
@@ -946,28 +944,28 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_154_osx_1231",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
@@ -988,28 +986,28 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java1703",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-go_1178",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-libressl_283",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
@@ -1030,14 +1028,14 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_303",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-apple_mail_16_0",
@@ -1051,7 +1049,7 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "rating_spec",
@@ -1072,14 +1070,14 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "95"
+              "finding"      : "100"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "28"
+              "finding"      : "30"
           }
 ,         {
               "id"           : "key_exchange_score",
@@ -1100,45 +1098,31 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "60"
+              "finding"      : "90"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "24"
+              "finding"      : "36"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "79"
+              "finding"      : "93"
           }
 ,         {
               "id"           : "overall_grade",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "B"
+              "severity"     : "OK",
+              "finding"      : "A"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.1 offered"
-          }
-,         {
-              "id"           : "grade_cap_reason_2",
-              "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.0 offered"
-          }
-,         {
-              "id"           : "grade_cap_reason_3",
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1149,6 +1133,6 @@
               "ip"           : "openfisca.mes-aides.1jeune1solution.beta.gouv.fr/5.135.137.147",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "120"
+              "finding"      : "64"
           }
 ]

@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 02:02:49",
+	"@generated": "Sun, 29 Oct 2023 02:01:04",
 	"site":[ 
 		{
 			"@name": "https://aplus.beta.gouv.fr",
@@ -101,7 +101,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "82"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "10063",
@@ -130,7 +130,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/assets/generated-js/4f968c8b03cc39c73998a04ba19e3378-index.js",
+							"uri": "https://aplus.beta.gouv.fr/assets/generated-js/acb036ba3c3a7e9db94e0781ce65e275-index.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -208,7 +208,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -225,16 +225,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJkYXRhIjp7ImNzcmZUb2tlbiI6IjIyYTVhOGM1MGEyNmFhNWVjZWRkNTFhZWRmNzQ5ZTg1NTUwNGY3NzQtMTY5NzMzNTM2MjIzOC05MWUzYjcyZWFhNDJkOTNjY2Y2ZDhkNWIifSwiZXhwIjoxNjk5OTI3MzYyLCJuYmYiOjE2OTczMzUzNjIsImlhdCI6MTY5NzMzNTM2Mn0",
-							"otherinfo": "{\"data\":{\"csrfToken\":\"22a5a8c50a26aa5ecedd51aedf749e855504f774-1697335362238-91e3b72eaa42d93ccf6d8d5b\"},\"exp\":1699927362,\"nbf\":1697335362,\"iat\":1697335362}"
+							"evidence": "eyJkYXRhIjp7ImNzcmZUb2tlbiI6IjNhZGUzZDgzZjNkMzg1NjZjNjUzOTYyYWU3N2E1M2IzMTgyMzZiOGItMTY5ODU0NDg1Njg0My1mZmM5NDFjMTE2ODdmYjNhNGU2NWY1MWMifSwiZXhwIjoxNzAxMTM2ODU2LCJuYmYiOjE2OTg1NDQ4NTYsImlhdCI6MTY5ODU0NDg1Nn0",
+							"otherinfo": "{\"data\":{\"csrfToken\":\"3ade3d83f3d38566c653962ae77a53b318236b8b-1698544856843-ffc941c11687fb3a4e65f51c\"},\"exp\":1701136856,\"nbf\":1698544856,\"iat\":1698544856}"
 						},
 						{
 							"uri": "https://aplus.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImUyZTRlZDc5YmNiMjc5MmY1ZDZlNjNiMzRiYjJiYTUwODkzYWUyMzUtMTY5NzMzNTM2MjQ2MS0zOWZhNTcxOTA4MTcyZmEzNGRlN2QxMzUifSwiZXhwIjoxNjk5OTI3MzYyLCJuYmYiOjE2OTczMzUzNjIsImlhdCI6MTY5NzMzNTM2Mn0",
-							"otherinfo": "{\"data\":{\"csrfToken\":\"e2e4ed79bcb2792f5d6e63b34bb2ba50893ae235-1697335362461-39fa571908172fa34de7d135\"},\"exp\":1699927362,\"nbf\":1697335362,\"iat\":1697335362}"
+							"evidence": "eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImVjODUxZTlkNTIwM2I3OWNjMTM0YTg4ZTFmMjA0YmI4MzM5OGRhZjktMTY5ODU0NDg1NzA5My1kZjZjMGEzN2FjZjZjNDI0YjlmOTk3NzcifSwiZXhwIjoxNzAxMTM2ODU3LCJuYmYiOjE2OTg1NDQ4NTcsImlhdCI6MTY5ODU0NDg1N30",
+							"otherinfo": "{\"data\":{\"csrfToken\":\"ec851e9d5203b79cc134a88e1f204bb83398daf9-1698544857093-df6c0a37acf6c424b9f99777\"},\"exp\":1701136857,\"nbf\":1698544857,\"iat\":1698544857}"
 						},
 						{
 							"uri": "https://aplus.beta.gouv.fr/",
@@ -281,13 +281,13 @@
 							"method": "POST",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJkYXRhIjp7ImVycm9yIjoiQXVjdW4gY29tcHRlIGFjdGlmIG7igJllc3QgYXNzb2Npw6kgw6AgY2V0dGUgYWRyZXNzZSBlLW1haWwuXG5NZXJjaSBkZSB2w6lyaWZpZXIgcXXigJlpbCBz4oCZYWdpdCBiaWVuIGRlIHZvdHJlIGFkcmVzc2UgcHJvZmVzc2lvbm5lbGxlIGV0IG5vbWluYXRpdmUuIiwiZW1haWwtdmFsdWUiOiJ6YXByb3h5QGV4YW1wbGUuY29tIn0sIm5iZiI6MTY5NzMzNTM2NCwiaWF0IjoxNjk3MzM1MzY0fQ",
-							"otherinfo": "{\"data\":{\"error\":\"Aucun compte actif n\u2019est associ\u00E9 \u00E0 cette adresse e-mail.\\nMerci de v\u00E9rifier qu\u2019il s\u2019agit bien de votre adresse professionnelle et nominative.\",\"email-value\":\"zaproxy@example.com\"},\"nbf\":1697335364,\"iat\":1697335364}"
+							"evidence": "eyJkYXRhIjp7ImVycm9yIjoiQXVjdW4gY29tcHRlIGFjdGlmIG7igJllc3QgYXNzb2Npw6kgw6AgY2V0dGUgYWRyZXNzZSBlLW1haWwuXG5NZXJjaSBkZSB2w6lyaWZpZXIgcXXigJlpbCBz4oCZYWdpdCBiaWVuIGRlIHZvdHJlIGFkcmVzc2UgcHJvZmVzc2lvbm5lbGxlIGV0IG5vbWluYXRpdmUuIiwiZW1haWwtdmFsdWUiOiJ6YXByb3h5QGV4YW1wbGUuY29tIn0sIm5iZiI6MTY5ODU0NDg1OCwiaWF0IjoxNjk4NTQ0ODU4fQ",
+							"otherinfo": "{\"data\":{\"error\":\"Aucun compte actif n\u2019est associ\u00E9 \u00E0 cette adresse e-mail.\\nMerci de v\u00E9rifier qu\u2019il s\u2019agit bien de votre adresse professionnelle et nominative.\",\"email-value\":\"zaproxy@example.com\"},\"nbf\":1698544858,\"iat\":1698544858}"
 						}
 					],
 					"count": "8",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>{\"data\":{\"csrfToken\":\"22a5a8c50a26aa5ecedd51aedf749e855504f774-1697335362238-91e3b72eaa42d93ccf6d8d5b\"},\"exp\":1699927362,\"nbf\":1697335362,\"iat\":1697335362}</p>",
+					"otherinfo": "<p>{\"data\":{\"csrfToken\":\"3ade3d83f3d38566c653962ae77a53b318236b8b-1698544856843-ffc941c11687fb3a4e65f51c\"},\"exp\":1701136856,\"nbf\":1698544856,\"iat\":1698544856}</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -304,7 +304,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://aplus.beta.gouv.fr/assets/generated-js/4f968c8b03cc39c73998a04ba19e3378-index.js",
+							"uri": "https://aplus.beta.gouv.fr/assets/generated-js/acb036ba3c3a7e9db94e0781ce65e275-index.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -377,7 +377,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -449,7 +449,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/sitemap.xml",
+							"uri": "https://aplus.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -484,7 +484,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/sitemap.xml",
+							"uri": "https://aplus.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -519,7 +519,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/sitemap.xml",
+							"uri": "https://aplus.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -554,7 +554,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/sitemap.xml",
+							"uri": "https://aplus.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -585,7 +585,7 @@
 							"method": "GET",
 							"param": "PLAY_SESSION",
 							"attack": "",
-							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6IjIyYTVhOGM1MGEyNmFhNWVjZWRkNTFhZWRmNzQ5ZTg1NTUwNGY3NzQtMTY5NzMzNTM2MjIzOC05MWUzYjcyZWFhNDJkOTNjY2Y2ZDhkNWIifSwiZXhwIjoxNjk5OTI3MzYyLCJuYmYiOjE2OTczMzUzNjIsImlhdCI6MTY5NzMzNTM2Mn0.eVSEy54U2ktbm_vFcUz7TqHXisdTnHPQrf2mMBtB2Tw",
+							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6IjNhZGUzZDgzZjNkMzg1NjZjNjUzOTYyYWU3N2E1M2IzMTgyMzZiOGItMTY5ODU0NDg1Njg0My1mZmM5NDFjMTE2ODdmYjNhNGU2NWY1MWMifSwiZXhwIjoxNzAxMTM2ODU2LCJuYmYiOjE2OTg1NDQ4NTYsImlhdCI6MTY5ODU0NDg1Nn0.Lljgfm7_kQReEbxE6MIIEcq416NeKJSLrIVoehEQZ-g",
 							"otherinfo": "\ncookie:PLAY_SESSION"
 						},
 						{
@@ -593,7 +593,7 @@
 							"method": "GET",
 							"param": "PLAY_SESSION",
 							"attack": "",
-							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImUyZTRlZDc5YmNiMjc5MmY1ZDZlNjNiMzRiYjJiYTUwODkzYWUyMzUtMTY5NzMzNTM2MjQ2MS0zOWZhNTcxOTA4MTcyZmEzNGRlN2QxMzUifSwiZXhwIjoxNjk5OTI3MzYyLCJuYmYiOjE2OTczMzUzNjIsImlhdCI6MTY5NzMzNTM2Mn0.TD0WPTYZowi6_DddIGmrjvcP8ROa0R9Ah8V74M5iX8Q",
+							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImVjODUxZTlkNTIwM2I3OWNjMTM0YTg4ZTFmMjA0YmI4MzM5OGRhZjktMTY5ODU0NDg1NzA5My1kZjZjMGEzN2FjZjZjNDI0YjlmOTk3NzcifSwiZXhwIjoxNzAxMTM2ODU3LCJuYmYiOjE2OTg1NDQ4NTcsImlhdCI6MTY5ODU0NDg1N30.W2lDtyAWIAlSuNsjNsjLOnard3ziXXSmME1GYqmYAVA",
 							"otherinfo": "\ncookie:PLAY_SESSION"
 						},
 						{
@@ -601,7 +601,7 @@
 							"method": "GET",
 							"param": "PLAY_SESSION",
 							"attack": "",
-							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImUyZTRlZDc5YmNiMjc5MmY1ZDZlNjNiMzRiYjJiYTUwODkzYWUyMzUtMTY5NzMzNTM2MjQ2MS0zOWZhNTcxOTA4MTcyZmEzNGRlN2QxMzUifSwiZXhwIjoxNjk5OTI3MzYyLCJuYmYiOjE2OTczMzUzNjIsImlhdCI6MTY5NzMzNTM2Mn0.TD0WPTYZowi6_DddIGmrjvcP8ROa0R9Ah8V74M5iX8Q",
+							"evidence": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6ImVjODUxZTlkNTIwM2I3OWNjMTM0YTg4ZTFmMjA0YmI4MzM5OGRhZjktMTY5ODU0NDg1NzA5My1kZjZjMGEzN2FjZjZjNDI0YjlmOTk3NzcifSwiZXhwIjoxNzAxMTM2ODU3LCJuYmYiOjE2OTg1NDQ4NTcsImlhdCI6MTY5ODU0NDg1N30.W2lDtyAWIAlSuNsjNsjLOnard3ziXXSmME1GYqmYAVA",
 							"otherinfo": "\ncookie:PLAY_SESSION"
 						}
 					],
@@ -664,7 +664,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://aplus.beta.gouv.fr/assets/stylesheets/db4f0c7cfe25e317bc72d92e6e8931ae-main.css",
+							"uri": "https://aplus.beta.gouv.fr/assets/stylesheets/d3ce18e68eeb3222147b0bf6d75c1093-main.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -718,7 +718,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}

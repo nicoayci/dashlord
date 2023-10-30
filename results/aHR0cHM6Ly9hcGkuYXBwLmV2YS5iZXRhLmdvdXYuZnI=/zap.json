@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 15 Oct 2023 16:41:33",
+	"@generated": "Sun, 29 Oct 2023 17:16:24",
 	"site":[ 
 		{
 			"@name": "https://api.app.eva.beta.gouv.fr",
@@ -224,6 +224,14 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
+							"uri": "https://api.app.eva.beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://api.app.eva.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -240,13 +248,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -263,13 +271,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "RArTDu6kgHoUZaUfHM2W6twKhMetLMKfwUT4",
-							"otherinfo": "D\n\uFFFD\\x000e\uE900z\\x0014e\uFFFD\\x001f\\x001c\u0356\uFFFD\uFFFD\n\uFFFD\u01ED,\u009F\uFFFDD\uFFFD"
+							"evidence": "2Fs4rhazfVD3KvmynVd0kwvb1lyXmo9I6qngTwIHG2Uk9DQVTHWOanIAyjvTPk2HLzgAPaEzPxKNoABO8Ih2eRUthdw",
+							"otherinfo": "\uFFFD[8\uFFFD\\x0016\uFFFD}P\uFFFD*\uFFFD\uFFFD\uFFFDWt\uFFFD\\x000b\uFFFD\uFFFD\\\uFFFD\uFFFD\uFFFDH\uFFFD\uFFFDO\\x0002\\x0007\\x001be$\uFFFD4\\x0015Lu\uFFFDjr\\x0000\uFFFD;\uFFFD>M\uFFFD/8\\x0000=\uFFFD3?\\x0012\uFFFD\uFFFD\\x0000N\uFFFD\uFFFDvy\\x0015-\uFFFD\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>D</p><p>\uFFFD\\x000e\uE900z\\x0014e\uFFFD\\x001f\\x001c\u0356\uFFFD\uFFFD</p><p>\uFFFD\u01ED,\u009F\uFFFDD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD[8\uFFFD\\x0016\uFFFD}P\uFFFD*\uFFFD\uFFFD\uFFFDWt\uFFFD\\x000b\uFFFD\uFFFD\\\uFFFD\uFFFD\uFFFDH\uFFFD\uFFFDO\\x0002\\x0007\\x001be$\uFFFD4\\x0015Lu\uFFFDjr\\x0000\uFFFD;\uFFFD>M\uFFFD/8\\x0000=\uFFFD3?\\x0012\uFFFD\uFFFD\\x0000N\uFFFD\uFFFDvy\\x0015-\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -516,7 +524,7 @@
 							"method": "GET",
 							"param": "_session_id",
 							"attack": "",
-							"evidence": "RArTDu6kgHoUZaUfHM2W6twKhMetLMKfwUT4%2FkRtk4du5Vnyp3URzYUqk%2FQXMC4AKzj54Q%2BReFGK54NAr%2Btyvw%2BFZcMOOzWfQxTflG0nCwN2l7aA0PPdjUhZimfn3Ci2ynSQVdCHff6%2B%2BfCZC8OZf%2BfEgeOzC5LqpzkYcyJ4PhCnZrYKcGHiXNsNyqLJp9WK%2BDpatZB5MGL%2BzDFunkGrocE6w%2FUqwaCfuMDCG8cP5Q55kXf0FwruO0y1wOe76Sm63uyWn6gFwG58S%2BZ5yZD8IghNvQ%3D%3D--cE5%2FAkSz%2Fr7NDjRP--bAi0wwwM410uj1UNZZd1%2FQ%3D%3D",
+							"evidence": "%2BAf%2B0Cju9XEghKQyEynD6gBuK%2FLUU6PrO2LSx%2F9%2FCHJzhSS5pSKFfZaLV5Co6%2Fs4rhazfVD3KvmynVd0kwvb1lyXmo9I6qngTwIHG2Uk9DQVTHWOanIAyjvTPk2HLzgAPaEzPxKNoABO8Ih2eRUthdw%2BMxEuLKqb%2B0WvnJBZ8rFrR9YT6vfJa%2BY%2BsGIFXOYhdQTg6MXynyqmrnDm99jfwFJDh2KmrPP%2FsltEZQD8F2B6AP5Vug0%2BIhqXUgvc07UvRUV13luKTdUdTbUX8FoFF1dDOw%3D%3D--RlbgYDe3olPTB0e9--iRE42hdqgsTAiQEC3j%2Btmg%3D%3D",
 							"otherinfo": "\ncookie:_session_id"
 						}
 					],
