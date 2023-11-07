@@ -667,6 +667,9 @@ urls:
   - url: https://anssi-mac-prod.osc-secnum-fr1.scalingo.io/
     category: startup
     betaId: MonAideCyber
+  - url: https://vae.gouv.fr
+    category: startup
+    betaId: reva
   - url: https://selexpert.anje-justice.fr
     category: startup
     betaId: experts
